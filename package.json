@@ -1,0 +1,18 @@
+{
+  "name": "kpopnet.json",
+  "version": "0.0.0",
+  "description": "K-pop open data",
+  "scripts": {
+    "prepare": "env/bin/kpopnet export"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kpopnet/kpopnet.json.git"
+  },
+  "author": "Kagami Hiiragi",
+  "license": "CC0-1.0",
+  "bugs": {
+    "url": "https://github.com/kpopnet/kpopnet.json/issues"
+  },
+  "homepage": "https://github.com/kpopnet/kpopnet.json#readme"
+}

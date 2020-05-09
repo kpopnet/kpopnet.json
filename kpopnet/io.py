@@ -41,6 +41,10 @@ def get_band_path_by_name(name):
     return path.join(get_profiles_path(), name, fname)
 
 
+def get_idol_path_by_name(bname, iname):
+    return path.join(get_profiles_path(), bname, iname + '.json')
+
+
 def get_idol_path(band, idol):
     check_name(band['name'])
     check_name(idol['name'])
@@ -53,9 +57,9 @@ def strip_json_ext(fname):
     return fname[:-5]
 
 
-def load_json(b):
+def load_json(fpath):
     # TODO(Kagami): Convert to native python types, e.g. birthday date.
-    return json.loads(b, encoding='utf-8')
+    return json.load(open(fpath, 'rb'))
 
 
 def default_encoder(o):
@@ -103,7 +107,7 @@ def get_band_by_url(url):
             for name in bnames:
                 bpath = get_band_path_by_name(name)
                 with suppress(OSError, KeyError):
-                    band = load_json(open(bpath, 'rb').read())
+                    band = load_json(bpath)
                     for url in band['urls']:
                         _all_band_urls[url] = band
     return _all_band_urls[url]
@@ -113,7 +117,7 @@ def save_band(updates):
     bpath = get_band_path(updates)
     os.makedirs(path.dirname(bpath), exist_ok=True)
     try:
-        band = load_json(open(bpath, 'rb').read())
+        band = load_json(bpath)
     except OSError:
         band = {}
     update_profile(band, updates)
@@ -125,7 +129,7 @@ def save_idol(band, updates):
     ipath = get_idol_path(band, updates)
     os.makedirs(path.dirname(ipath), exist_ok=True)
     try:
-        idol = load_json(open(ipath, 'rb').read())
+        idol = load_json(ipath)
     except OSError:
         idol = {}
     update_profile(idol, updates)
@@ -133,22 +137,26 @@ def save_idol(band, updates):
         f.write(dump_json(idol))
 
 
-def get_all_idol_names():
-    try:
-        bnames = os.listdir(get_profiles_path())
-    except OSError:
-        return []
+def get_all_band_names():
+    bnames = os.listdir(get_profiles_path())
     for bname in bnames:
         if bname == INDEX_NAME:
             continue
-        try:
-            inames = os.listdir(path.join(get_profiles_path(), bname))
-        except OSError:
+        yield bname
+
+
+def get_idol_names(bname):
+    inames = os.listdir(path.join(get_profiles_path(), bname))
+    for iname in inames:
+        iname = strip_json_ext(iname)
+        if iname == INDEX_NAME:
             continue
-        for iname in inames:
-            iname = strip_json_ext(iname)
-            if iname == INDEX_NAME:
-                continue
+        yield iname
+
+
+def get_all_idol_names():
+    for bname in get_all_band_names():
+        for iname in get_idol_names(bname):
             yield bname, iname
 
 

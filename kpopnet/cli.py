@@ -2,6 +2,7 @@
 kpopnet web spiders and utils.
 
 Usage:
+  kpopnet export [options]
   kpopnet profile update [BAND...] [options]
   kpopnet image update [options]
   kpopnet [-h | --help]
@@ -10,6 +11,7 @@ Usage:
 Options:
   -h --help     Show this screen.
   -V --version  Show version.
+  -o <path>     Export profiles to file [default: kpopnet.json].
   --debug       Enable debug logging.
   -s SPIDER     Select spider.
   --all         Update already collected data.
@@ -26,7 +28,12 @@ def main():
     version = pkg_resources.require('kpopnet')[0].version
     args = docopt(__doc__, version=version)
 
-    if args['profile']:
+    if args['export']:
+        from . import profiles
+
+        return profiles.export(args['-o'])
+
+    elif args['profile']:
         from . import profiles
 
         if args['update']:
