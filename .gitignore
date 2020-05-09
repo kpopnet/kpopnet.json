@@ -1,0 +1,4 @@
+*.pyc
+/env/
+/kpopnet.egg-info/
+/images/
