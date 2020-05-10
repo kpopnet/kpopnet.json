@@ -2,6 +2,7 @@
   "name": "kpopnet.json",
   "version": "0.1.0",
   "description": "K-pop open data",
+  "main": "kpopnet.json",
   "scripts": {
     "prepare": "env/bin/kpopnet export"
   },
