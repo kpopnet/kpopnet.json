@@ -1,7 +1,37 @@
 import re
 import json
+import base64
+import hashlib
 from pprint import pprint
 import scrapy
+
+
+class Idol(dict):
+    REQUIRED_FIELDS = [
+        "name",
+        "name_original",
+        "real_name",
+        "real_name_original",
+        "birth_date",
+    ]
+    OPTIONAL_FIELDS = ["debut_date", "height", "weight"]
+
+    def gen_id(self):
+        s = self["real_name_original"] + self["birth_date"]
+        hash = hashlib.md5(s.encode()).digest()
+        return base64.b64encode(hash).decode().rstrip("=")
+
+    def normalize(self):
+        for field in self.REQUIRED_FIELDS:
+            assert self.get(field), (field, self)
+        for field in self.OPTIONAL_FIELDS:
+            if field not in self:
+                self[field] = None
+        self["id"] = self.gen_id()
+
+
+class Group(dict):
+    pass
 
 
 class KastdenSpider(scrapy.Spider):
@@ -9,7 +39,8 @@ class KastdenSpider(scrapy.Spider):
     allowed_domains = ["selca.kastden.org"]
     start_urls = ["https://selca.kastden.org/noona/search/?pt=kpop&h_op=lt&h=153"]
 
-    all_idols = []
+    all_idols: list[Idol] = []
+    all_groups: list[Group] = []
 
     def parse(self, response):
         for href in response.css(".cell_line a::attr(href)").getall():
@@ -33,9 +64,9 @@ class KastdenSpider(scrapy.Spider):
         Debut date: 2008-04-15 (15 years and 6 months ago) ▲ ▼
         Country of origin: Korea, Republic of
         """
-        idol = {}
-        table = response.css("table")[0]
-        for tr in table.css("tr"):
+        idol = Idol()
+        table_idol = response.css("h1 ~ div table")[0]
+        for tr in table_idol.css("tr"):
             prop = tr.css("td:nth-child(1)::text").get()
             if not prop:
                 continue
@@ -45,6 +76,7 @@ class KastdenSpider(scrapy.Spider):
             if not value:
                 continue
 
+            # TODO: other fields
             if prop == "Pop type":
                 assert value == "K-pop", (prop, value)
             elif re.search(r"stage\s+name.*romanized", prop, re.I):
@@ -72,26 +104,31 @@ class KastdenSpider(scrapy.Spider):
                 assert m, (prop, value)
                 idol["weight"] = float(m.group(1))
 
-        self.normalize_idol(idol)
+        idol["groups"] = []
+        table2 = response.css("h2 ~ table tbody")
+        if table2:
+            # TODO: subunit table
+            # XXX: subunits table without groups table?
+            for tr in table2[0].css("tr"):
+                # TODO: roles
+                tds = tr.css("td")
+                td_img, td_name, td_company, td_debut, td_disband, td_current = tds[:6]
+                group_name = td_name.css("a::text").get()
+                idol["groups"].append(group_name)
+                group_url = td_name.css("a::attr(href)").get()
+                # XXX: does deduplication always work?
+                yield response.follow(group_url, callback=self.parse_group)
+
+        idol.normalize()
         self.all_idols.append(idol)
 
-    REQUIRED_FIELDS = [
-        "name",
-        "name_original",
-        "real_name",
-        "real_name_original",
-        "birth_date",
-    ]
-    OPTIONAL_FIELDS = ["debut_date", "height", "weight"]
-
-    def normalize_idol(self, idol: dict):
-        for field in self.REQUIRED_FIELDS:
-            assert field in idol, (field, idol)
-        for field in self.OPTIONAL_FIELDS:
-            if field not in idol:
-                idol[field] = None
+    def parse_group(self, response):
+        print("PARSING", response.url)
 
     def closed(self, reason):
-        result = {"idols": self.all_idols}
+        self.log("Dumping data")
+        idols = sorted(self.all_idols, key=lambda i: i["birth_date"], reverse=True)
+        groups = sorted(self.all_groups, key=lambda g: g["debut_date"], reverse=True)
+        result = {"idols": idols, "groups": groups}
         with open("kpopnet.json", "w") as f:
             json.dump(result, f, ensure_ascii=False, sort_keys=True, indent=2)

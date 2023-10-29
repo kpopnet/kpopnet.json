@@ -1,19 +1,13 @@
 {
+  "groups": [],
   "idols": [
-    {
-      "birth_date": "2004-03-12",
-      "debut_date": "2022-01-03",
-      "height": 154.5,
-      "id": "I1WWgNsU9quemNLjreT7rw",
-      "name": "Hikaru",
-      "name_original": "히카루",
-      "real_name": "Ezaki Hikaru",
-      "real_name_original": "江崎ひかる",
-      "weight": null
-    },
     {
       "birth_date": "2002-11-11",
       "debut_date": "2017-01-16",
+      "groups": [
+        "Loossemble",
+        "LOONA"
+      ],
       "height": 148.0,
       "id": "hPC0uEHuDGKaBufit7W+5w",
       "name": "Yeojin",
@@ -23,19 +17,11 @@
       "weight": 35.0
     },
     {
-      "birth_date": "2002-10-09",
-      "debut_date": "2021-06-21",
-      "height": 154.0,
-      "id": "NgDUfSbU8tLvGMa/1l9dCg",
-      "name": "Miku",
-      "name_original": "미쿠",
-      "real_name": "Katae Miku",
-      "real_name_original": "片衛 美紅",
-      "weight": null
-    },
-    {
       "birth_date": "2000-12-26",
       "debut_date": "2021-06-21",
+      "groups": [
+        "Pink Fantasy"
+      ],
       "height": 152.0,
       "id": "cjm8pzNqVkaybhAkhFpK2A",
       "name": "Momoka",
@@ -45,19 +31,9 @@
       "weight": null
     },
     {
-      "birth_date": "1999-10-06",
-      "debut_date": "2021-10-25",
-      "height": 154.0,
-      "id": "4pFSJIBDSWrWvHsEMwmKWQ",
-      "name": "Eunchae",
-      "name_original": "은채",
-      "real_name": "Son Eunchae",
-      "real_name_original": "손은채",
-      "weight": 38.0
-    },
-    {
       "birth_date": "1996-12-09",
       "debut_date": "2019-10-21",
+      "groups": [],
       "height": 150.0,
       "id": "gG+j4BOxocBekWy3HH6NSw",
       "name": "AleXa",
@@ -67,19 +43,12 @@
       "weight": 41.0
     },
     {
-      "birth_date": "1996-08-26",
-      "debut_date": "2019-10-24",
-      "height": 154.0,
-      "id": "s5xkUxnk26E3f/7xSVB7kw",
-      "name": "Yunji",
-      "name_original": "윤지",
-      "real_name": "Kim Yunji",
-      "real_name_original": "김윤지 (金潤知)",
-      "weight": 40.0
-    },
-    {
       "birth_date": "1994-06-23",
       "debut_date": null,
+      "groups": [
+        "Real Girls Project",
+        "Tiny-G"
+      ],
       "height": 150.0,
       "id": "UShWQRJCZzw4ORDCqKh4OQ",
       "name": "Mint",
@@ -89,19 +58,11 @@
       "weight": 42.0
     },
     {
-      "birth_date": "1991-03-19",
-      "debut_date": null,
-      "height": 153.0,
-      "id": "GNxXKMLAJdHH2SGhPhhWSQ",
-      "name": "Sakura Moko",
-      "name_original": "사쿠라 모코 (桜もこ)",
-      "real_name": "Ito Yuu",
-      "real_name_original": "伊東裕",
-      "weight": null
-    },
-    {
       "birth_date": "1986-03-22",
       "debut_date": "2008-04-15",
+      "groups": [
+        "T-ara"
+      ],
       "height": 152.8,
       "id": "jZRSN1vHSZeGoxTg5zur0A",
       "name": "Boram",
