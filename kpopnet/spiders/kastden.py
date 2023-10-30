@@ -122,12 +122,12 @@ class KastdenSpider(scrapy.Spider):
                 # XXX: does crawl deduplication always work?
                 yield response.follow(group_url, callback=self.parse_group)
 
-        # TODO: Check for <h2>References</h2>?
         idol["urls"] = [response.url]
-        list_urls = response.css("h2 ~ ul")
-        if list_urls:
-            for url in list_urls.css("a::attr(href)").getall():
-                idol["urls"].append(self.unquote(url))
+        # TODO: Check for <h2>References</h2>?
+        # list_urls = response.css("h2 ~ ul")
+        # if list_urls:
+        #     for url in list_urls.css("a::attr(href)").getall():
+        #         idol["urls"].append(self.unquote(url))
 
         idol.normalize(self.all_overrides["idols"])
         self.all_idols.append(idol)
@@ -163,10 +163,10 @@ class KastdenSpider(scrapy.Spider):
                 group["disband_date"] = self.parse_date(prop, value, full=False)
 
         group["urls"] = [response.url]
-        list_urls = response.css("h2 ~ ul")
-        if list_urls:
-            for url in list_urls.css("a::attr(href)").getall():
-                group["urls"].append(self.unquote(url))
+        # list_urls = response.css("h2 ~ ul")
+        # if list_urls:
+        #     for url in list_urls.css("a::attr(href)").getall():
+        #         group["urls"].append(self.unquote(url))
 
         group.normalize(self.all_overrides["groups"])
         self.all_groups.append(group)

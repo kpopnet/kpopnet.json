@@ -20,6 +20,11 @@
       "match": ["name_original"],
       "name_original": "김보",
       "agency_name": "ARAline Entertainment"
+    },
+    {
+      "match": ["name_original"],
+      "name_original": "라임라잇",
+      "debut_date": "2023-02-14"
     }
   ]
 }
