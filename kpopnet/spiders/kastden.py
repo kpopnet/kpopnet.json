@@ -31,7 +31,15 @@ class Idol(dict):
 
 
 class Group(dict):
-    pass
+    REQUIRED_FIELDS = ["name", "name_original", "agency_name"]
+    OPTIONAL_FIELDS = ["debut_date", "disband_date"]
+
+    def normalize(self):
+        for field in self.REQUIRED_FIELDS:
+            assert self.get(field), (field, self)
+        for field in self.OPTIONAL_FIELDS:
+            if field not in self:
+                self[field] = None
 
 
 class KastdenSpider(scrapy.Spider):
@@ -86,6 +94,7 @@ class KastdenSpider(scrapy.Spider):
             elif re.search(r"real\s+name.*romanized", prop, re.I):
                 idol["real_name"] = value
             elif re.search(r"real\s+name.*original", prop, re.I):
+                value = re.sub(r"\s+\(.*\)$", "", value)  # remove hanja name
                 idol["real_name_original"] = value
             elif re.search(r"birth\s+date", prop, re.I):
                 m = re.search(r"(\d{4})\s*-\s*(\d{2})\s*-\s*(\d{2})", value)
@@ -104,31 +113,105 @@ class KastdenSpider(scrapy.Spider):
                 assert m, (prop, value)
                 idol["weight"] = float(m.group(1))
 
-        idol["groups"] = []
+        idol["_groups"] = []  # tmp key, will update later
         table2 = response.css("h2 ~ table tbody")
         if table2:
             # TODO: subunit table
             # XXX: subunits table without groups table?
             for tr in table2[0].css("tr"):
-                # TODO: roles
                 tds = tr.css("td")
-                td_img, td_name, td_company, td_debut, td_disband, td_current = tds[:6]
+                td_name = tds[1]
                 group_name = td_name.css("a::text").get()
-                idol["groups"].append(group_name)
                 group_url = td_name.css("a::attr(href)").get()
-                # XXX: does deduplication always work?
+                group_current = tds[5].css("::text").get() == "Yes"
+                group_roles = None
+                if len(tds) > 6:
+                    group_roles = tds[6].css("::text").get().lower()
+                idol["_groups"].append(
+                    {"name": group_name, "current": group_current, "roles": group_roles}
+                )
+                # XXX: does crawl deduplication always work?
                 yield response.follow(group_url, callback=self.parse_group)
 
         idol.normalize()
         self.all_idols.append(idol)
 
     def parse_group(self, response):
-        print("PARSING", response.url)
+        """
+        Display name (romanized): T-ara
+        Display name (original): 티아라
+        Company: MBK Entertainment
+        Debut date: 2009-07-29 (14 years and 3 months ago)
+        """
+        group = Group()
+        table_group = response.css("h1 ~ div table")[0]
+        for tr in table_group.css("tr"):
+            prop = tr.css("td:nth-child(1)::text").get()
+            if not prop:
+                continue
+            prop = prop.strip()
+            value = tr.css("td:nth-child(2) ::text").getall()
+            value = "".join(value).strip()
+            if not value:
+                continue
+
+            if re.search(r"display\s+name.*romanized", prop, re.I):
+                group["name"] = value
+            elif re.search(r"display\s+name.*original", prop, re.I):
+                group["name_original"] = value
+            elif re.search(r"company", prop, re.I):
+                group["agency_name"] = value
+            elif re.search(r"debut\s+date", prop, re.I):
+                m = re.search(r"(\d{4})\s*-\s*(\d{2})\s*-\s*(\d{2})", value)
+                assert m, (prop, value)
+                group["debut_date"] = "-".join(m.groups())
+            elif re.search(r"disbandment\s+date", prop, re.I):
+                m = re.search(r"(\d{4})\s*-\s*(\d{2})\s*-\s*(\d{2})", value)
+                # NOTE: Some groups have only year and it doesn't seem useful
+                if not m:
+                    continue
+                group["disband_date"] = "-".join(m.groups())
+
+        group.normalize()
+        self.all_groups.append(group)
+
+    def ensure_unique_group_names(self):
+        group_by_name: dict[str, Group] = {}
+        for group in self.all_groups:
+            name = group["name"]
+            if name in group_by_name:
+                g1 = json.dumps(group)
+                g2 = json.dumps(group_by_name[name])
+                raise Exception(f"Duplicated group names!\n{g1}\n{g2}")
+            group_by_name[name] = group
+        return group_by_name
 
     def closed(self, reason):
         self.log("Dumping data")
+
+        group_by_name = self.ensure_unique_group_names()
+
         idols = sorted(self.all_idols, key=lambda i: i["birth_date"], reverse=True)
-        groups = sorted(self.all_groups, key=lambda g: g["debut_date"], reverse=True)
+        groups = sorted(
+            self.all_groups, key=lambda g: g["debut_date"] or "0", reverse=True
+        )
+
+        # Modify group data *in place*
+        for group in groups:
+            group["members"] = []
+        for idol in idols:
+            idol_groups = idol.pop("_groups")
+            idol["groups"] = [g["name"] for g in idol_groups]
+            for idol_group in idol_groups:
+                group = group_by_name[idol_group["name"]]
+                group["members"].append(
+                    {
+                        "id": idol["id"],
+                        "current": idol_group["current"],
+                        "roles": idol_group["roles"],
+                    }
+                )
+
         result = {"idols": idols, "groups": groups}
         with open("kpopnet.json", "w") as f:
             json.dump(result, f, ensure_ascii=False, sort_keys=True, indent=2)

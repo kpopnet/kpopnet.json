@@ -3,9 +3,6 @@
   "version": "1.0.0",
   "description": "K-pop open data",
   "main": "kpopnet.json",
-  "scripts": {
-    "prepare": "env/bin/kpopnet export"
-  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/kpopnet/kpopnet.json.git"

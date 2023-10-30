@@ -1,5 +1,90 @@
 {
-  "groups": [],
+  "groups": [
+    {
+      "agency_name": "MyDoll Entertainment",
+      "debut_date": "2018-10-24",
+      "disband_date": null,
+      "members": [
+        {
+          "current": true,
+          "id": "cjm8pzNqVkaybhAkhFpK2A",
+          "roles": null
+        }
+      ],
+      "name": "Pink Fantasy",
+      "name_original": "핑크판타지"
+    },
+    {
+      "agency_name": "BlockBerry Creative",
+      "debut_date": "2018-08-19",
+      "disband_date": null,
+      "members": [
+        {
+          "current": true,
+          "id": "0N7bV78kPU0iQhf8DlfLRQ",
+          "roles": null
+        }
+      ],
+      "name": "LOONA",
+      "name_original": "이달의 소녀"
+    },
+    {
+      "agency_name": "Interactive Media Mix",
+      "debut_date": "2016-08-25",
+      "disband_date": null,
+      "members": [
+        {
+          "current": true,
+          "id": "UShWQRJCZzw4ORDCqKh4OQ",
+          "roles": null
+        }
+      ],
+      "name": "Real Girls Project",
+      "name_original": "리얼걸 프로젝트"
+    },
+    {
+      "agency_name": "GNG Production",
+      "debut_date": "2012-08-23",
+      "disband_date": null,
+      "members": [
+        {
+          "current": false,
+          "id": "UShWQRJCZzw4ORDCqKh4OQ",
+          "roles": null
+        }
+      ],
+      "name": "Tiny-G",
+      "name_original": "타이니지"
+    },
+    {
+      "agency_name": "MBK Entertainment",
+      "debut_date": "2009-07-29",
+      "disband_date": null,
+      "members": [
+        {
+          "current": false,
+          "id": "jZRSN1vHSZeGoxTg5zur0A",
+          "roles": null
+        }
+      ],
+      "name": "T-ara",
+      "name_original": "티아라"
+    },
+    {
+      "agency_name": "CTDENM",
+      "debut_date": null,
+      "disband_date": null,
+      "members": [
+        {
+          "current": true,
+          "id": "0N7bV78kPU0iQhf8DlfLRQ",
+          "roles": null
+        }
+      ],
+      "name": "Loossemble",
+      "name_original": "루셈블"
+    }
+  ],
   "idols": [
     {
       "birth_date": "2002-11-11",
@@ -9,11 +94,11 @@
         "LOONA"
       ],
       "height": 148.0,
-      "id": "hPC0uEHuDGKaBufit7W+5w",
+      "id": "0N7bV78kPU0iQhf8DlfLRQ",
       "name": "Yeojin",
       "name_original": "여진",
       "real_name": "Im Yeojin",
-      "real_name_original": "임여진 (林汝眞)",
+      "real_name_original": "임여진",
       "weight": 35.0
     },
     {
