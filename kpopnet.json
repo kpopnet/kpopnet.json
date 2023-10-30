@@ -195,12 +195,12 @@
         },
         {
           "current": true,
-          "id": "wwgfrMmPHGKhX2HIm/sKiA",
+          "id": "7+v1igHBaK/YB6Qp07FRUg",
           "roles": null
         },
         {
           "current": true,
-          "id": "7+v1igHBaK/YB6Qp07FRUg",
+          "id": "wwgfrMmPHGKhX2HIm/sKiA",
           "roles": null
         },
         {
@@ -899,7 +899,7 @@
         },
         {
           "current": true,
-          "id": "ffqIGxd1ArB1NUaWFartxQ",
+          "id": "Q/JxrhUbudIjOSQs2b4Y3Q",
           "roles": null
         },
         {
@@ -3137,7 +3137,7 @@
         },
         {
           "current": true,
-          "id": "Sruw2BWPEGYvbdF1+rYbMA",
+          "id": "Ho0pMySbxUpmtFWXpzRZKA",
           "roles": "main vocal"
         }
       ],
@@ -3448,7 +3448,7 @@
         },
         {
           "current": false,
-          "id": "wNcPaiA+exghvpI20taIOQ",
+          "id": "UE5CWG/j4YmkXyar2pQyKA",
           "roles": null
         },
         {
@@ -3685,12 +3685,12 @@
         },
         {
           "current": false,
-          "id": "3iCRSc/n/8N6v5ki2jQeEA",
+          "id": "6VWeIbpSe+NVnJ7Mcg/iWQ",
           "roles": null
         },
         {
           "current": false,
-          "id": "6VWeIbpSe+NVnJ7Mcg/iWQ",
+          "id": "3iCRSc/n/8N6v5ki2jQeEA",
           "roles": null
         },
         {
@@ -3812,7 +3812,7 @@
         }
       ],
       "name": "Cosmic Girls",
-      "name_original": "우주소녀 (宇宙少女)",
+      "name_original": "우주소녀",
       "urls": [
         "https://selca.kastden.org/noona/group/wjsn/"
       ]
@@ -3990,7 +3990,7 @@
         },
         {
           "current": false,
-          "id": "Sruw2BWPEGYvbdF1+rYbMA",
+          "id": "Ho0pMySbxUpmtFWXpzRZKA",
           "roles": null
         },
         {
@@ -5214,23 +5214,6 @@
       ]
     },
     {
-      "agency_name": "AKS",
-      "debut_date": "2011-10-23",
-      "disband_date": null,
-      "members": [
-        {
-          "current": false,
-          "id": "seAvWqps5LOaFeJA8/GpQg",
-          "roles": null
-        }
-      ],
-      "name": "HKT48",
-      "name_original": "HKT48",
-      "urls": [
-        "https://selca.kastden.org/noona/group/hkt48/"
-      ]
-    },
-    {
       "agency_name": "The Entertainment Pascal",
       "debut_date": "2011-08-23",
       "disband_date": "2018-02-26",
@@ -5420,28 +5403,6 @@
       "name_original": "달샤벳",
       "urls": [
         "https://selca.kastden.org/noona/group/dalshabet/"
-      ]
-    },
-    {
-      "agency_name": "Showtitle",
-      "debut_date": "2010-10-09",
-      "disband_date": null,
-      "members": [
-        {
-          "current": false,
-          "id": "QKFNBaCs03JweQRKm4ME3w",
-          "roles": null
-        },
-        {
-          "current": false,
-          "id": "790mQne1UI1criE9onKKAg",
-          "roles": null
-        }
-      ],
-      "name": "NMB48",
-      "name_original": "NMB48",
-      "urls": [
-        "https://selca.kastden.org/noona/group/nmb48/"
       ]
     },
     {
@@ -5902,30 +5863,13 @@
       ]
     },
     {
-      "agency_name": "avex trax",
-      "debut_date": "2008-07-30",
-      "disband_date": null,
-      "members": [
-        {
-          "current": false,
-          "id": "2oItQ6U0FgyZVUy9HKvy3A",
-          "roles": null
-        }
-      ],
-      "name": "SKE48",
-      "name_original": "SKE48",
-      "urls": [
-        "https://selca.kastden.org/noona/group/ske48/"
-      ]
-    },
-    {
       "agency_name": "Stone Music Entertainment, B2M Entertainment",
       "debut_date": "2008-01-28",
       "disband_date": null,
       "members": [
         {
           "current": true,
-          "id": "y1sjfvwLpEda+0giuHe2Lg",
+          "id": "gn7o1w16j3H+sVSKFF4U9w",
           "roles": "main visual"
         },
         {
@@ -5967,7 +5911,7 @@
         },
         {
           "current": true,
-          "id": "ffqIGxd1ArB1NUaWFartxQ",
+          "id": "Q/JxrhUbudIjOSQs2b4Y3Q",
           "roles": "main dancer"
         },
         {
@@ -6029,7 +5973,7 @@
         },
         {
           "current": false,
-          "id": "22CctUeEwW/IAkvKBZw44Q",
+          "id": "7oH1iiydmUWzNQXxFg/Iwg",
           "roles": null
         }
       ],
@@ -6111,23 +6055,6 @@
       "name_original": "브라운 아이드 걸스",
       "urls": [
         "https://selca.kastden.org/noona/group/beg/"
-      ]
-    },
-    {
-      "agency_name": "AKS",
-      "debut_date": "2005-12-08",
-      "disband_date": null,
-      "members": [
-        {
-          "current": false,
-          "id": "i6+DlbCwG4b5qujlUkHVew",
-          "roles": null
-        }
-      ],
-      "name": "AKB48",
-      "name_original": "AKB48",
-      "urls": [
-        "https://selca.kastden.org/noona/group/akb48/"
       ]
     },
     {
@@ -6895,23 +6822,6 @@
     },
     {
       "birth_date": "2005-12-10",
-      "debut_date": "2021-02-17",
-      "groups": [
-        "TRI.BE"
-      ],
-      "height": 162.0,
-      "id": "W5RAdYPyPJHGynuEUx24lw",
-      "name": "Soeun",
-      "name_original": "소은",
-      "real_name": "Bang Soeun",
-      "real_name_original": "방소은",
-      "urls": [
-        "https://selca.kastden.org/noona/idol/tribe_soeun/"
-      ],
-      "weight": 48.0
-    },
-    {
-      "birth_date": "2005-12-10",
       "debut_date": "2023-05-09",
       "groups": [
         "Adya"
@@ -6926,6 +6836,23 @@
         "https://selca.kastden.org/noona/idol/adya_chaeeun/"
       ],
       "weight": null
+    },
+    {
+      "birth_date": "2005-12-10",
+      "debut_date": "2021-02-17",
+      "groups": [
+        "TRI.BE"
+      ],
+      "height": 162.0,
+      "id": "W5RAdYPyPJHGynuEUx24lw",
+      "name": "Soeun",
+      "name_original": "소은",
+      "real_name": "Bang Soeun",
+      "real_name_original": "방소은",
+      "urls": [
+        "https://selca.kastden.org/noona/idol/tribe_soeun/"
+      ],
+      "weight": 48.0
     },
     {
       "birth_date": "2005-12-06",
@@ -7986,21 +7913,6 @@
     },
     {
       "birth_date": "2004-04-14",
-      "debut_date": "2021-08-05",
-      "groups": [],
-      "height": 161.0,
-      "id": "rezqG/39UmvOACn4SjGV9A",
-      "name": "Lee JinE",
-      "name_original": "이진이",
-      "real_name": "Lee Jin-yi",
-      "real_name_original": "이진이",
-      "urls": [
-        "https://selca.kastden.org/noona/idol/leejine/"
-      ],
-      "weight": null
-    },
-    {
-      "birth_date": "2004-04-14",
       "debut_date": "2020-11-12",
       "groups": [
         "STAYC"
@@ -8015,6 +7927,21 @@
         "https://selca.kastden.org/noona/idol/stayc_yoon/"
       ],
       "weight": 49.0
+    },
+    {
+      "birth_date": "2004-04-14",
+      "debut_date": "2021-08-05",
+      "groups": [],
+      "height": 161.0,
+      "id": "rezqG/39UmvOACn4SjGV9A",
+      "name": "Lee JinE",
+      "name_original": "이진이",
+      "real_name": "Lee Jin-yi",
+      "real_name_original": "이진이",
+      "urls": [
+        "https://selca.kastden.org/noona/idol/leejine/"
+      ],
+      "weight": null
     },
     {
       "birth_date": "2004-04-12",
@@ -8307,23 +8234,6 @@
     },
     {
       "birth_date": "2003-12-09",
-      "debut_date": "2022-05-05",
-      "groups": [
-        "CLASS:y"
-      ],
-      "height": 165.0,
-      "id": "T4dxVHgjba2LSva73+S+XQ",
-      "name": "Hyeju",
-      "name_original": "혜주",
-      "real_name": "Hong Hyeju",
-      "real_name_original": "홍혜주",
-      "urls": [
-        "https://selca.kastden.org/noona/idol/classy_hyeju/"
-      ],
-      "weight": 45.0
-    },
-    {
-      "birth_date": "2003-12-09",
       "debut_date": "2019-02-12",
       "groups": [
         "ITZY"
@@ -8338,6 +8248,23 @@
         "https://selca.kastden.org/noona/idol/itzy_yuna/"
       ],
       "weight": 48.0
+    },
+    {
+      "birth_date": "2003-12-09",
+      "debut_date": "2022-05-05",
+      "groups": [
+        "CLASS:y"
+      ],
+      "height": 165.0,
+      "id": "T4dxVHgjba2LSva73+S+XQ",
+      "name": "Hyeju",
+      "name_original": "혜주",
+      "real_name": "Hong Hyeju",
+      "real_name_original": "홍혜주",
+      "urls": [
+        "https://selca.kastden.org/noona/idol/classy_hyeju/"
+      ],
+      "weight": 45.0
     },
     {
       "birth_date": "2003-12-04",
@@ -9109,23 +9036,6 @@
     },
     {
       "birth_date": "2002-10-13",
-      "debut_date": "2022-10-28",
-      "groups": [
-        "tripleS"
-      ],
-      "height": 166.0,
-      "id": "wwgfrMmPHGKhX2HIm/sKiA",
-      "name": "Nakyoung",
-      "name_original": "김나경",
-      "real_name": "Kim Nakyoung",
-      "real_name_original": "김나경",
-      "urls": [
-        "https://selca.kastden.org/noona/idol/triples_nakyoung/"
-      ],
-      "weight": null
-    },
-    {
-      "birth_date": "2002-10-13",
       "debut_date": "2023-08-17",
       "groups": [
         "tripleS"
@@ -9138,6 +9048,23 @@
       "real_name_original": "박소현",
       "urls": [
         "https://selca.kastden.org/noona/idol/triples_sohyun/"
+      ],
+      "weight": null
+    },
+    {
+      "birth_date": "2002-10-13",
+      "debut_date": "2022-10-28",
+      "groups": [
+        "tripleS"
+      ],
+      "height": 166.0,
+      "id": "wwgfrMmPHGKhX2HIm/sKiA",
+      "name": "Nakyoung",
+      "name_original": "김나경",
+      "real_name": "Kim Nakyoung",
+      "real_name_original": "김나경",
+      "urls": [
+        "https://selca.kastden.org/noona/idol/triples_nakyoung/"
       ],
       "weight": null
     },
@@ -9774,23 +9701,6 @@
     },
     {
       "birth_date": "2002-01-23",
-      "debut_date": "2020-11-12",
-      "groups": [
-        "STAYC"
-      ],
-      "height": null,
-      "id": "AAtcmhX8nyeYBQBVFSXHpA",
-      "name": "Isa",
-      "name_original": "아이사",
-      "real_name": "Lee Chaeyoung",
-      "real_name_original": "이채영",
-      "urls": [
-        "https://selca.kastden.org/noona/idol/stayc_isa/"
-      ],
-      "weight": null
-    },
-    {
-      "birth_date": "2002-01-23",
       "debut_date": "2022-04-04",
       "groups": [
         "ILY:1"
@@ -9803,6 +9713,23 @@
       "real_name_original": "이윤지",
       "urls": [
         "https://selca.kastden.org/noona/idol/ily1_ara/"
+      ],
+      "weight": null
+    },
+    {
+      "birth_date": "2002-01-23",
+      "debut_date": "2020-11-12",
+      "groups": [
+        "STAYC"
+      ],
+      "height": null,
+      "id": "AAtcmhX8nyeYBQBVFSXHpA",
+      "name": "Isa",
+      "name_original": "아이사",
+      "real_name": "Lee Chaeyoung",
+      "real_name_original": "이채영",
+      "urls": [
+        "https://selca.kastden.org/noona/idol/stayc_isa/"
       ],
       "weight": null
     },
@@ -9961,23 +9888,6 @@
     },
     {
       "birth_date": "2001-11-13",
-      "debut_date": "2017-06-01",
-      "groups": [
-        "G-reyish"
-      ],
-      "height": 161.0,
-      "id": "aO6sKUT6L2kxeB8RjBIAlw",
-      "name": "Yeso",
-      "name_original": "예소",
-      "real_name": "Lee Yeso",
-      "real_name_original": "이예소",
-      "urls": [
-        "https://selca.kastden.org/noona/idol/greyish_yeso/"
-      ],
-      "weight": 46.0
-    },
-    {
-      "birth_date": "2001-11-13",
       "debut_date": "2018-03-30",
       "groups": [
         "Loossemble",
@@ -9993,6 +9903,23 @@
         "https://selca.kastden.org/noona/idol/loossemble_hyeju/"
       ],
       "weight": 48.0
+    },
+    {
+      "birth_date": "2001-11-13",
+      "debut_date": "2017-06-01",
+      "groups": [
+        "G-reyish"
+      ],
+      "height": 161.0,
+      "id": "aO6sKUT6L2kxeB8RjBIAlw",
+      "name": "Yeso",
+      "name_original": "예소",
+      "real_name": "Lee Yeso",
+      "real_name_original": "이예소",
+      "urls": [
+        "https://selca.kastden.org/noona/idol/greyish_yeso/"
+      ],
+      "weight": 46.0
     },
     {
       "birth_date": "2001-11-06",
@@ -10407,6 +10334,23 @@
     },
     {
       "birth_date": "2001-03-14",
+      "debut_date": "2018-09-05",
+      "groups": [
+        "GWSN"
+      ],
+      "height": 167.0,
+      "id": "eh7pgoYgJCAl2zIbjKfISw",
+      "name": "Soso",
+      "name_original": "소소",
+      "real_name": "Wang Jing Yi",
+      "real_name_original": "王靖儀",
+      "urls": [
+        "https://selca.kastden.org/noona/idol/gwsn_soso/"
+      ],
+      "weight": null
+    },
+    {
+      "birth_date": "2001-03-14",
       "debut_date": "2017-06-01",
       "groups": [
         "LUNARSOLAR",
@@ -10422,23 +10366,6 @@
         "https://selca.kastden.org/noona/idol/kwonjieun/"
       ],
       "weight": 47.0
-    },
-    {
-      "birth_date": "2001-03-14",
-      "debut_date": "2018-09-05",
-      "groups": [
-        "GWSN"
-      ],
-      "height": 167.0,
-      "id": "eh7pgoYgJCAl2zIbjKfISw",
-      "name": "Soso",
-      "name_original": "소소",
-      "real_name": "Wang Jing Yi",
-      "real_name_original": "王靖儀",
-      "urls": [
-        "https://selca.kastden.org/noona/idol/gwsn_soso/"
-      ],
-      "weight": null
     },
     {
       "birth_date": "2001-03-13",
@@ -10476,23 +10403,6 @@
     },
     {
       "birth_date": "2001-03-09",
-      "debut_date": "2016-05-04",
-      "groups": [
-        "I.O.I"
-      ],
-      "height": 172.0,
-      "id": "cHRX/cOnG0vqV/aswxDTNg",
-      "name": "Somi",
-      "name_original": "소미",
-      "real_name": "Jeon Somi",
-      "real_name_original": "전소미",
-      "urls": [
-        "https://selca.kastden.org/noona/idol/somi/"
-      ],
-      "weight": 46.6
-    },
-    {
-      "birth_date": "2001-03-09",
       "debut_date": "2020-05-13",
       "groups": [
         "EL7Z U+P",
@@ -10508,6 +10418,23 @@
         "https://selca.kastden.org/noona/idol/wooah_nana/"
       ],
       "weight": null
+    },
+    {
+      "birth_date": "2001-03-09",
+      "debut_date": "2016-05-04",
+      "groups": [
+        "I.O.I"
+      ],
+      "height": 172.0,
+      "id": "cHRX/cOnG0vqV/aswxDTNg",
+      "name": "Somi",
+      "name_original": "소미",
+      "real_name": "Jeon Somi",
+      "real_name_original": "전소미",
+      "urls": [
+        "https://selca.kastden.org/noona/idol/somi/"
+      ],
+      "weight": 46.6
     },
     {
       "birth_date": "2001-03-09",
@@ -11266,23 +11193,6 @@
     },
     {
       "birth_date": "2000-07-21",
-      "debut_date": "2019-02-12",
-      "groups": [
-        "ITZY"
-      ],
-      "height": 163.0,
-      "id": "3Bh/IDCZAqSQTUnTm5gC3A",
-      "name": "Lia",
-      "name_original": "리아",
-      "real_name": "Choi Jisoo",
-      "real_name_original": "최지수",
-      "urls": [
-        "https://selca.kastden.org/noona/idol/itzy_lia/"
-      ],
-      "weight": 43.0
-    },
-    {
-      "birth_date": "2000-07-21",
       "debut_date": "2019-03-18",
       "groups": [
         "EVERGLOW"
@@ -11297,6 +11207,23 @@
         "https://selca.kastden.org/noona/idol/everglow_aisha/"
       ],
       "weight": 55.0
+    },
+    {
+      "birth_date": "2000-07-21",
+      "debut_date": "2019-02-12",
+      "groups": [
+        "ITZY"
+      ],
+      "height": 163.0,
+      "id": "3Bh/IDCZAqSQTUnTm5gC3A",
+      "name": "Lia",
+      "name_original": "리아",
+      "real_name": "Choi Jisoo",
+      "real_name_original": "최지수",
+      "urls": [
+        "https://selca.kastden.org/noona/idol/itzy_lia/"
+      ],
+      "weight": 43.0
     },
     {
       "birth_date": "2000-07-13",
@@ -11385,23 +11312,6 @@
     },
     {
       "birth_date": "2000-05-26",
-      "debut_date": "2019-02-12",
-      "groups": [
-        "ITZY"
-      ],
-      "height": 169.0,
-      "id": "Nf7cxjxSteedanReXUT/Hg",
-      "name": "Yeji",
-      "name_original": "예지",
-      "real_name": "Hwang Yeji",
-      "real_name_original": "황예지",
-      "urls": [
-        "https://selca.kastden.org/noona/idol/itzy_yeji/"
-      ],
-      "weight": null
-    },
-    {
-      "birth_date": "2000-05-26",
       "debut_date": "2018-10-24",
       "groups": [
         "Pink Fantasy"
@@ -11414,6 +11324,23 @@
       "real_name_original": "박근혜",
       "urls": [
         "https://selca.kastden.org/noona/idol/pinkfantasy_harin/"
+      ],
+      "weight": null
+    },
+    {
+      "birth_date": "2000-05-26",
+      "debut_date": "2019-02-12",
+      "groups": [
+        "ITZY"
+      ],
+      "height": 169.0,
+      "id": "Nf7cxjxSteedanReXUT/Hg",
+      "name": "Yeji",
+      "name_original": "예지",
+      "real_name": "Hwang Yeji",
+      "real_name_original": "황예지",
+      "urls": [
+        "https://selca.kastden.org/noona/idol/itzy_yeji/"
       ],
       "weight": null
     },
@@ -11472,8 +11399,7 @@
       "birth_date": "2000-05-16",
       "debut_date": "2021-08-14",
       "groups": [
-        "QWER",
-        "NMB48"
+        "QWER"
       ],
       "height": 162.0,
       "id": "QKFNBaCs03JweQRKm4ME3w",
@@ -11813,23 +11739,6 @@
     },
     {
       "birth_date": "2000-01-22",
-      "debut_date": "2018-11-26",
-      "groups": [
-        "FANATICS"
-      ],
-      "height": 164.0,
-      "id": "E6Avbn8rc8m2pQ+6y5yXpQ",
-      "name": "Chiayi",
-      "name_original": "지아이",
-      "real_name": "Jia Yi",
-      "real_name_original": "家儀",
-      "urls": [
-        "https://selca.kastden.org/noona/idol/fanatics_chiayi/"
-      ],
-      "weight": null
-    },
-    {
-      "birth_date": "2000-01-22",
       "debut_date": "2017-11-30",
       "groups": [
         "fromis_9"
@@ -11844,6 +11753,23 @@
         "https://selca.kastden.org/noona/idol/fromis9_seoyeon/"
       ],
       "weight": 47.2
+    },
+    {
+      "birth_date": "2000-01-22",
+      "debut_date": "2018-11-26",
+      "groups": [
+        "FANATICS"
+      ],
+      "height": 164.0,
+      "id": "E6Avbn8rc8m2pQ+6y5yXpQ",
+      "name": "Chiayi",
+      "name_original": "지아이",
+      "real_name": "Jia Yi",
+      "real_name_original": "家儀",
+      "urls": [
+        "https://selca.kastden.org/noona/idol/fanatics_chiayi/"
+      ],
+      "weight": null
     },
     {
       "birth_date": "2000-01-21",
@@ -12002,24 +11928,6 @@
       "birth_date": "1999-12-04",
       "debut_date": "2016-05-04",
       "groups": [
-        "gugudan",
-        "I.O.I"
-      ],
-      "height": 164.0,
-      "id": "3iCRSc/n/8N6v5ki2jQeEA",
-      "name": "Mina",
-      "name_original": "미나",
-      "real_name": "Kang Mina",
-      "real_name_original": "강미나",
-      "urls": [
-        "https://selca.kastden.org/noona/idol/gugudan_mina/"
-      ],
-      "weight": 42.0
-    },
-    {
-      "birth_date": "1999-12-04",
-      "debut_date": "2016-05-04",
-      "groups": [
         "WJMK",
         "Weki Meki",
         "I.O.I"
@@ -12034,6 +11942,24 @@
         "https://selca.kastden.org/noona/idol/wekimeki_doyeon/"
       ],
       "weight": 49.0
+    },
+    {
+      "birth_date": "1999-12-04",
+      "debut_date": "2016-05-04",
+      "groups": [
+        "gugudan",
+        "I.O.I"
+      ],
+      "height": 164.0,
+      "id": "3iCRSc/n/8N6v5ki2jQeEA",
+      "name": "Mina",
+      "name_original": "미나",
+      "real_name": "Kang Mina",
+      "real_name_original": "강미나",
+      "urls": [
+        "https://selca.kastden.org/noona/idol/gugudan_mina/"
+      ],
+      "weight": 42.0
     },
     {
       "birth_date": "1999-11-15",
@@ -12226,23 +12152,6 @@
     },
     {
       "birth_date": "1999-10-15",
-      "debut_date": "2018-07-18",
-      "groups": [
-        "Saturday"
-      ],
-      "height": 166.0,
-      "id": "dG6fnq1wrW9sGq9Ak4UnCw",
-      "name": "Sunha",
-      "name_original": "선하",
-      "real_name": "Goo Sunha",
-      "real_name_original": "구선하",
-      "urls": [
-        "https://selca.kastden.org/noona/idol/saturday_sunha/"
-      ],
-      "weight": null
-    },
-    {
-      "birth_date": "1999-10-15",
       "debut_date": "2017-06-01",
       "groups": [
         "Alice"
@@ -12257,6 +12166,23 @@
         "https://selca.kastden.org/noona/idol/alice_yeonjae/"
       ],
       "weight": 49.0
+    },
+    {
+      "birth_date": "1999-10-15",
+      "debut_date": "2018-07-18",
+      "groups": [
+        "Saturday"
+      ],
+      "height": 166.0,
+      "id": "dG6fnq1wrW9sGq9Ak4UnCw",
+      "name": "Sunha",
+      "name_original": "선하",
+      "real_name": "Goo Sunha",
+      "real_name_original": "구선하",
+      "urls": [
+        "https://selca.kastden.org/noona/idol/saturday_sunha/"
+      ],
+      "weight": null
     },
     {
       "birth_date": "1999-10-09",
@@ -12312,23 +12238,6 @@
     },
     {
       "birth_date": "1999-09-29",
-      "debut_date": "2018-10-29",
-      "groups": [
-        "IZ*ONE"
-      ],
-      "height": 163.0,
-      "id": "HbLKy4oWozMo9Vb3N5iqDQ",
-      "name": "Choi Yena",
-      "name_original": "최예나",
-      "real_name": "Choi Yena",
-      "real_name_original": "최예나",
-      "urls": [
-        "https://selca.kastden.org/noona/idol/choiyena/"
-      ],
-      "weight": 45.0
-    },
-    {
-      "birth_date": "1999-09-29",
       "debut_date": "2017-01-01",
       "groups": [
         "BONUSbaby"
@@ -12343,6 +12252,23 @@
         "https://selca.kastden.org/noona/idol/bonusbaby_chaehyun/"
       ],
       "weight": null
+    },
+    {
+      "birth_date": "1999-09-29",
+      "debut_date": "2018-10-29",
+      "groups": [
+        "IZ*ONE"
+      ],
+      "height": 163.0,
+      "id": "HbLKy4oWozMo9Vb3N5iqDQ",
+      "name": "Choi Yena",
+      "name_original": "최예나",
+      "real_name": "Choi Yena",
+      "real_name_original": "최예나",
+      "urls": [
+        "https://selca.kastden.org/noona/idol/choiyena/"
+      ],
+      "weight": 45.0
     },
     {
       "birth_date": "1999-09-27",
@@ -12516,23 +12442,6 @@
     },
     {
       "birth_date": "1999-08-05",
-      "debut_date": "2019-03-18",
-      "groups": [
-        "EVERGLOW"
-      ],
-      "height": 170.0,
-      "id": "6xTpqpl2GaHngsiJVKYZgQ",
-      "name": "Sihyeon",
-      "name_original": "시현",
-      "real_name": "Kim Sihyeon",
-      "real_name_original": "김시현",
-      "urls": [
-        "https://selca.kastden.org/noona/idol/everglow_sihyeon/"
-      ],
-      "weight": 50.0
-    },
-    {
-      "birth_date": "1999-08-05",
       "debut_date": "2019-08-05",
       "groups": [
         "Pink Fantasy"
@@ -12547,6 +12456,23 @@
         "https://selca.kastden.org/noona/idol/pinkfantasy_sanga/"
       ],
       "weight": null
+    },
+    {
+      "birth_date": "1999-08-05",
+      "debut_date": "2019-03-18",
+      "groups": [
+        "EVERGLOW"
+      ],
+      "height": 170.0,
+      "id": "6xTpqpl2GaHngsiJVKYZgQ",
+      "name": "Sihyeon",
+      "name_original": "시현",
+      "real_name": "Kim Sihyeon",
+      "real_name_original": "김시현",
+      "urls": [
+        "https://selca.kastden.org/noona/idol/everglow_sihyeon/"
+      ],
+      "weight": 50.0
     },
     {
       "birth_date": "1999-08-03",
@@ -13325,11 +13251,11 @@
         "Momoland"
       ],
       "height": 168.0,
-      "id": "wNcPaiA+exghvpI20taIOQ",
+      "id": "UE5CWG/j4YmkXyar2pQyKA",
       "name": "Nayun",
       "name_original": "나윤",
       "real_name": "Kim Nayoon",
-      "real_name_original": "김나윤(金娜允)",
+      "real_name_original": "김나윤",
       "urls": [
         "https://selca.kastden.org/noona/idol/momoland_nayun/"
       ],
@@ -13458,6 +13384,23 @@
     },
     {
       "birth_date": "1998-06-03",
+      "debut_date": "2017-04-25",
+      "groups": [
+        "Momoland"
+      ],
+      "height": 164.0,
+      "id": "mXmEZ+/zZ31+DvKoz16YYw",
+      "name": "Taeha",
+      "name_original": "태하",
+      "real_name": "Kim Taeha",
+      "real_name_original": "김태하",
+      "urls": [
+        "https://selca.kastden.org/noona/idol/momoland_taeha/"
+      ],
+      "weight": 48.0
+    },
+    {
+      "birth_date": "1998-06-03",
       "debut_date": "2015-01-16",
       "groups": [
         "VIVIZ",
@@ -13473,23 +13416,6 @@
         "https://selca.kastden.org/noona/idol/viviz_sinb/"
       ],
       "weight": 47.0
-    },
-    {
-      "birth_date": "1998-06-03",
-      "debut_date": "2017-04-25",
-      "groups": [
-        "Momoland"
-      ],
-      "height": 164.0,
-      "id": "mXmEZ+/zZ31+DvKoz16YYw",
-      "name": "Taeha",
-      "name_original": "태하",
-      "real_name": "Kim Taeha",
-      "real_name_original": "김태하",
-      "urls": [
-        "https://selca.kastden.org/noona/idol/momoland_taeha/"
-      ],
-      "weight": 48.0
     },
     {
       "birth_date": "1998-05-28",
@@ -13611,6 +13537,23 @@
     },
     {
       "birth_date": "1998-03-20",
+      "debut_date": "2017-11-30",
+      "groups": [
+        "fromis_9"
+      ],
+      "height": 158.0,
+      "id": "w4ZUHwFP/w1ynljDrifwhA",
+      "name": "Park Jiwon",
+      "name_original": "박지원",
+      "real_name": "Park Jiwon",
+      "real_name_original": "박지원",
+      "urls": [
+        "https://selca.kastden.org/noona/idol/fromis9_jiwon/"
+      ],
+      "weight": 45.0
+    },
+    {
+      "birth_date": "1998-03-20",
       "debut_date": "2015-04-12",
       "groups": [
         "UNI.T",
@@ -13628,29 +13571,11 @@
       "weight": 49.0
     },
     {
-      "birth_date": "1998-03-20",
-      "debut_date": "2017-11-30",
-      "groups": [
-        "fromis_9"
-      ],
-      "height": 158.0,
-      "id": "w4ZUHwFP/w1ynljDrifwhA",
-      "name": "Park Jiwon",
-      "name_original": "박지원",
-      "real_name": "Park Jiwon",
-      "real_name_original": "박지원",
-      "urls": [
-        "https://selca.kastden.org/noona/idol/fromis9_jiwon/"
-      ],
-      "weight": 45.0
-    },
-    {
       "birth_date": "1998-03-19",
       "debut_date": "2011-11-26",
       "groups": [
         "Le Sserafim",
-        "IZ*ONE",
-        "HKT48"
+        "IZ*ONE"
       ],
       "height": 164.0,
       "id": "seAvWqps5LOaFeJA8/GpQg",
@@ -13991,13 +13916,12 @@
       "birth_date": "1997-10-03",
       "debut_date": "2011-04-00",
       "groups": [
-        "Rocket Punch",
-        "AKB48"
+        "Rocket Punch"
       ],
       "height": 160.0,
       "id": "i6+DlbCwG4b5qujlUkHVew",
       "name": "Juri",
-      "name_original": "じゅり",
+      "name_original": "쥬리",
       "real_name": "Takahashi Juri",
       "real_name_original": "高橋朱里",
       "urls": [
@@ -14642,23 +14566,6 @@
     },
     {
       "birth_date": "1997-01-14",
-      "debut_date": "2017-07-26",
-      "groups": [
-        "P.O.P"
-      ],
-      "height": null,
-      "id": "66WJq95dIsu9dO+S7Hhy2w",
-      "name": "Haeri",
-      "name_original": "해리",
-      "real_name": "Jeong Haeri",
-      "real_name_original": "정해리",
-      "urls": [
-        "https://selca.kastden.org/noona/idol/pop_haeri/"
-      ],
-      "weight": null
-    },
-    {
-      "birth_date": "1997-01-14",
       "debut_date": "2018-08-03",
       "groups": [
         "Nature"
@@ -14675,22 +14582,21 @@
       "weight": 51.0
     },
     {
-      "birth_date": "1997-01-07",
-      "debut_date": "2017-08-30",
+      "birth_date": "1997-01-14",
+      "debut_date": "2017-07-26",
       "groups": [
-        "IRRIS",
-        "Good Day"
+        "P.O.P"
       ],
-      "height": 168.0,
-      "id": "KBGhGHxWOqlVSLIknOGA+w",
-      "name": "I.L",
-      "name_original": "아이엘",
-      "real_name": "Kim Jiwon",
-      "real_name_original": "김지원",
+      "height": null,
+      "id": "66WJq95dIsu9dO+S7Hhy2w",
+      "name": "Haeri",
+      "name_original": "해리",
+      "real_name": "Jeong Haeri",
+      "real_name_original": "정해리",
       "urls": [
-        "https://selca.kastden.org/noona/idol/irris_il/"
+        "https://selca.kastden.org/noona/idol/pop_haeri/"
       ],
-      "weight": 50.5
+      "weight": null
     },
     {
       "birth_date": "1997-01-07",
@@ -14726,6 +14632,24 @@
         "https://selca.kastden.org/noona/idol/dreamcatcher_yoohyeon/"
       ],
       "weight": null
+    },
+    {
+      "birth_date": "1997-01-07",
+      "debut_date": "2017-08-30",
+      "groups": [
+        "IRRIS",
+        "Good Day"
+      ],
+      "height": 168.0,
+      "id": "KBGhGHxWOqlVSLIknOGA+w",
+      "name": "I.L",
+      "name_original": "아이엘",
+      "real_name": "Kim Jiwon",
+      "real_name_original": "김지원",
+      "urls": [
+        "https://selca.kastden.org/noona/idol/irris_il/"
+      ],
+      "weight": 50.5
     },
     {
       "birth_date": "1997-01-01",
@@ -15177,11 +15101,11 @@
         "April"
       ],
       "height": 163.0,
-      "id": "Sruw2BWPEGYvbdF1+rYbMA",
+      "id": "Ho0pMySbxUpmtFWXpzRZKA",
       "name": "Jeon Somin",
       "name_original": "전소민",
       "real_name": "Jeon Somin",
-      "real_name_original": "전소민(全昭珉)",
+      "real_name_original": "전소민",
       "urls": [
         "https://selca.kastden.org/noona/idol/kard_somin/"
       ],
@@ -15802,13 +15726,12 @@
       "birth_date": "1995-10-28",
       "debut_date": "2011-05-00",
       "groups": [
-        "Honey Popcorn",
-        "NMB48"
+        "Honey Popcorn"
       ],
       "height": 157.0,
       "id": "790mQne1UI1criE9onKKAg",
       "name": "Matsuda Miko",
-      "name_original": "마츠다 미코 (松田美子)",
+      "name_original": "마츠다 미코",
       "real_name": "Okada Risako",
       "real_name_original": "岡田梨紗子",
       "urls": [
@@ -16795,6 +16718,23 @@
     },
     {
       "birth_date": "1994-06-09",
+      "debut_date": "2010-10-29",
+      "groups": [
+        "Girl's Day"
+      ],
+      "height": 166.0,
+      "id": "nm5+CsuRSsSM1Fx+RTgafQ",
+      "name": "Hyeri",
+      "name_original": "혜리",
+      "real_name": "Lee Hyeri",
+      "real_name_original": "이혜리",
+      "urls": [
+        "https://selca.kastden.org/noona/idol/girlsday_hyeri/"
+      ],
+      "weight": 50.0
+    },
+    {
+      "birth_date": "1994-06-09",
       "debut_date": "2014-08-28",
       "groups": [
         "UNI.T",
@@ -16810,23 +16750,6 @@
         "https://selca.kastden.org/noona/idol/laboum_zn/"
       ],
       "weight": 48.0
-    },
-    {
-      "birth_date": "1994-06-09",
-      "debut_date": "2010-10-29",
-      "groups": [
-        "Girl's Day"
-      ],
-      "height": 166.0,
-      "id": "nm5+CsuRSsSM1Fx+RTgafQ",
-      "name": "Hyeri",
-      "name_original": "혜리",
-      "real_name": "Lee Hyeri",
-      "real_name_original": "이혜리",
-      "urls": [
-        "https://selca.kastden.org/noona/idol/girlsday_hyeri/"
-      ],
-      "weight": 50.0
     },
     {
       "birth_date": "1994-06-07",
@@ -17086,6 +17009,23 @@
     },
     {
       "birth_date": "1994-02-10",
+      "debut_date": "2011-04-19",
+      "groups": [
+        "Apink"
+      ],
+      "height": 168.0,
+      "id": "zrAywOxnmaktU2rerxNaeQ",
+      "name": "Naeun",
+      "name_original": "나은",
+      "real_name": "Son Naeun",
+      "real_name_original": "손나은",
+      "urls": [
+        "https://selca.kastden.org/noona/idol/apink_naeun/"
+      ],
+      "weight": 48.0
+    },
+    {
+      "birth_date": "1994-02-10",
       "debut_date": "2014-07-27",
       "groups": [
         "GOT the beat",
@@ -17101,23 +17041,6 @@
         "https://selca.kastden.org/noona/idol/redvelvet_seulgi/"
       ],
       "weight": 45.0
-    },
-    {
-      "birth_date": "1994-02-10",
-      "debut_date": "2011-04-19",
-      "groups": [
-        "Apink"
-      ],
-      "height": 168.0,
-      "id": "zrAywOxnmaktU2rerxNaeQ",
-      "name": "Naeun",
-      "name_original": "나은",
-      "real_name": "Son Naeun",
-      "real_name_original": "손나은",
-      "urls": [
-        "https://selca.kastden.org/noona/idol/apink_naeun/"
-      ],
-      "weight": 48.0
     },
     {
       "birth_date": "1994-01-21",
@@ -17323,13 +17246,12 @@
       "birth_date": "1993-08-16",
       "debut_date": "2009-03-29",
       "groups": [
-        "Honey Popcorn",
-        "SKE48"
+        "Honey Popcorn"
       ],
       "height": 159.0,
       "id": "2oItQ6U0FgyZVUy9HKvy3A",
       "name": "Mikami Yua",
-      "name_original": "미카미 유아 (三上悠亜)",
+      "name_original": "미카미 유아",
       "real_name": "Kito Momona",
       "real_name_original": "鬼頭桃菜",
       "urls": [
@@ -17592,23 +17514,6 @@
     },
     {
       "birth_date": "1993-04-22",
-      "debut_date": "2010-12-01",
-      "groups": [
-        "T-ara"
-      ],
-      "height": 168.0,
-      "id": "/IxRU7jSJtkMtgv2y1Pl9Q",
-      "name": "Ryu Hwayoung",
-      "name_original": "류화영",
-      "real_name": "Ryu Hwayoung",
-      "real_name_original": "류화영",
-      "urls": [
-        "https://selca.kastden.org/noona/idol/ryuhwayoung/"
-      ],
-      "weight": 52.0
-    },
-    {
-      "birth_date": "1993-04-22",
       "debut_date": "2010-09-30",
       "groups": [
         "F-ve Dolls"
@@ -17621,6 +17526,23 @@
       "real_name_original": "류효영",
       "urls": [
         "https://selca.kastden.org/noona/idol/ryuhyoyoung/"
+      ],
+      "weight": 52.0
+    },
+    {
+      "birth_date": "1993-04-22",
+      "debut_date": "2010-12-01",
+      "groups": [
+        "T-ara"
+      ],
+      "height": 168.0,
+      "id": "/IxRU7jSJtkMtgv2y1Pl9Q",
+      "name": "Ryu Hwayoung",
+      "name_original": "류화영",
+      "real_name": "Ryu Hwayoung",
+      "real_name_original": "류화영",
+      "urls": [
+        "https://selca.kastden.org/noona/idol/ryuhwayoung/"
       ],
       "weight": 52.0
     },
@@ -17709,21 +17631,6 @@
     },
     {
       "birth_date": "1993-02-16",
-      "debut_date": "2019-02-22",
-      "groups": [],
-      "height": null,
-      "id": "8dvTQFd3fQ7iqf2h63GTkQ",
-      "name": "Yukika",
-      "name_original": "유키카",
-      "real_name": "Teramoto Yukika",
-      "real_name_original": "寺本來可",
-      "urls": [
-        "https://selca.kastden.org/noona/idol/yukika/"
-      ],
-      "weight": null
-    },
-    {
-      "birth_date": "1993-02-16",
       "debut_date": "2017-06-01",
       "groups": [
         "S.E.T"
@@ -17738,6 +17645,21 @@
         "https://selca.kastden.org/noona/idol/set_soone/"
       ],
       "weight": 46.0
+    },
+    {
+      "birth_date": "1993-02-16",
+      "debut_date": "2019-02-22",
+      "groups": [],
+      "height": null,
+      "id": "8dvTQFd3fQ7iqf2h63GTkQ",
+      "name": "Yukika",
+      "name_original": "유키카",
+      "real_name": "Teramoto Yukika",
+      "real_name_original": "寺本來可",
+      "urls": [
+        "https://selca.kastden.org/noona/idol/yukika/"
+      ],
+      "weight": null
     },
     {
       "birth_date": "1993-01-19",
@@ -18816,7 +18738,7 @@
       "height": 153.0,
       "id": "GNxXKMLAJdHH2SGhPhhWSQ",
       "name": "Sakura Moko",
-      "name_original": "사쿠라 모코 (桜もこ)",
+      "name_original": "사쿠라 모코",
       "real_name": "Ito Yuu",
       "real_name_original": "伊東裕",
       "urls": [
@@ -19101,11 +19023,11 @@
         "Davichi"
       ],
       "height": 167.0,
-      "id": "y1sjfvwLpEda+0giuHe2Lg",
+      "id": "gn7o1w16j3H+sVSKFF4U9w",
       "name": "Kang Minkyoung",
       "name_original": "강민경",
       "real_name": "Kang Minkyoung",
-      "real_name_original": "강민경(姜珉耿)",
+      "real_name_original": "강민경",
       "urls": [
         "https://selca.kastden.org/noona/idol/davichi_minkyoung/"
       ],
@@ -19545,11 +19467,11 @@
         "Girls' Generation"
       ],
       "height": 158.0,
-      "id": "ffqIGxd1ArB1NUaWFartxQ",
+      "id": "Q/JxrhUbudIjOSQs2b4Y3Q",
       "name": "Hyoyeon",
       "name_original": "효연",
       "real_name": "Kim Hyoyeon",
-      "real_name_original": "김효연(金孝淵)",
+      "real_name_original": "김효연",
       "urls": [
         "https://selca.kastden.org/noona/idol/snsd_hyoyeon/"
       ],
@@ -19625,21 +19547,6 @@
     },
     {
       "birth_date": "1989-05-30",
-      "debut_date": "2012-01-30",
-      "groups": [],
-      "height": 164.0,
-      "id": "yjoSuQG/qnkC4nnfsZZ3Cw",
-      "name": "Ailee",
-      "name_original": "에일리",
-      "real_name": "Lee Yejin",
-      "real_name_original": "이예진",
-      "urls": [
-        "https://selca.kastden.org/noona/idol/ailee/"
-      ],
-      "weight": 52.0
-    },
-    {
-      "birth_date": "1989-05-30",
       "debut_date": "2009-07-27",
       "groups": [
         "T-ara"
@@ -19654,6 +19561,21 @@
         "https://selca.kastden.org/noona/idol/tara_hyomin/"
       ],
       "weight": 46.0
+    },
+    {
+      "birth_date": "1989-05-30",
+      "debut_date": "2012-01-30",
+      "groups": [],
+      "height": 164.0,
+      "id": "yjoSuQG/qnkC4nnfsZZ3Cw",
+      "name": "Ailee",
+      "name_original": "에일리",
+      "real_name": "Lee Yejin",
+      "real_name_original": "이예진",
+      "urls": [
+        "https://selca.kastden.org/noona/idol/ailee/"
+      ],
+      "weight": 52.0
     },
     {
       "birth_date": "1989-05-26",
@@ -19968,11 +19890,11 @@
         "KARA"
       ],
       "height": 162.0,
-      "id": "22CctUeEwW/IAkvKBZw44Q",
+      "id": "7oH1iiydmUWzNQXxFg/Iwg",
       "name": "Park Gyuri",
       "name_original": "박규리",
       "real_name": "Park Gyuri",
-      "real_name_original": "박규리(朴奎俐)",
+      "real_name_original": "박규리",
       "urls": [
         "https://selca.kastden.org/noona/idol/kara_gyuri/"
       ],

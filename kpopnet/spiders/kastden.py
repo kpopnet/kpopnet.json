@@ -73,17 +73,19 @@ class KastdenSpider(scrapy.Spider):
             if not value:
                 continue
 
-            # TODO: other fields: formerly known as, hometown, country, real_name_hanja
+            # TODO: other fields: formerly known as, hometown, country
+            # TODO: additional fields? name_kanji, real_name_hanja
             if prop == "Pop type":
                 assert value == "K-pop", (prop, value)
             elif re.search(r"stage\s+name.*romanized", prop, re.I):
                 idol["name"] = value
             elif re.search(r"stage\s+name.*original", prop, re.I):
+                value = re.sub(r"\s*\(.*\)$", "", value)  # remove kanji name
                 idol["name_original"] = value
             elif re.search(r"real\s+name.*romanized", prop, re.I):
                 idol["real_name"] = value
             elif re.search(r"real\s+name.*original", prop, re.I):
-                value = re.sub(r"\s+\(.*\)$", "", value)  # remove hanja name
+                value = re.sub(r"\s*\(.*\)$", "", value)  # remove hanja name
                 idol["real_name_original"] = value
             elif re.search(r"birth\s+date", prop, re.I):
                 idol["birth_date"] = self.parse_date(prop, value)
@@ -106,6 +108,9 @@ class KastdenSpider(scrapy.Spider):
             for tr in tables_groups[0].css("tr"):
                 tds = tr.css("td")
                 group_name = tds[1].css("a::text").get()
+                if group_name in self.all_overrides["ignore_group_names"]:
+                    continue  # J-pop groups
+
                 group_url = tds[1].css("a::attr(href)").get()
                 group_disbanded = tds[4].get() is not None
                 group_current = not group_disbanded
@@ -190,8 +195,9 @@ class KastdenSpider(scrapy.Spider):
 
         group_by_name = self.ensure_unique_group_names()
 
+        idol_key = lambda i: (i["birth_date"], i["real_name"])
+        idols = sorted(self.all_idols, key=idol_key, reverse=True)
         group_key = lambda g: (g["debut_date"] or "0", g["name"])
-        idols = sorted(self.all_idols, key=lambda i: i["birth_date"], reverse=True)
         groups = sorted(self.all_groups, key=group_key, reverse=True)
 
         # Modify idol/group data *in place*
