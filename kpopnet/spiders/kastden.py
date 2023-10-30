@@ -1,6 +1,7 @@
 import os.path as Path
 import re
 import json
+from urllib.parse import unquote
 import scrapy
 from ..items import Idol, Group, Overrides
 
@@ -20,6 +21,12 @@ class KastdenSpider(scrapy.Spider):
             Path.dirname(Path.realpath(__file__)), "..", "..", "overrides.json"
         )
         self.all_overrides = json.load(open(overrides_fpath))
+
+    @staticmethod
+    def unquote(url: str) -> str:
+        url = unquote(url)
+        # for convenient ctrl+click from terminal
+        return url.replace(" ", "%20")
 
     def parse(self, response):
         for href in response.css(".cell_line a::attr(href)").getall():
@@ -115,6 +122,13 @@ class KastdenSpider(scrapy.Spider):
                 # XXX: does crawl deduplication always work?
                 yield response.follow(group_url, callback=self.parse_group)
 
+        # TODO: Check for <h2>References</h2>?
+        idol["urls"] = [response.url]
+        list_urls = response.css("h2 ~ ul")
+        if list_urls:
+            for url in list_urls.css("a::attr(href)").getall():
+                idol["urls"].append(self.unquote(url))
+
         idol.normalize(self.all_overrides["idols"])
         self.all_idols.append(idol)
 
@@ -148,6 +162,12 @@ class KastdenSpider(scrapy.Spider):
             elif re.search(r"disbandment\s+date", prop, re.I):
                 group["disband_date"] = self.parse_date(prop, value, full=False)
 
+        group["urls"] = [response.url]
+        list_urls = response.css("h2 ~ ul")
+        if list_urls:
+            for url in list_urls.css("a::attr(href)").getall():
+                group["urls"].append(self.unquote(url))
+
         group.normalize(self.all_overrides["groups"])
         self.all_groups.append(group)
 
@@ -170,10 +190,9 @@ class KastdenSpider(scrapy.Spider):
 
         group_by_name = self.ensure_unique_group_names()
 
+        group_key = lambda g: (g["debut_date"] or "0", g["name"])
         idols = sorted(self.all_idols, key=lambda i: i["birth_date"], reverse=True)
-        groups = sorted(
-            self.all_groups, key=lambda g: g["debut_date"] or "0", reverse=True
-        )
+        groups = sorted(self.all_groups, key=group_key, reverse=True)
 
         # Modify idol/group data *in place*
         for group in groups:
