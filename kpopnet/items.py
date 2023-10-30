@@ -44,8 +44,8 @@ class Idol(Item):
 
     def gen_id(self):
         s = self["real_name_original"] + self["birth_date"]
-        hash = hashlib.md5(s.encode()).digest()
-        return base64.b64encode(hash).decode().rstrip("=")
+        hash = hashlib.blake2b(s.encode(), digest_size=8).digest()
+        return base64.b64encode(hash, b"-_").decode().rstrip("=")
 
     def normalize(self, overrides: list[Override]):
         super().normalize(overrides)
