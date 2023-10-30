@@ -1,59 +1,41 @@
+import os.path as Path
 import re
 import json
-import base64
-import hashlib
-from pprint import pprint
 import scrapy
-
-
-class Idol(dict):
-    REQUIRED_FIELDS = [
-        "name",
-        "name_original",
-        "real_name",
-        "real_name_original",
-        "birth_date",
-    ]
-    OPTIONAL_FIELDS = ["debut_date", "height", "weight"]
-
-    def gen_id(self):
-        s = self["real_name_original"] + self["birth_date"]
-        hash = hashlib.md5(s.encode()).digest()
-        return base64.b64encode(hash).decode().rstrip("=")
-
-    def normalize(self):
-        for field in self.REQUIRED_FIELDS:
-            assert self.get(field), (field, self)
-        for field in self.OPTIONAL_FIELDS:
-            if field not in self:
-                self[field] = None
-        self["id"] = self.gen_id()
-
-
-class Group(dict):
-    REQUIRED_FIELDS = ["name", "name_original", "agency_name"]
-    OPTIONAL_FIELDS = ["debut_date", "disband_date"]
-
-    def normalize(self):
-        for field in self.REQUIRED_FIELDS:
-            assert self.get(field), (field, self)
-        for field in self.OPTIONAL_FIELDS:
-            if field not in self:
-                self[field] = None
+from ..items import Idol, Group, Overrides
 
 
 class KastdenSpider(scrapy.Spider):
     name = "kastden"
     allowed_domains = ["selca.kastden.org"]
-    start_urls = ["https://selca.kastden.org/noona/search/?pt=kpop&h_op=lt&h=153"]
+    start_urls = ["https://selca.kastden.org/noona/search/?pt=kpop"]
 
     all_idols: list[Idol] = []
     all_groups: list[Group] = []
+    all_overrides: Overrides
+
+    def __init__(self, *args, **kwargs):
+        super().__init__(*args, **kwargs)
+        overrides_fpath = Path.join(
+            Path.dirname(Path.realpath(__file__)), "..", "..", "overrides.json"
+        )
+        self.all_overrides = json.load(open(overrides_fpath))
 
     def parse(self, response):
         for href in response.css(".cell_line a::attr(href)").getall():
             if href.startswith("/noona/idol/"):
                 yield response.follow(href, callback=self.parse_idol)
+
+    def parse_date(self, prop, value, full=True):
+        if full:
+            m = re.search(r"(\d{4})\s*-\s*(\d{2})\s*-\s*(\d{2})", value)
+        else:
+            m = re.search(r"(\d{4})(?:\s*-\s*(\d{2})(?:\s*-\s*(\d{2}))?)?", value)
+        assert m, (prop, value)
+        year, month, day = m.groups()
+        month = month or "00"
+        day = day or "00"
+        return f"{year}-{month}-{day}"
 
     def parse_idol(self, response):
         """
@@ -84,7 +66,7 @@ class KastdenSpider(scrapy.Spider):
             if not value:
                 continue
 
-            # TODO: other fields
+            # TODO: other fields: formerly known as, hometown, country, real_name_hanja
             if prop == "Pop type":
                 assert value == "K-pop", (prop, value)
             elif re.search(r"stage\s+name.*romanized", prop, re.I):
@@ -97,13 +79,9 @@ class KastdenSpider(scrapy.Spider):
                 value = re.sub(r"\s+\(.*\)$", "", value)  # remove hanja name
                 idol["real_name_original"] = value
             elif re.search(r"birth\s+date", prop, re.I):
-                m = re.search(r"(\d{4})\s*-\s*(\d{2})\s*-\s*(\d{2})", value)
-                assert m, (prop, value)
-                idol["birth_date"] = "-".join(m.groups())
+                idol["birth_date"] = self.parse_date(prop, value)
             elif re.search(r"debut\s+date", prop, re.I):
-                m = re.search(r"(\d{4})\s*-\s*(\d{2})\s*-\s*(\d{2})", value)
-                assert m, (prop, value)
-                idol["debut_date"] = "-".join(m.groups())
+                idol["debut_date"] = self.parse_date(prop, value, full=False)
             elif re.search(r"height", prop, re.I):
                 m = re.search(r"(\d+(?:\.\d+)?)cm", value)
                 assert m, (prop, value)
@@ -114,26 +92,30 @@ class KastdenSpider(scrapy.Spider):
                 idol["weight"] = float(m.group(1))
 
         idol["_groups"] = []  # tmp key, will update later
-        table2 = response.css("h2 ~ table tbody")
-        if table2:
+        tables_groups = response.css("h2 ~ table tbody")
+        if tables_groups:
             # TODO: subunit table
             # XXX: subunits table without groups table?
-            for tr in table2[0].css("tr"):
+            for tr in tables_groups[0].css("tr"):
                 tds = tr.css("td")
-                td_name = tds[1]
-                group_name = td_name.css("a::text").get()
-                group_url = td_name.css("a::attr(href)").get()
-                group_current = tds[5].css("::text").get() == "Yes"
+                group_name = tds[1].css("a::text").get()
+                group_url = tds[1].css("a::attr(href)").get()
+                group_disbanded = tds[4].get() is not None
+                group_current = not group_disbanded
+                if len(tds) > 5:
+                    group_current = tds[5].css("::text").get() == "Yes"
                 group_roles = None
                 if len(tds) > 6:
-                    group_roles = tds[6].css("::text").get().lower()
+                    roles_text = tds[6].css("::text").get()
+                    # TODO: split by comma?
+                    group_roles = roles_text.lower() if roles_text else None
                 idol["_groups"].append(
                     {"name": group_name, "current": group_current, "roles": group_roles}
                 )
                 # XXX: does crawl deduplication always work?
                 yield response.follow(group_url, callback=self.parse_group)
 
-        idol.normalize()
+        idol.normalize(self.all_overrides["idols"])
         self.all_idols.append(idol)
 
     def parse_group(self, response):
@@ -162,17 +144,11 @@ class KastdenSpider(scrapy.Spider):
             elif re.search(r"company", prop, re.I):
                 group["agency_name"] = value
             elif re.search(r"debut\s+date", prop, re.I):
-                m = re.search(r"(\d{4})\s*-\s*(\d{2})\s*-\s*(\d{2})", value)
-                assert m, (prop, value)
-                group["debut_date"] = "-".join(m.groups())
+                group["debut_date"] = self.parse_date(prop, value, full=False)
             elif re.search(r"disbandment\s+date", prop, re.I):
-                m = re.search(r"(\d{4})\s*-\s*(\d{2})\s*-\s*(\d{2})", value)
-                # NOTE: Some groups have only year and it doesn't seem useful
-                if not m:
-                    continue
-                group["disband_date"] = "-".join(m.groups())
+                group["disband_date"] = self.parse_date(prop, value, full=False)
 
-        group.normalize()
+        group.normalize(self.all_overrides["groups"])
         self.all_groups.append(group)
 
     def ensure_unique_group_names(self):
@@ -187,6 +163,9 @@ class KastdenSpider(scrapy.Spider):
         return group_by_name
 
     def closed(self, reason):
+        if reason != "finished":
+            return
+
         self.log("Dumping data")
 
         group_by_name = self.ensure_unique_group_names()
@@ -196,7 +175,7 @@ class KastdenSpider(scrapy.Spider):
             self.all_groups, key=lambda g: g["debut_date"] or "0", reverse=True
         )
 
-        # Modify group data *in place*
+        # Modify idol/group data *in place*
         for group in groups:
             group["members"] = []
         for idol in idols:
@@ -215,3 +194,7 @@ class KastdenSpider(scrapy.Spider):
         result = {"idols": idols, "groups": groups}
         with open("kpopnet.json", "w") as f:
             json.dump(result, f, ensure_ascii=False, sort_keys=True, indent=2)
+        with open("kpopnet.min.json", "w") as f:
+            json.dump(
+                result, f, ensure_ascii=False, sort_keys=True, separators=(",", ":")
+            )
