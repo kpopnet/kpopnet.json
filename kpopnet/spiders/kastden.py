@@ -2,6 +2,7 @@ import os.path as Path
 import re
 import json
 from urllib.parse import unquote
+from typing import Sequence
 import scrapy
 from ..items import Idol, Group, Overrides
 
@@ -14,6 +15,9 @@ class KastdenSpider(scrapy.Spider):
     all_idols: list[Idol] = []
     all_groups: list[Group] = []
     all_overrides: Overrides
+
+    OUT_JSON_FNAME = "kpopnet.json"
+    OUT_MINJSON_FNAME = "kpopnet.min.json"
 
     def __init__(self, *args, **kwargs):
         super().__init__(*args, **kwargs)
@@ -118,6 +122,7 @@ class KastdenSpider(scrapy.Spider):
                     roles_text = tds[6].css("::text").get()
                     # TODO: split by comma?
                     group_roles = roles_text.lower() if roles_text else None
+                # FIXME: might need to normalize group_name and reference will be broken!
                 idol["_groups"].append(
                     {"name": group_name, "current": group_current, "roles": group_roles}
                 )
@@ -173,38 +178,48 @@ class KastdenSpider(scrapy.Spider):
         group.normalize(self.all_overrides["groups"])
         self.all_groups.append(group)
 
-    def ensure_unique_group_names(self):
-        group_by_name: dict[str, Group] = {}
+    def validate_duplicate_fields(
+        self, items: Sequence[Idol | Group], fields: list[str]
+    ):
+        seen = dict((field, dict()) for field in fields)
+        for item in items:
+            for field in fields:
+                value = item[field]
+                if value in seen[field]:
+                    i1 = json.dumps(item)
+                    i2 = json.dumps(seen[field][value])
+                    raise Exception(f"Found duplicated field {field}:\n{i1}\n{i2}")
+                seen[field][value] = item
+
+    def validate_all(self):
+        for idol in self.all_idols:
+            idol.validate()
         for group in self.all_groups:
-            name = group["name"]
-            if name in group_by_name:
-                g1 = json.dumps(group)
-                g2 = json.dumps(group_by_name[name])
-                raise Exception(f"Duplicated group names!\n{g1}\n{g2}")
-            group_by_name[name] = group
-        return group_by_name
+            group.validate()
+        # TODO: validate id cross-reference?
+        self.validate_duplicate_fields(self.all_idols, ["id"])
+        self.validate_duplicate_fields(self.all_groups, ["name", "name_original", "id"])
 
     def closed(self, reason):
         if reason != "finished":
+            self.log("Exited with error, no dump")
             return
 
         self.log("Dumping data")
-
-        group_by_name = self.ensure_unique_group_names()
-
         idol_key = lambda i: (i["birth_date"], i["real_name"])
-        idols = sorted(self.all_idols, key=idol_key, reverse=True)
         group_key = lambda g: (g["debut_date"] or "0", g["name"])
+        idols = sorted(self.all_idols, key=idol_key, reverse=True)
         groups = sorted(self.all_groups, key=group_key, reverse=True)
 
         # Modify idol/group data *in place*
+        group_by_name = dict((g["name"], g) for g in groups)
         for group in groups:
             group["members"] = []
         for idol in idols:
-            idol_groups = idol.pop("_groups")
-            idol["groups"] = [g["name"] for g in idol_groups]
-            for idol_group in idol_groups:
+            idol["groups"] = []
+            for idol_group in idol.pop("_groups"):
                 group = group_by_name[idol_group["name"]]
+                idol["groups"].append(group["id"])
                 group["members"].append(
                     {
                         "id": idol["id"],
@@ -213,10 +228,13 @@ class KastdenSpider(scrapy.Spider):
                     }
                 )
 
+        # Validate after modifications
+        self.validate_all()
+
         result = {"idols": idols, "groups": groups}
-        with open("kpopnet.json", "w") as f:
+        with open(self.OUT_JSON_FNAME, "w") as f:
             json.dump(result, f, ensure_ascii=False, sort_keys=True, indent=2)
-        with open("kpopnet.min.json", "w") as f:
+        with open(self.OUT_MINJSON_FNAME, "w") as f:
             json.dump(
                 result, f, ensure_ascii=False, sort_keys=True, separators=(",", ":")
             )
