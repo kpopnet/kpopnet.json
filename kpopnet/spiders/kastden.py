@@ -1,6 +1,6 @@
-import os.path as Path
 import re
 import json
+from pathlib import Path
 from urllib.parse import unquote
 from typing import Sequence
 import scrapy
@@ -21,9 +21,7 @@ class KastdenSpider(scrapy.Spider):
 
     def __init__(self, *args, **kwargs):
         super().__init__(*args, **kwargs)
-        overrides_fpath = Path.join(
-            Path.dirname(Path.realpath(__file__)), "..", "..", "overrides.json"
-        )
+        overrides_fpath = Path(__file__).parent / ".." / ".." / "overrides.json"
         self.all_overrides = json.load(open(overrides_fpath))
 
     @staticmethod
