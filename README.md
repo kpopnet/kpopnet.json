@@ -2,7 +2,7 @@
 
 K-pop open data.
 
-Package provides minified `kpopnet.json` with information about all K-pop bands and idols.
+Package provides `kpopnet.json` with information about all K-pop groups and idols.
 
 ## npm
 
@@ -14,4 +14,5 @@ npm i kpopnet.json
 
 ```bash
 wget https://unpkg.com/kpopnet.json
+wget https://unpkg.com/kpopnet.json/kpopnet.min.json
 ```
