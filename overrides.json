@@ -1,0 +1,50 @@
+{
+  "idols": [
+    {
+      "match": {
+        "name_original": "마젠타",
+        "birth_date": "1997-06-02"
+      },
+      "update": {
+        "real_name": "unknown_magenta",
+        "real_name_original": "unknown_magenta"
+      }
+    },
+    {
+      "match": {
+        "name_original": "대왕",
+        "birth_date": "1989-12-25"
+      },
+      "update": {
+        "real_name": "unknown_daewang",
+        "real_name_original": "unknown_daewang"
+      }
+    }
+  ],
+  "groups": [
+    {
+      "match": {
+        "name_original": "김보"
+      },
+      "update": {
+        "agency_name": "ARAline Entertainment"
+      }
+    },
+    {
+      "match": {
+        "name_original": "라임라잇"
+      },
+      "update": {
+        "debut_date": "2023-02-14"
+      }
+    },
+    {
+      "match": {
+        "name_original": "우주소녀 (宇宙少女)"
+      },
+      "update": {
+        "name_original": "우주소녀"
+      }
+    }
+  ]
+}

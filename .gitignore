@@ -1,6 +1,2 @@
-__pycache__
-*.pyc
-/env/
-/kpopnet.egg-info/
-/images/
-/kpopnet.json
+/.scrapy/httpcache/
+kpopnet.min.json
