@@ -11,7 +11,6 @@ class Override(TypedDict):
 class Overrides(TypedDict):
     idols: list[Override]
     groups: list[Override]
-    ignore_group_names: list[str]
 
 
 class Item(dict):

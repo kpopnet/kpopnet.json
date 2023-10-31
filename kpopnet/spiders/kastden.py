@@ -108,9 +108,6 @@ class KastdenSpider(scrapy.Spider):
             for tr in tables_groups[0].css("tr"):
                 tds = tr.css("td")
                 group_name = tds[1].css("a::text").get()
-                if group_name in self.all_overrides["ignore_group_names"]:
-                    continue  # J-pop groups
-
                 group_url = tds[1].css("a::attr(href)").get()
                 group_disbanded = tds[4].get() is not None
                 group_current = not group_disbanded

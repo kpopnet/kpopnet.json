@@ -5214,6 +5214,23 @@
       ]
     },
     {
+      "agency_name": "AKS",
+      "debut_date": "2011-10-23",
+      "disband_date": null,
+      "members": [
+        {
+          "current": false,
+          "id": "Cq86mfOHZyQ",
+          "roles": null
+        }
+      ],
+      "name": "HKT48",
+      "name_original": "HKT48",
+      "urls": [
+        "https://selca.kastden.org/noona/group/hkt48/"
+      ]
+    },
+    {
       "agency_name": "The Entertainment Pascal",
       "debut_date": "2011-08-23",
       "disband_date": "2018-02-26",
@@ -5403,6 +5420,28 @@
       "name_original": "달샤벳",
       "urls": [
         "https://selca.kastden.org/noona/group/dalshabet/"
+      ]
+    },
+    {
+      "agency_name": "Showtitle",
+      "debut_date": "2010-10-09",
+      "disband_date": null,
+      "members": [
+        {
+          "current": false,
+          "id": "e2gxAGnD5MY",
+          "roles": null
+        },
+        {
+          "current": false,
+          "id": "XMXfsa1fa-o",
+          "roles": null
+        }
+      ],
+      "name": "NMB48",
+      "name_original": "NMB48",
+      "urls": [
+        "https://selca.kastden.org/noona/group/nmb48/"
       ]
     },
     {
@@ -5863,6 +5902,23 @@
       ]
     },
     {
+      "agency_name": "avex trax",
+      "debut_date": "2008-07-30",
+      "disband_date": null,
+      "members": [
+        {
+          "current": false,
+          "id": "HRTPeZIlT1Y",
+          "roles": null
+        }
+      ],
+      "name": "SKE48",
+      "name_original": "SKE48",
+      "urls": [
+        "https://selca.kastden.org/noona/group/ske48/"
+      ]
+    },
+    {
       "agency_name": "Stone Music Entertainment, B2M Entertainment",
       "debut_date": "2008-01-28",
       "disband_date": null,
@@ -6055,6 +6111,23 @@
       "name_original": "브라운 아이드 걸스",
       "urls": [
         "https://selca.kastden.org/noona/group/beg/"
+      ]
+    },
+    {
+      "agency_name": "AKS",
+      "debut_date": "2005-12-08",
+      "disband_date": null,
+      "members": [
+        {
+          "current": false,
+          "id": "H4jwvuWd4vo",
+          "roles": null
+        }
+      ],
+      "name": "AKB48",
+      "name_original": "AKB48",
+      "urls": [
+        "https://selca.kastden.org/noona/group/akb48/"
       ]
     },
     {
@@ -11399,7 +11472,8 @@
       "birth_date": "2000-05-16",
       "debut_date": "2021-08-14",
       "groups": [
-        "QWER"
+        "QWER",
+        "NMB48"
       ],
       "height": 162.0,
       "id": "e2gxAGnD5MY",
@@ -13575,7 +13649,8 @@
       "debut_date": "2011-11-26",
       "groups": [
         "Le Sserafim",
-        "IZ*ONE"
+        "IZ*ONE",
+        "HKT48"
       ],
       "height": 164.0,
       "id": "Cq86mfOHZyQ",
@@ -13916,7 +13991,8 @@
       "birth_date": "1997-10-03",
       "debut_date": "2011-04-00",
       "groups": [
-        "Rocket Punch"
+        "Rocket Punch",
+        "AKB48"
       ],
       "height": 160.0,
       "id": "H4jwvuWd4vo",
@@ -15726,7 +15802,8 @@
       "birth_date": "1995-10-28",
       "debut_date": "2011-05-00",
       "groups": [
-        "Honey Popcorn"
+        "Honey Popcorn",
+        "NMB48"
       ],
       "height": 157.0,
       "id": "XMXfsa1fa-o",
@@ -17246,7 +17323,8 @@
       "birth_date": "1993-08-16",
       "debut_date": "2009-03-29",
       "groups": [
-        "Honey Popcorn"
+        "Honey Popcorn",
+        "SKE48"
       ],
       "height": 159.0,
       "id": "HRTPeZIlT1Y",
