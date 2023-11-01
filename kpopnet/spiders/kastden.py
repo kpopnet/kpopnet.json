@@ -4,7 +4,7 @@ from pathlib import Path
 from urllib.parse import unquote
 from typing import Sequence
 import scrapy
-from ..items import Idol, Group, Overrides
+from ..items import Idol, Group, GroupMember, Profiles, Overrides
 
 
 class KastdenSpider(scrapy.Spider):
@@ -218,21 +218,20 @@ class KastdenSpider(scrapy.Spider):
             for idol_group in idol.pop("_groups"):
                 group = group_by_name[idol_group["name"]]
                 idol["groups"].append(group["id"])
-                group["members"].append(
-                    {
-                        "id": idol["id"],
-                        "current": idol_group["current"],
-                        "roles": idol_group["roles"],
-                    }
-                )
+                group_member: GroupMember = {
+                    "id": idol["id"],
+                    "current": idol_group["current"],
+                    "roles": idol_group["roles"],
+                }
+                group["members"].append(group_member)
 
         # Validate after modifications
         self.validate_all()
 
-        result = {"idols": idols, "groups": groups}
+        profiles: Profiles = {"idols": idols, "groups": groups}
         with open(self.OUT_JSON_FNAME, "w") as f:
-            json.dump(result, f, ensure_ascii=False, sort_keys=True, indent=2)
+            json.dump(profiles, f, ensure_ascii=False, sort_keys=True, indent=2)
         with open(self.OUT_MINJSON_FNAME, "w") as f:
             json.dump(
-                result, f, ensure_ascii=False, sort_keys=True, separators=(",", ":")
+                profiles, f, ensure_ascii=False, sort_keys=True, separators=(",", ":")
             )

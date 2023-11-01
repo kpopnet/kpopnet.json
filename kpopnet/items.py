@@ -13,6 +13,7 @@ class Overrides(TypedDict):
     groups: list[Override]
 
 
+# TODO(Kagami): use dataclass instead for proper field typing?
 class Item(dict):
     REQUIRED_FIELDS = []
     OPTIONAL_FIELDS = []
@@ -48,6 +49,7 @@ class Item(dict):
         raise NotImplementedError
 
 
+# NOTE(Kagami): Should match with types in kpopnet.d.ts!
 class Idol(Item):
     REQUIRED_FIELDS = [
         "name",
@@ -64,6 +66,12 @@ class Idol(Item):
         return self.hash(self["real_name_original"] + self["birth_date"])
 
 
+class GroupMember(TypedDict):
+    id: str
+    current: bool
+    roles: str | None
+
+
 class Group(Item):
     REQUIRED_FIELDS = ["name", "name_original", "agency_name", "urls"]
     OPTIONAL_FIELDS = ["debut_date", "disband_date"]
@@ -71,3 +79,8 @@ class Group(Item):
 
     def gen_id(self):
         return self.hash(self["name_original"])
+
+
+class Profiles(TypedDict):
+    groups: list[Group]
+    idols: list[Idol]

@@ -3,6 +3,7 @@
   "version": "2.0.0",
   "description": "K-pop open data",
   "main": "kpopnet.json",
+  "types": "kpopnet.d.ts",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/kpopnet/kpopnet.json.git"
