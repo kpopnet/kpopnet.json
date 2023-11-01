@@ -1,6 +1,6 @@
 {
   "name": "kpopnet.json",
-  "version": "2.0.0",
+  "version": "2.0.1",
   "description": "K-pop open data",
   "main": "kpopnet.json",
   "types": "kpopnet.d.ts",
