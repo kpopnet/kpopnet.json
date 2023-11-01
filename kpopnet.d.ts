@@ -29,7 +29,7 @@ export interface Group {
   name: string;
   name_original: string;
   agency_name: string;
-  urls: string;
+  urls: string[];
   // optional
   debut_date: string | null;
   disband_date: string | null;

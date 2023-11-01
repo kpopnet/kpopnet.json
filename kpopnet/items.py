@@ -1,6 +1,52 @@
+import json
 import base64
 import hashlib
-from typing import TypedDict
+from typing import TypedDict, Optional, Sequence, Mapping, NotRequired
+
+
+# NOTE(Kagami): Should match with types in kpopnet/items.py!
+class Idol(TypedDict):
+    # required
+    id: str
+    name: str
+    name_original: str
+    real_name: str
+    real_name_original: str
+    birth_date: str
+    urls: list[str]
+    # optional
+    debut_date: Optional[str]
+    height: Optional[float]
+    weight: Optional[float]
+    # references
+    groups: list[str]
+    # tmp key
+    _groups: NotRequired[list[dict]]
+
+
+class GroupMember(TypedDict):
+    id: str
+    current: bool
+    roles: str | None
+
+
+class Group(TypedDict):
+    # required
+    id: str
+    name: str
+    name_original: str
+    agency_name: str
+    urls: list[str]
+    # optional
+    debut_date: Optional[str]
+    disband_date: Optional[str]
+    # references
+    members: list[GroupMember]
+
+
+class Profiles(TypedDict):
+    groups: list[Group]
+    idols: list[Idol]
 
 
 class Override(TypedDict):
@@ -13,44 +59,66 @@ class Overrides(TypedDict):
     groups: list[Override]
 
 
-# TODO(Kagami): use dataclass instead for proper field typing?
-class Item(dict):
+# Runtime validation/data fixes
+class Validator:
     REQUIRED_FIELDS = []
     OPTIONAL_FIELDS = []
     OTHER_FIELDS = []
+    UNIQUE_FIELDS = []
 
-    def normalize(self, overrides: list[Override]):
+    @classmethod
+    def normalize(cls, item: dict, overrides: list[Override]):
         for override in overrides:
-            matched = all(self[k] == v for k, v in override["match"].items())
+            matched = all(item[k] == v for k, v in override["match"].items())
             if matched:
-                self.update(override["update"])
+                item.update(override["update"])
                 break
-        for field in self.REQUIRED_FIELDS:
-            assert self.get(field), (field, self)
-        for field in self.OPTIONAL_FIELDS:
-            if field not in self:
-                self[field] = None
-        self["id"] = self.gen_id()
-
-    # TODO: validate types, regular expression
-    def validate(self):
-        allowed_fields = set(
-            self.REQUIRED_FIELDS + self.OPTIONAL_FIELDS + self.OTHER_FIELDS + ["id"]
-        )
-        current_fields = set(self.keys())
-        assert allowed_fields == current_fields, (allowed_fields, current_fields)
+        for field in cls.REQUIRED_FIELDS:
+            assert item.get(field), (field, item)
+        for field in cls.OPTIONAL_FIELDS:
+            if field not in item:
+                item[field] = None
+        item["id"] = cls.gen_id(item)
 
     @staticmethod
     def hash(s: str) -> str:
         hash = hashlib.blake2b(s.encode(), digest_size=9).digest()
         return base64.b64encode(hash, b"-_").decode()
 
-    def gen_id(self) -> str:
+    @classmethod
+    def gen_id(cls, item: dict) -> str:
         raise NotImplementedError
 
+    # TODO: validate types, regular expression
+    @classmethod
+    def validate(cls, item: Mapping):
+        allowed_fields = set(
+            cls.REQUIRED_FIELDS + cls.OPTIONAL_FIELDS + cls.OTHER_FIELDS + ["id"]
+        )
+        current_fields = set(item.keys())
+        assert allowed_fields == current_fields, (allowed_fields, current_fields)
 
-# NOTE(Kagami): Should match with types in kpopnet.d.ts!
-class Idol(Item):
+    @classmethod
+    def validate_unique_fields(cls, items: Sequence[Mapping], fields: list[str]):
+        seen = dict((field, dict()) for field in fields)
+        for item in items:
+            for field in fields:
+                value = item[field]
+                if value in seen[field]:
+                    i1 = json.dumps(item)
+                    i2 = json.dumps(seen[field][value])
+                    raise Exception(f"Found duplicated field {field}:\n{i1}\n{i2}")
+                seen[field][value] = item
+
+    @classmethod
+    def validate_all(cls, items: Sequence[Mapping]):
+        for item in items:
+            cls.validate(item)
+        # TODO: validate id cross-reference?
+        cls.validate_unique_fields(items, cls.UNIQUE_FIELDS + ["id"])
+
+
+class IdolValidator(Validator):
     REQUIRED_FIELDS = [
         "name",
         "name_original",
@@ -62,25 +130,17 @@ class Idol(Item):
     OPTIONAL_FIELDS = ["debut_date", "height", "weight"]
     OTHER_FIELDS = ["groups"]
 
-    def gen_id(self):
-        return self.hash(self["real_name_original"] + self["birth_date"])
+    @classmethod
+    def gen_id(cls, item: Idol) -> str:
+        return cls.hash(item["real_name_original"] + item["birth_date"])
 
 
-class GroupMember(TypedDict):
-    id: str
-    current: bool
-    roles: str | None
-
-
-class Group(Item):
+class GroupValidator(Validator):
     REQUIRED_FIELDS = ["name", "name_original", "agency_name", "urls"]
     OPTIONAL_FIELDS = ["debut_date", "disband_date"]
     OTHER_FIELDS = ["members"]
+    UNIQUE_FIELDS = ["name", "name_original"]
 
-    def gen_id(self):
-        return self.hash(self["name_original"])
-
-
-class Profiles(TypedDict):
-    groups: list[Group]
-    idols: list[Idol]
+    @classmethod
+    def gen_id(cls, item: Group) -> str:
+        return cls.hash(item["name_original"])

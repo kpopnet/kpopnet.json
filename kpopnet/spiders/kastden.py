@@ -2,9 +2,16 @@ import re
 import json
 from pathlib import Path
 from urllib.parse import unquote
-from typing import Sequence
+from typing import cast
 import scrapy
-from ..items import Idol, Group, GroupMember, Profiles, Overrides
+from ..items import (
+    Idol,
+    Group,
+    Profiles,
+    Overrides,
+    IdolValidator,
+    GroupValidator,
+)
 
 
 class KastdenSpider(scrapy.Spider):
@@ -63,7 +70,7 @@ class KastdenSpider(scrapy.Spider):
         Debut date: 2008-04-15 (15 years and 6 months ago) ▲ ▼
         Country of origin: Korea, Republic of
         """
-        idol = Idol()
+        idol = cast(Idol, {})
         table_idol = response.css("h1 ~ div table")[0]
         for tr in table_idol.css("tr"):
             prop = tr.css("td:nth-child(1)::text").get()
@@ -134,7 +141,7 @@ class KastdenSpider(scrapy.Spider):
         #     for url in list_urls.css("a::attr(href)").getall():
         #         idol["urls"].append(self.unquote(url))
 
-        idol.normalize(self.all_overrides["idols"])
+        IdolValidator.normalize(cast(dict, idol), self.all_overrides["idols"])
         self.all_idols.append(idol)
 
     def parse_group(self, response):
@@ -144,7 +151,7 @@ class KastdenSpider(scrapy.Spider):
         Company: MBK Entertainment
         Debut date: 2009-07-29 (14 years and 3 months ago)
         """
-        group = Group()
+        group = cast(Group, {})
         table_group = response.css("h1 ~ div table")[0]
         for tr in table_group.css("tr"):
             prop = tr.css("td:nth-child(1)::text").get()
@@ -173,30 +180,8 @@ class KastdenSpider(scrapy.Spider):
         #     for url in list_urls.css("a::attr(href)").getall():
         #         group["urls"].append(self.unquote(url))
 
-        group.normalize(self.all_overrides["groups"])
+        GroupValidator.normalize(cast(dict, group), self.all_overrides["groups"])
         self.all_groups.append(group)
-
-    def validate_duplicate_fields(
-        self, items: Sequence[Idol | Group], fields: list[str]
-    ):
-        seen = dict((field, dict()) for field in fields)
-        for item in items:
-            for field in fields:
-                value = item[field]
-                if value in seen[field]:
-                    i1 = json.dumps(item)
-                    i2 = json.dumps(seen[field][value])
-                    raise Exception(f"Found duplicated field {field}:\n{i1}\n{i2}")
-                seen[field][value] = item
-
-    def validate_all(self):
-        for idol in self.all_idols:
-            idol.validate()
-        for group in self.all_groups:
-            group.validate()
-        # TODO: validate id cross-reference?
-        self.validate_duplicate_fields(self.all_idols, ["id"])
-        self.validate_duplicate_fields(self.all_groups, ["name", "name_original", "id"])
 
     def closed(self, reason):
         if reason != "finished":
@@ -218,15 +203,17 @@ class KastdenSpider(scrapy.Spider):
             for idol_group in idol.pop("_groups"):
                 group = group_by_name[idol_group["name"]]
                 idol["groups"].append(group["id"])
-                group_member: GroupMember = {
-                    "id": idol["id"],
-                    "current": idol_group["current"],
-                    "roles": idol_group["roles"],
-                }
-                group["members"].append(group_member)
+                group["members"].append(
+                    {
+                        "id": idol["id"],
+                        "current": idol_group["current"],
+                        "roles": idol_group["roles"],
+                    }
+                )
 
         # Validate after modifications
-        self.validate_all()
+        IdolValidator.validate_all(self.all_idols)
+        GroupValidator.validate_all(self.all_groups)
 
         profiles: Profiles = {"idols": idols, "groups": groups}
         with open(self.OUT_JSON_FNAME, "w") as f:
