@@ -1,5 +1,3 @@
-// NOTE(Kagami): Should match with types in kpopnet/items.py!
-
 export interface Idol {
   // required
   id: string;

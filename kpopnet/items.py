@@ -3,7 +3,7 @@ import hashlib
 from typing import TypedDict, Optional, Sequence, Mapping, NotRequired
 
 
-# NOTE(Kagami): Should match with types in kpopnet/items.py!
+# NOTE(Kagami): Should match with types in kpopnet.d.ts!
 class Idol(TypedDict):
     # required
     id: str
