@@ -1,9 +1,17 @@
+import os
 import re
+import io
 import json
+import hashlib
 from pathlib import Path
 from urllib.parse import unquote
 from typing import cast
+from contextlib import suppress
+
 import scrapy
+from scrapy.http import Response
+from PIL import Image
+
 from ..items import (
     Idol,
     Group,
@@ -25,11 +33,28 @@ class KastdenSpider(scrapy.Spider):
 
     OUT_JSON_FNAME = "kpopnet.json"
     OUT_MINJSON_FNAME = "kpopnet.min.json"
+    OUT_THUMB_DNAME = "thumb"
+
+    THUMB_BASE_URL = "https://up.kpop.re/net"
 
     def __init__(self, *args, **kwargs):
         super().__init__(*args, **kwargs)
-        overrides_fpath = Path(__file__).parent / ".." / ".." / "overrides.json"
+        project_root_fpath = Path(__file__).parent / ".." / ".."
+
+        self.out_json_fpath = project_root_fpath / self.OUT_JSON_FNAME
+        self.out_minjson_fpath = project_root_fpath / self.OUT_MINJSON_FNAME
+        self.out_thumb_dpath = project_root_fpath / self.OUT_THUMB_DNAME
+
+        overrides_fpath = project_root_fpath / "overrides.json"
         self.all_overrides = json.load(open(overrides_fpath))
+
+        self.cleanup()
+
+    def cleanup(self):
+        with suppress(FileNotFoundError):
+            os.remove(self.out_json_fpath)
+        with suppress(FileNotFoundError):
+            os.remove(self.out_minjson_fpath)
 
     @staticmethod
     def unquote(url: str) -> str:
@@ -52,6 +77,27 @@ class KastdenSpider(scrapy.Spider):
         month = month or "00"
         day = day or "00"
         return f"{year}-{month}-{day}"
+
+    def download_thumb(self, response: Response, item: Idol | Group):
+        thumb_url = response.css(".thumb img::attr(src)").get()
+        if not thumb_url:
+            return  # optional
+        assert thumb_url.endswith(".jpg"), thumb_url
+        # Callbacks are better than await here because we can download
+        # everything asynchonously
+        yield response.follow(
+            thumb_url, callback=self.write_thumb, cb_kwargs=dict(item=item)
+        )
+
+    def write_thumb(self, response: Response, item: Idol | Group):
+        im = Image.open(io.BytesIO(response.body))
+        assert im.format == "JPEG", item
+        hash = hashlib.sha1(response.body).hexdigest()
+        fname = hash[:2] + "/" + hash[2:] + ".jpg"
+        fpath = self.out_thumb_dpath / fname
+        os.makedirs(fpath.parent, exist_ok=True)
+        fpath.write_bytes(response.body)
+        item["thumb_url"] = self.THUMB_BASE_URL + "/" + fname
 
     def parse_idol(self, response):
         """
@@ -131,8 +177,10 @@ class KastdenSpider(scrapy.Spider):
                 idol["_groups"].append(
                     {"name": group_name, "current": group_current, "roles": group_roles}
                 )
-                # XXX: does crawl deduplication always work?
+                # TODO(Kagami): does crawl deduplication always work?
                 yield response.follow(group_url, callback=self.parse_group)
+
+        yield from self.download_thumb(response, idol)
 
         idol["urls"] = [response.url]
         # TODO: Check for <h2>References</h2>?
@@ -174,6 +222,8 @@ class KastdenSpider(scrapy.Spider):
             elif re.search(r"disbandment\s+date", prop, re.I):
                 group["disband_date"] = self.parse_date(prop, value, full=False)
 
+        yield from self.download_thumb(response, group)
+
         group["urls"] = [response.url]
         # list_urls = response.css("h2 ~ ul")
         # if list_urls:
@@ -188,7 +238,7 @@ class KastdenSpider(scrapy.Spider):
             self.log("Exited with error, no dump")
             return
 
-        self.log("Dumping data")
+        self.log("Processing data")
         idol_key = lambda i: (i["birth_date"], i["real_name"])
         group_key = lambda g: (g["debut_date"] or "0", g["name"])
         idols = sorted(self.all_idols, key=idol_key, reverse=True)
@@ -216,9 +266,10 @@ class KastdenSpider(scrapy.Spider):
         GroupValidator.validate_all(self.all_groups)
 
         profiles: Profiles = {"idols": idols, "groups": groups}
-        with open(self.OUT_JSON_FNAME, "w") as f:
+        self.log("Dumping data")
+        with open(self.out_json_fpath, "w") as f:
             json.dump(profiles, f, ensure_ascii=False, sort_keys=True, indent=2)
-        with open(self.OUT_MINJSON_FNAME, "w") as f:
+        with open(self.out_minjson_fpath, "w") as f:
             json.dump(
                 profiles, f, ensure_ascii=False, sort_keys=True, separators=(",", ":")
             )

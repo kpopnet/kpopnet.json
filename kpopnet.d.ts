@@ -13,6 +13,7 @@ export interface Idol {
   debut_date: string | null;
   height: number | null;
   weight: number | null;
+  thumb_url: string | null;
   // references
   groups: string[];
 }
@@ -33,6 +34,7 @@ export interface Group {
   // optional
   debut_date: string | null;
   disband_date: string | null;
+  thumb_url: string | null;
   // references
   members: GroupMember[];
 }

@@ -5,6 +5,7 @@ name = "pypi"
 
 [packages]
 scrapy = "*"
+pillow = "*"
 
 [dev-packages]
 pytest = "*"

@@ -1,4 +1,3 @@
-import json
 import base64
 import hashlib
 from typing import TypedDict, Optional, Sequence, Mapping, NotRequired
@@ -18,6 +17,7 @@ class Idol(TypedDict):
     debut_date: Optional[str]
     height: Optional[float]
     weight: Optional[float]
+    thumb_url: Optional[str]
     # references
     groups: list[str]
     # tmp key
@@ -27,7 +27,7 @@ class Idol(TypedDict):
 class GroupMember(TypedDict):
     id: str
     current: bool
-    roles: str | None
+    roles: Optional[str]
 
 
 class Group(TypedDict):
@@ -40,6 +40,7 @@ class Group(TypedDict):
     # optional
     debut_date: Optional[str]
     disband_date: Optional[str]
+    thumb_url: Optional[str]
     # references
     members: list[GroupMember]
 
@@ -104,10 +105,7 @@ class Validator:
         for item in items:
             for field in fields:
                 value = item[field]
-                if value in seen[field]:
-                    i1 = json.dumps(item)
-                    i2 = json.dumps(seen[field][value])
-                    raise Exception(f"Found duplicated field {field}:\n{i1}\n{i2}")
+                assert value not in seen[field], (item, seen[field][value])
                 seen[field][value] = item
 
     @classmethod
@@ -127,7 +125,7 @@ class IdolValidator(Validator):
         "birth_date",
         "urls",
     ]
-    OPTIONAL_FIELDS = ["debut_date", "height", "weight"]
+    OPTIONAL_FIELDS = ["debut_date", "height", "weight", "thumb_url"]
     OTHER_FIELDS = ["groups"]
 
     @classmethod
@@ -137,7 +135,7 @@ class IdolValidator(Validator):
 
 class GroupValidator(Validator):
     REQUIRED_FIELDS = ["name", "name_original", "agency_name", "urls"]
-    OPTIONAL_FIELDS = ["debut_date", "disband_date"]
+    OPTIONAL_FIELDS = ["debut_date", "disband_date", "thumb_url"]
     OTHER_FIELDS = ["members"]
     UNIQUE_FIELDS = ["name", "name_original"]
 
