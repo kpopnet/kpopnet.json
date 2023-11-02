@@ -82,7 +82,7 @@ class Validator:
 
     @staticmethod
     def hash(s: str) -> str:
-        hash = hashlib.blake2b(s.encode(), digest_size=9).digest()
+        hash = hashlib.blake2b(s.encode(), digest_size=15).digest()
         return base64.b64encode(hash, b"-_").decode()
 
     @classmethod
