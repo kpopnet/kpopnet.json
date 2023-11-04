@@ -42,10 +42,8 @@ def main():
             had_error = True
 
         if had_error:
-            print()
-            print("@" * 50)
-            print("ERROR OCCURED, PLEASE CHECK LOGS")
-            print("@" * 50)
+            at = "@" * 50
+            print(f"\n{at}\nERROR OCCURED, PLEASE CHECK LOGS\n{at}", file=sys.stderr)
             sys.exit(1)
 
     else:
