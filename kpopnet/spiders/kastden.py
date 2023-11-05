@@ -250,7 +250,10 @@ class KastdenSpider(scrapy.Spider):
         groups = sorted(self.all_groups, key=group_key, reverse=True)
 
         # Modify idol/group data *in place*
+        group_by_id = dict((g["id"], g) for g in groups)
         group_by_name = dict((g["name"], g) for g in groups)
+        idol_groups_key = lambda gid: group_key(group_by_id[gid])
+
         for group in groups:
             group["members"] = []
         for idol in idols:
@@ -265,6 +268,7 @@ class KastdenSpider(scrapy.Spider):
                         "roles": idol_group["roles"],
                     }
                 )
+            idol["groups"].sort(key=idol_groups_key, reverse=True)
 
         # Validate after modifications
         IdolValidator.validate_all(self.all_idols)
