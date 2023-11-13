@@ -14,6 +14,7 @@ class Idol(TypedDict):
     birth_date: str
     urls: list[str]
     # optional
+    name_alias: Optional[str]
     debut_date: Optional[str]
     height: Optional[float]
     weight: Optional[float]
@@ -38,6 +39,7 @@ class Group(TypedDict):
     agency_name: str
     urls: list[str]
     # optional
+    name_alias: Optional[str]
     debut_date: Optional[str]
     disband_date: Optional[str]
     thumb_url: Optional[str]
@@ -125,7 +127,7 @@ class IdolValidator(Validator):
         "birth_date",
         "urls",
     ]
-    OPTIONAL_FIELDS = ["debut_date", "height", "weight", "thumb_url"]
+    OPTIONAL_FIELDS = ["name_alias", "debut_date", "height", "weight", "thumb_url"]
     OTHER_FIELDS = ["groups"]
 
     @classmethod
@@ -135,7 +137,7 @@ class IdolValidator(Validator):
 
 class GroupValidator(Validator):
     REQUIRED_FIELDS = ["name", "name_original", "agency_name", "urls"]
-    OPTIONAL_FIELDS = ["debut_date", "disband_date", "thumb_url"]
+    OPTIONAL_FIELDS = ["name_alias", "debut_date", "disband_date", "thumb_url"]
     OTHER_FIELDS = ["members"]
     UNIQUE_FIELDS = ["name", "name_original"]
 

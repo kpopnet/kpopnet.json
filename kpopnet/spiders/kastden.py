@@ -102,6 +102,13 @@ class KastdenSpider(scrapy.Spider):
     def get_item_kpopnet_url(self, item: Idol | Group) -> str:
         return f"https://net.kpop.re/?id={item['id']}"
 
+    def parse_name_alias(self, value: str) -> str:
+        value = re.sub(r"\s*\(\s*", ",", value)
+        value = re.sub(r"\s*\)\s*", ",", value)
+        value = re.sub(r",+$", "", value)
+        value = re.sub(r"\s*,+\s*", ", ", value)
+        return value
+
     def parse_idol(self, response):
         """
         Pop type: K-pop
@@ -140,6 +147,8 @@ class KastdenSpider(scrapy.Spider):
             elif re.search(r"stage\s+name.*original", prop, re.I):
                 value = re.sub(r"\s*\(.*\)$", "", value)  # remove kanji name
                 idol["name_original"] = value
+            elif re.search(r"formerly\s+known\s+as", prop, re.I):
+                idol["name_alias"] = self.parse_name_alias(value)
             elif re.search(r"real\s+name.*romanized", prop, re.I):
                 idol["real_name"] = value
             elif re.search(r"real\s+name.*original", prop, re.I):
@@ -165,8 +174,8 @@ class KastdenSpider(scrapy.Spider):
             # XXX: subunits table without groups table?
             for tr in tables_groups[0].css("tr"):
                 tds = tr.css("td")
-                group_name = tds[1].css("a::text").get()
-                group_url = tds[1].css("a::attr(href)").get()
+                # group_name = tds[1].css("a::text").get()
+                group_url = response.urljoin(tds[1].css("a::attr(href)").get())
                 group_disbanded = tds[4].get() is not None
                 group_current = not group_disbanded
                 if len(tds) > 5:
@@ -174,11 +183,9 @@ class KastdenSpider(scrapy.Spider):
                 group_roles = None
                 if len(tds) > 6:
                     roles_text = tds[6].css("::text").get()
-                    # TODO: split by comma?
                     group_roles = roles_text.lower() if roles_text else None
-                # FIXME: might need to normalize group_name and reference will be broken!
                 idol["_groups"].append(
-                    {"name": group_name, "current": group_current, "roles": group_roles}
+                    {"url": group_url, "current": group_current, "roles": group_roles}
                 )
                 # TODO(Kagami): does crawl deduplication always work?
                 yield response.follow(group_url, callback=self.parse_group)
@@ -235,6 +242,7 @@ class KastdenSpider(scrapy.Spider):
         #         group["urls"].append(self.unquote(url))
 
         GroupValidator.normalize(cast(dict, group), self.all_overrides["groups"])
+        # after normalize because we need ID
         group["urls"].insert(0, self.get_item_kpopnet_url(group))
         self.all_groups.append(group)
 
@@ -251,7 +259,8 @@ class KastdenSpider(scrapy.Spider):
 
         # Modify idol/group data *in place*
         group_by_id = dict((g["id"], g) for g in groups)
-        group_by_name = dict((g["name"], g) for g in groups)
+        # XXX: second url is kastden
+        group_by_url = dict((g["urls"][1], g) for g in groups)
         idol_groups_key = lambda gid: group_key(group_by_id[gid])
 
         for group in groups:
@@ -259,7 +268,7 @@ class KastdenSpider(scrapy.Spider):
         for idol in idols:
             idol["groups"] = []
             for idol_group in idol.pop("_groups"):
-                group = group_by_name[idol_group["name"]]
+                group = group_by_url[idol_group["url"]]
                 idol["groups"].append(group["id"])
                 group["members"].append(
                     {

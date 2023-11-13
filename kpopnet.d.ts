@@ -8,6 +8,7 @@ export interface Idol {
   birth_date: string;
   urls: string[];
   // optional
+  name_alias: string | null;
   debut_date: string | null;
   height: number | null;
   weight: number | null;
@@ -30,6 +31,7 @@ export interface Group {
   agency_name: string;
   urls: string[];
   // optional
+  name_alias: string | null;
   debut_date: string | null;
   disband_date: string | null;
   thumb_url: string | null;
