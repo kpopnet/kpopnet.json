@@ -35,6 +35,7 @@
       "name": "Young Posse",
       "name_alias": null,
       "name_original": "영파씨",
+      "parent_id": null,
       "thumb_url": "https://up.kpop.re/net/8f/b00ebf5d61261e4d9cc31e7c2ff9e892433819.jpg",
       "urls": [
         "https://net.kpop.re/?id=TeGThP2Za2y7Tsw4Dfln",
@@ -71,10 +72,125 @@
       "name": "QWER",
       "name_alias": null,
       "name_original": "최애의 아이들",
+      "parent_id": null,
       "thumb_url": "https://up.kpop.re/net/e4/10cbe0be2167a82491f64033b1fc26c989ff3f.jpg",
       "urls": [
         "https://net.kpop.re/?id=iy2SZRm9qo8LyHoepWnx",
         "https://selca.kastden.org/noona/group/qwer/"
+      ]
+    },
+    {
+      "agency_name": "Modhaus",
+      "debut_date": "2023-10-11",
+      "disband_date": null,
+      "id": "-avkw-cyV8yTIXaF89Rk",
+      "members": [
+        {
+          "current": true,
+          "id": "NOdgsXvVZEOFb35-zCbj",
+          "roles": null
+        },
+        {
+          "current": true,
+          "id": "XC5l96Ce_25PfGkX6aKV",
+          "roles": null
+        },
+        {
+          "current": true,
+          "id": "t5UrP4VMeunf9Eg2TZCr",
+          "roles": null
+        },
+        {
+          "current": true,
+          "id": "FjHdQOrPRXVMM6dLDgM8",
+          "roles": null
+        },
+        {
+          "current": true,
+          "id": "CICoD0jHbO9cDHs86Ci5",
+          "roles": null
+        },
+        {
+          "current": true,
+          "id": "SzOIvSJPMyXJRYqUZMwx",
+          "roles": null
+        },
+        {
+          "current": true,
+          "id": "arSmcnO1UvRM3rz0r9v6",
+          "roles": null
+        },
+        {
+          "current": true,
+          "id": "ULOPXx1hTksdJGLcgGDE",
+          "roles": null
+        }
+      ],
+      "name": "EVOLution",
+      "name_alias": null,
+      "name_original": "에볼루션",
+      "parent_id": "pnPfkA6YOroT-uM84RsF",
+      "thumb_url": "https://up.kpop.re/net/37/cea07b150eb0383d13d282ff15505d8e0ce6e6.jpg",
+      "urls": [
+        "https://net.kpop.re/?id=-avkw-cyV8yTIXaF89Rk",
+        "https://selca.kastden.org/noona/group/evolution/"
+      ]
+    },
+    {
+      "agency_name": "Modhaus",
+      "debut_date": "2023-08-17",
+      "disband_date": null,
+      "id": "2oyC33weM185JDCCnYGO",
+      "members": [
+        {
+          "current": true,
+          "id": "OUhXE_GMal0MzEIgUYI-",
+          "roles": null
+        },
+        {
+          "current": true,
+          "id": "k6-KLv_YhsKbhV6073oF",
+          "roles": null
+        },
+        {
+          "current": true,
+          "id": "op1uqTvTOnmCtJpOVemv",
+          "roles": null
+        },
+        {
+          "current": true,
+          "id": "Z6Yey-kgNte9H60nsRl7",
+          "roles": null
+        },
+        {
+          "current": true,
+          "id": "TuBT9Fil_AZ3d7tPjq_D",
+          "roles": null
+        },
+        {
+          "current": true,
+          "id": "vnQljhjPPWD8MYMCjYHH",
+          "roles": null
+        },
+        {
+          "current": true,
+          "id": "-vESaj-zq_uN7rXNrfWX",
+          "roles": null
+        },
+        {
+          "current": true,
+          "id": "_zgEnwnIF3CTAsDHBldm",
+          "roles": null
+        }
+      ],
+      "name": "LOVElution",
+      "name_alias": null,
+      "name_original": "러블루션",
+      "parent_id": "pnPfkA6YOroT-uM84RsF",
+      "thumb_url": "https://up.kpop.re/net/66/0ebd1e5268574c9aae7473cc6c91d608113249.jpg",
+      "urls": [
+        "https://net.kpop.re/?id=2oyC33weM185JDCCnYGO",
+        "https://selca.kastden.org/noona/group/lovelution/"
       ]
     },
     {
@@ -112,10 +228,48 @@
       "name": "Adya",
       "name_alias": null,
       "name_original": "에이디야",
+      "parent_id": null,
       "thumb_url": "https://up.kpop.re/net/c9/afe5d5e49c1c48a243ca9f5cdd3c93b13d8c2c.jpg",
       "urls": [
         "https://net.kpop.re/?id=gY1M4DJSZ437luW7tDbC",
         "https://selca.kastden.org/noona/group/adya/"
+      ]
+    },
+    {
+      "agency_name": "Modhaus",
+      "debut_date": "2023-05-04",
+      "disband_date": null,
+      "id": "vt_CeJYdD_9RlQzAtf2D",
+      "members": [
+        {
+          "current": true,
+          "id": "XC5l96Ce_25PfGkX6aKV",
+          "roles": null
+        },
+        {
+          "current": true,
+          "id": "t5UrP4VMeunf9Eg2TZCr",
+          "roles": null
+        },
+        {
+          "current": true,
+          "id": "FjHdQOrPRXVMM6dLDgM8",
+          "roles": null
+        },
+        {
+          "current": true,
+          "id": "Z6Yey-kgNte9H60nsRl7",
+          "roles": null
+        }
+      ],
+      "name": "+(KR)ystal Eyes",
+      "name_alias": null,
+      "name_original": "크리스탈 아이즈",
+      "parent_id": "pnPfkA6YOroT-uM84RsF",
+      "thumb_url": "https://up.kpop.re/net/4d/516b8ae6f03ccc3162518f20316c6425dc3d73.jpg",
+      "urls": [
+        "https://net.kpop.re/?id=vt_CeJYdD_9RlQzAtf2D",
+        "https://selca.kastden.org/noona/group/krystaleyes/"
       ]
     },
     {
@@ -143,6 +297,7 @@
       "name": "LimeLight",
       "name_alias": null,
       "name_original": "라임라잇",
+      "parent_id": null,
       "thumb_url": "https://up.kpop.re/net/d2/7ba1195bb5f02f32c3670942ada8c128094fbb.jpg",
       "urls": [
         "https://net.kpop.re/?id=6tfqT85DhdA6g52kG4J2",
@@ -239,6 +394,7 @@
       "name": "tripleS",
       "name_alias": null,
       "name_original": "트리플에스",
+      "parent_id": null,
       "thumb_url": "https://up.kpop.re/net/79/21db0768022f5071facf1894e2c48dd3253080.jpg",
       "urls": [
         "https://net.kpop.re/?id=pnPfkA6YOroT-uM84RsF",
@@ -275,6 +431,7 @@
       "name": "Primrose",
       "name_alias": null,
       "name_original": "프림로즈",
+      "parent_id": null,
       "thumb_url": "https://up.kpop.re/net/20/745776e4af71538a04da1e48aa22a430e8e0fc.jpg",
       "urls": [
         "https://net.kpop.re/?id=408Kf3hQ3OrS9DMPm_de",
@@ -311,10 +468,48 @@
       "name": "Fifty Fifty",
       "name_alias": null,
       "name_original": "피프티 피프티",
+      "parent_id": null,
       "thumb_url": "https://up.kpop.re/net/20/2e729c319cb9e4fa50bb0396c130bb8dfd5988.jpg",
       "urls": [
         "https://net.kpop.re/?id=H5qWIR4zf7xVVWB_-sbc",
         "https://selca.kastden.org/noona/group/fiftyfifty/"
+      ]
+    },
+    {
+      "agency_name": "Modhaus",
+      "debut_date": "2022-10-28",
+      "disband_date": null,
+      "id": "W39pZ2mMvMhdsD6VhMRF",
+      "members": [
+        {
+          "current": true,
+          "id": "OUhXE_GMal0MzEIgUYI-",
+          "roles": null
+        },
+        {
+          "current": true,
+          "id": "op1uqTvTOnmCtJpOVemv",
+          "roles": null
+        },
+        {
+          "current": true,
+          "id": "SzOIvSJPMyXJRYqUZMwx",
+          "roles": null
+        },
+        {
+          "current": true,
+          "id": "ULOPXx1hTksdJGLcgGDE",
+          "roles": null
+        }
+      ],
+      "name": "Acid Angel from Asia",
+      "name_alias": null,
+      "name_original": "애시드 엔젤 프롬 에이시아",
+      "parent_id": "pnPfkA6YOroT-uM84RsF",
+      "thumb_url": "https://up.kpop.re/net/14/27caa04d1c8159feb4c8b1e0bf7b87a52e5e6f.jpg",
+      "urls": [
+        "https://net.kpop.re/?id=W39pZ2mMvMhdsD6VhMRF",
+        "https://selca.kastden.org/noona/group/acidangelfromasia/"
       ]
     },
     {
@@ -357,6 +552,7 @@
       "name": "Queenz Eye",
       "name_alias": null,
       "name_original": "퀸즈아이",
+      "parent_id": null,
       "thumb_url": "https://up.kpop.re/net/c4/6e8450b932e43c318fd07f409e19287837a781.jpg",
       "urls": [
         "https://net.kpop.re/?id=976Ln5F6AnjVh9AqNlQQ",
@@ -398,6 +594,7 @@
       "name": "mimiirose",
       "name_alias": null,
       "name_original": "미미로즈",
+      "parent_id": null,
       "thumb_url": "https://up.kpop.re/net/63/cbf0656e387daae851f0d845a9066f1ebaeb69.jpg",
       "urls": [
         "https://net.kpop.re/?id=vWDOwrgvcR14QucdakJZ",
@@ -439,6 +636,7 @@
       "name": "NewJeans",
       "name_alias": null,
       "name_original": "뉴진스",
+      "parent_id": null,
       "thumb_url": "https://up.kpop.re/net/f6/00fd1e729b785e16e238d6b4df31f5423738bd.jpg",
       "urls": [
         "https://net.kpop.re/?id=-j_4yQsJ6gTjN_4kkH88",
@@ -490,10 +688,38 @@
       "name": "CSR",
       "name_alias": null,
       "name_original": "첫사랑",
+      "parent_id": null,
       "thumb_url": "https://up.kpop.re/net/04/7ebcc083b27eedf450d2d90cbe8b6a31a884a6.jpg",
       "urls": [
         "https://net.kpop.re/?id=vDDRjjgJHpJaswLTTQ3G",
         "https://selca.kastden.org/noona/group/csr/"
+      ]
+    },
+    {
+      "agency_name": "Plan A Entertainment",
+      "debut_date": "2022-07-12",
+      "disband_date": null,
+      "id": "XNV4sTtbNECe7hXf5PKr",
+      "members": [
+        {
+          "current": true,
+          "id": "0xiVRo5B6Kd6S3YbDpyu",
+          "roles": null
+        },
+        {
+          "current": true,
+          "id": "t_tuECyIYaFbPgSJC2Wj",
+          "roles": null
+        }
+      ],
+      "name": "ChoBom",
+      "name_alias": null,
+      "name_original": "초봄",
+      "parent_id": "HH4mYi0Z7NhRWX5JEQfB",
+      "thumb_url": "https://up.kpop.re/net/84/0741d143cbebbcaf8645a7ac9289fec0f6f7a2.jpg",
+      "urls": [
+        "https://net.kpop.re/?id=XNV4sTtbNECe7hXf5PKr",
+        "https://selca.kastden.org/noona/group/chobom/"
       ]
     },
     {
@@ -526,6 +752,7 @@
       "name": "IRRIS",
       "name_alias": null,
       "name_original": "아이리스",
+      "parent_id": null,
       "thumb_url": "https://up.kpop.re/net/33/46c253f3fc82566d26912fd69c472ac5bb196a.jpg",
       "urls": [
         "https://net.kpop.re/?id=7B5G4C0XD8o3rwuPGstU",
@@ -572,6 +799,7 @@
       "name": "Lapillus",
       "name_alias": null,
       "name_original": "라필루스",
+      "parent_id": null,
       "thumb_url": "https://up.kpop.re/net/74/18e5a9a81678fa38472f4436aa5a7a6cdceb73.jpg",
       "urls": [
         "https://net.kpop.re/?id=pnHe0mJQjt3oIReGOsvu",
@@ -623,6 +851,7 @@
       "name": "CLASS:y",
       "name_alias": null,
       "name_original": "클라씨",
+      "parent_id": null,
       "thumb_url": "https://up.kpop.re/net/3b/b5670a3ef204dfbdaacec3601df218abc00b42.jpg",
       "urls": [
         "https://net.kpop.re/?id=yUgiV7UWcGeVHELNEbMA",
@@ -669,6 +898,7 @@
       "name": "Le Sserafim",
       "name_alias": null,
       "name_original": "르세라핌",
+      "parent_id": null,
       "thumb_url": "https://up.kpop.re/net/df/57f7b0ee62e8a4da50bb2e492b5b290f48f638.jpg",
       "urls": [
         "https://net.kpop.re/?id=1JruZ-tmS4UqK4fpJIdY",
@@ -715,6 +945,7 @@
       "name": "ILY:1",
       "name_alias": null,
       "name_original": "아일리원",
+      "parent_id": null,
       "thumb_url": "https://up.kpop.re/net/b2/0171acadb6e482d402f4fc76c36c8ee4a831b1.jpg",
       "urls": [
         "https://net.kpop.re/?id=jt4MvW47ZFVEk4X_gywN",
@@ -766,6 +997,7 @@
       "name": "XG",
       "name_alias": null,
       "name_original": "XG",
+      "parent_id": null,
       "thumb_url": "https://up.kpop.re/net/ae/d9f653b7ef75c8f0b3a858ea2612aee2a54fac.jpg",
       "urls": [
         "https://net.kpop.re/?id=6_01XMhv7k0Yd4GBJ7H7",
@@ -817,6 +1049,7 @@
       "name": "NMIXX",
       "name_alias": null,
       "name_original": "엔믹스",
+      "parent_id": null,
       "thumb_url": "https://up.kpop.re/net/44/408bfa023b04f75b8f6977bb52a384616f5705.jpg",
       "urls": [
         "https://net.kpop.re/?id=yuM_tZ2HXYE_Ub4mRUQb",
@@ -848,6 +1081,7 @@
       "name": "VIVIZ",
       "name_alias": null,
       "name_original": "비비지",
+      "parent_id": null,
       "thumb_url": "https://up.kpop.re/net/9c/71ce54d027b3440f988452a7c636b140c6a48a.jpg",
       "urls": [
         "https://net.kpop.re/?id=bT24ybHarFOuoUyzpu95",
@@ -889,6 +1123,7 @@
       "name": "H1-KEY",
       "name_alias": null,
       "name_original": "H1-KEY",
+      "parent_id": null,
       "thumb_url": "https://up.kpop.re/net/d1/59bd6b0996b8f8a3fb9648d3b9e7f85b2fd114.jpg",
       "urls": [
         "https://net.kpop.re/?id=EmDltT3UQWwnTGjkdn9Y",
@@ -950,6 +1185,7 @@
       "name": "Kep1er",
       "name_alias": null,
       "name_original": "케플러",
+      "parent_id": null,
       "thumb_url": "https://up.kpop.re/net/84/0865250cae0a27e76af15f42287302bbec4d5e.jpg",
       "urls": [
         "https://net.kpop.re/?id=SDv-i0A0PBfxLkRBzeBa",
@@ -1001,6 +1237,7 @@
       "name": "GOT the beat",
       "name_alias": null,
       "name_original": "갓 더 비트",
+      "parent_id": null,
       "thumb_url": "https://up.kpop.re/net/ae/8e6353ef102f23a9988572050602a824ce6464.jpg",
       "urls": [
         "https://net.kpop.re/?id=8t-jPdvEkQAw52HDMedH",
@@ -1047,6 +1284,7 @@
       "name": "IVE",
       "name_alias": null,
       "name_original": "아이브",
+      "parent_id": null,
       "thumb_url": "https://up.kpop.re/net/8f/3bbee65bd58cb80ef54bb00fd78d0a13d1def8.jpg",
       "urls": [
         "https://net.kpop.re/?id=8Skl1FaMoJPIo-5l2Rpt",
@@ -1098,6 +1336,7 @@
       "name": "Billlie",
       "name_alias": null,
       "name_original": "빌리",
+      "parent_id": null,
       "thumb_url": "https://up.kpop.re/net/c7/f278ab7c8d720a49e55e4c88ceb28ab7c93f99.jpg",
       "urls": [
         "https://net.kpop.re/?id=h9iWDb-Ioz9nqTTkQk3M",
@@ -1144,6 +1383,7 @@
       "name": "bugAboo",
       "name_alias": null,
       "name_original": "버가부",
+      "parent_id": null,
       "thumb_url": "https://up.kpop.re/net/62/64c7179f8e28bc7f0155e0a9dd0be711666484.jpg",
       "urls": [
         "https://net.kpop.re/?id=Z-ZU6mUzXCaNeMnxnHD8",
@@ -1200,6 +1440,7 @@
       "name": "ICHILLIN'",
       "name_alias": null,
       "name_original": "아이칠린",
+      "parent_id": null,
       "thumb_url": "https://up.kpop.re/net/75/007b43468e6a34c7640a5b2291236e91899c5d.jpg",
       "urls": [
         "https://net.kpop.re/?id=ac_IEXIPS_uNmNmP8ZpK",
@@ -1236,6 +1477,7 @@
       "name": "PRITTI-G",
       "name_alias": null,
       "name_original": "프리티지",
+      "parent_id": null,
       "thumb_url": "https://up.kpop.re/net/0a/26200c2216b880abc4e21c16132dab9e037512.jpg",
       "urls": [
         "https://net.kpop.re/?id=h9DsUdPtvDLB9XI33S8o",
@@ -1292,10 +1534,48 @@
       "name": "Lightsum",
       "name_alias": null,
       "name_original": "라잇썸",
+      "parent_id": null,
       "thumb_url": "https://up.kpop.re/net/68/ed58efbfb98f3ce22c0054272a74e92af1fc63.jpg",
       "urls": [
         "https://net.kpop.re/?id=2vpXWVmyLKtiCbT1Yx_s",
         "https://selca.kastden.org/noona/group/lightsum/"
+      ]
+    },
+    {
+      "agency_name": "Starship Entertainment, Yuehua Entertainment",
+      "debut_date": "2021-05-12",
+      "disband_date": null,
+      "id": "WtinlyPm2uuve6BDbwGV",
+      "members": [
+        {
+          "current": true,
+          "id": "VScPMGk2V-BiciqhIndP",
+          "roles": null
+        },
+        {
+          "current": true,
+          "id": "wFClUJTGAAaz5V2jvJ_p",
+          "roles": null
+        },
+        {
+          "current": true,
+          "id": "j9NlBbUkjZvA7vrR9G_F",
+          "roles": null
+        },
+        {
+          "current": true,
+          "id": "IxvvXe_LYBMTY0uAN4PW",
+          "roles": null
+        }
+      ],
+      "name": "WJSN The Black",
+      "name_alias": null,
+      "name_original": "우주소녀 더 블랙",
+      "parent_id": "_Xr8i6j68t6bncM_nItb",
+      "thumb_url": "https://up.kpop.re/net/51/4c8f552daf2c7f0285a413dc02e0618d12078e.jpg",
+      "urls": [
+        "https://net.kpop.re/?id=WtinlyPm2uuve6BDbwGV",
+        "https://selca.kastden.org/noona/group/wjsntheblack/"
       ]
     },
     {
@@ -1343,6 +1623,7 @@
       "name": "Hot Issue",
       "name_alias": null,
       "name_original": "핫이슈",
+      "parent_id": null,
       "thumb_url": "https://up.kpop.re/net/6f/18368362ac0997c1d7cac56decaa031cd98f6e.jpg",
       "urls": [
         "https://net.kpop.re/?id=E-8yUy-4LWLmuDtgPHmV",
@@ -1394,6 +1675,7 @@
       "name": "Purple Kiss",
       "name_alias": null,
       "name_original": "퍼플키스",
+      "parent_id": null,
       "thumb_url": "https://up.kpop.re/net/62/ecf515b510f17e2faa7391791ea3083e9a794a.jpg",
       "urls": [
         "https://net.kpop.re/?id=2V3pjwRCNweIhu0N3_2g",
@@ -1445,6 +1727,7 @@
       "name": "Pixy",
       "name_alias": null,
       "name_original": "픽시",
+      "parent_id": null,
       "thumb_url": "https://up.kpop.re/net/3e/9fd961a5a63313e394326f34e9f19704b4fefa.jpg",
       "urls": [
         "https://net.kpop.re/?id=rdUXWDIGi2oPIl-hiPfQ",
@@ -1496,6 +1779,7 @@
       "name": "TRI.BE",
       "name_alias": null,
       "name_original": "트라이비",
+      "parent_id": null,
       "thumb_url": "https://up.kpop.re/net/1f/f43bc294ba8f3dadcd632e5eb6093be2c01dc2.jpg",
       "urls": [
         "https://net.kpop.re/?id=aHqhtK_I-2MUUqwc6Lka",
@@ -1532,6 +1816,7 @@
       "name": "aespa",
       "name_alias": null,
       "name_original": "에스파",
+      "parent_id": null,
       "thumb_url": "https://up.kpop.re/net/aa/db8f18ae1fd3aadfc57114356e9243943c57b4.jpg",
       "urls": [
         "https://net.kpop.re/?id=7WJQQrEe45xdB9XpC5FY",
@@ -1578,10 +1863,48 @@
       "name": "STAYC",
       "name_alias": null,
       "name_original": "스테이씨",
+      "parent_id": null,
       "thumb_url": "https://up.kpop.re/net/22/b10a846a1c6d646b708113d2329dbf418c245e.jpg",
       "urls": [
         "https://net.kpop.re/?id=Q7UAmRddLW4ly5OcrTWI",
         "https://selca.kastden.org/noona/group/stayc/"
+      ]
+    },
+    {
+      "agency_name": "Starship Entertainment, Yuehua Entertainment",
+      "debut_date": "2020-10-07",
+      "disband_date": null,
+      "id": "mHAlgxemfik9CktXBthl",
+      "members": [
+        {
+          "current": true,
+          "id": "fon8FmIiNQ_Vnf3wYqhI",
+          "roles": null
+        },
+        {
+          "current": true,
+          "id": "F4rfMN6nH9gNU4wW8MQr",
+          "roles": null
+        },
+        {
+          "current": false,
+          "id": "CLeBCreLWVoIXhZvpzLb",
+          "roles": null
+        },
+        {
+          "current": true,
+          "id": "2QfPnxyM4OOUBCeJFStJ",
+          "roles": null
+        }
+      ],
+      "name": "WJSN Chocome",
+      "name_alias": null,
+      "name_original": "우주소녀 쪼꼬미",
+      "parent_id": "_Xr8i6j68t6bncM_nItb",
+      "thumb_url": "https://up.kpop.re/net/c0/36ea7e526338482e6e2945116419948820d041.jpg",
+      "urls": [
+        "https://net.kpop.re/?id=mHAlgxemfik9CktXBthl",
+        "https://selca.kastden.org/noona/group/wjsnchocome/"
       ]
     },
     {
@@ -1614,6 +1937,7 @@
       "name": "LUNARSOLAR",
       "name_alias": null,
       "name_original": "루나솔라",
+      "parent_id": null,
       "thumb_url": "https://up.kpop.re/net/00/1a4a2cd039a79b697ba773a86a4bff6a950c13.jpg",
       "urls": [
         "https://net.kpop.re/?id=O0LZa3GcoWLpSqrO42I2",
@@ -1665,6 +1989,7 @@
       "name": "Weeekly",
       "name_alias": null,
       "name_original": "위클리",
+      "parent_id": null,
       "thumb_url": "https://up.kpop.re/net/90/0cef389a1992b1ac544e6f99614f229bb1362d.jpg",
       "urls": [
         "https://net.kpop.re/?id=zKsG1vveq8Lhsn59jaeO",
@@ -1711,6 +2036,7 @@
       "name": "Secret Number",
       "name_alias": null,
       "name_original": "시크릿넘버",
+      "parent_id": null,
       "thumb_url": "https://up.kpop.re/net/9f/f13811e5d264dcbb01087e0c35024a4188330b.jpg",
       "urls": [
         "https://net.kpop.re/?id=JvDCdghuIr4QXiggKtRC",
@@ -1757,6 +2083,7 @@
       "name": "woo!ah!",
       "name_alias": null,
       "name_original": "우아!",
+      "parent_id": null,
       "thumb_url": "https://up.kpop.re/net/82/8eeb40891039598479fb831ad5a6da8d00de49.jpg",
       "urls": [
         "https://net.kpop.re/?id=fzUPQ2bjJ99TSMuZx6tj",
@@ -1798,6 +2125,7 @@
       "name": "Craxy",
       "name_alias": null,
       "name_original": "크랙시",
+      "parent_id": null,
       "thumb_url": "https://up.kpop.re/net/41/06cf67aae90fcc41e5e214db5f0cd6320a2a0e.jpg",
       "urls": [
         "https://net.kpop.re/?id=SQ4NRxMc65oJensKBe81",
@@ -1859,6 +2187,7 @@
       "name": "cignature",
       "name_alias": null,
       "name_original": "시그니처",
+      "parent_id": null,
       "thumb_url": "https://up.kpop.re/net/53/08d2bf3bb54e2b92d6de5a03a876cd81d68f19.jpg",
       "urls": [
         "https://net.kpop.re/?id=vJzvT9ZPcRQlU7r7dFKV",
@@ -1900,6 +2229,7 @@
       "name": "HINAPIA",
       "name_alias": null,
       "name_original": "희나피아",
+      "parent_id": null,
       "thumb_url": "https://up.kpop.re/net/53/b7cc8f89937eb0fc8d580da83b0fbb950257c8.jpg",
       "urls": [
         "https://net.kpop.re/?id=ioz0FhlazizrorM1_phb",
@@ -1946,6 +2276,7 @@
       "name": "Ariaz",
       "name_alias": null,
       "name_original": "아리아즈",
+      "parent_id": null,
       "thumb_url": "https://up.kpop.re/net/ac/d1a412f91d80577834e7925ece5c3e7055fc66.jpg",
       "urls": [
         "https://net.kpop.re/?id=opfYzRMc84i5RJlRzVIR",
@@ -2002,6 +2333,7 @@
       "name": "ANS",
       "name_alias": null,
       "name_original": "ANS",
+      "parent_id": null,
       "thumb_url": "https://up.kpop.re/net/06/d559ceb2969b4c78a68302ab099b0b724ef2b4.jpg",
       "urls": [
         "https://net.kpop.re/?id=uBimpUG7-BA-6lmswllg",
@@ -2048,6 +2380,7 @@
       "name": "Rocket Punch",
       "name_alias": null,
       "name_original": "로켓펀치",
+      "parent_id": null,
       "thumb_url": "https://up.kpop.re/net/2c/476d85b6cbfb4f29d9a977e1eef9828bb9f142.jpg",
       "urls": [
         "https://net.kpop.re/?id=33O3kmxjDmWBivmNCnUV",
@@ -2104,6 +2437,7 @@
       "name": "FANATICS",
       "name_alias": null,
       "name_original": "파나틱스",
+      "parent_id": null,
       "thumb_url": "https://up.kpop.re/net/94/8989df2d62caae1700a8f91065926de01e60f4.jpg",
       "urls": [
         "https://net.kpop.re/?id=03U6H6kIY3w7jWFWW2BL",
@@ -2130,6 +2464,7 @@
       "name": "Rockit Girl",
       "name_alias": null,
       "name_original": "락킷걸",
+      "parent_id": null,
       "thumb_url": "https://up.kpop.re/net/27/35b6c173bbdbe4da6cdc706fb284be97d9bcf1.jpg",
       "urls": [
         "https://net.kpop.re/?id=zdotHIMSgtpHkjfNNC8D",
@@ -2161,6 +2496,7 @@
       "name": "3YE",
       "name_alias": null,
       "name_original": "써드아이",
+      "parent_id": null,
       "thumb_url": "https://up.kpop.re/net/49/0215934c95fb9fe22dc910549d3550491287a7.jpg",
       "urls": [
         "https://net.kpop.re/?id=uiWCCVuRCbkzZGxawTc0",
@@ -2202,6 +2538,7 @@
       "name": "Bvndit",
       "name_alias": null,
       "name_original": "밴디트",
+      "parent_id": null,
       "thumb_url": "https://up.kpop.re/net/f1/9615601929b37140b3cf2f37c73a1f8045f761.jpg",
       "urls": [
         "https://net.kpop.re/?id=a81SciDpS5tf5or5TZqh",
@@ -2248,6 +2585,7 @@
       "name": "EVERGLOW",
       "name_alias": null,
       "name_original": "에버글로우",
+      "parent_id": null,
       "thumb_url": "https://up.kpop.re/net/19/7ff2e780db18bba35495057331f90dd2bd8a38.jpg",
       "urls": [
         "https://net.kpop.re/?id=ENiqQPfyRyN4Vjvmuu0P",
@@ -2289,6 +2627,7 @@
       "name": "ITZY",
       "name_alias": null,
       "name_original": "있지",
+      "parent_id": null,
       "thumb_url": "https://up.kpop.re/net/98/33a8437b12a3a2e2c3055d7f4b4fd8b5dbf710.jpg",
       "urls": [
         "https://net.kpop.re/?id=QO65tVfTQDEkSPXJxUbw",
@@ -2355,10 +2694,43 @@
       "name": "Cherry Bullet",
       "name_alias": null,
       "name_original": "체리블렛",
+      "parent_id": null,
       "thumb_url": "https://up.kpop.re/net/12/4aee6d756e54088622e639cfb4818c8f76ff39.jpg",
       "urls": [
         "https://net.kpop.re/?id=5TwgCTV6EtYwg14t_vC0",
         "https://selca.kastden.org/noona/group/cherrybullet/"
+      ]
+    },
+    {
+      "agency_name": "FENT",
+      "debut_date": "2018-11-26",
+      "disband_date": null,
+      "id": "AyPa81WVg9TAgzQw2zTr",
+      "members": [
+        {
+          "current": true,
+          "id": "8O-ZSW8BlhbTXR1UGWFk",
+          "roles": null
+        },
+        {
+          "current": true,
+          "id": "WOXSK_H0TQxFEKoeX583",
+          "roles": null
+        },
+        {
+          "current": true,
+          "id": "3VUpehfwCfBxEQ3qR2q6",
+          "roles": null
+        }
+      ],
+      "name": "FANATICS-FLAVOR",
+      "name_alias": null,
+      "name_original": "파나틱스 플레이버",
+      "parent_id": "03U6H6kIY3w7jWFWW2BL",
+      "thumb_url": "https://up.kpop.re/net/a0/26f5f16df2b0d1f9f344f5268d4bd42273115b.jpg",
+      "urls": [
+        "https://net.kpop.re/?id=AyPa81WVg9TAgzQw2zTr",
+        "https://selca.kastden.org/noona/group/fanaticsflavor/"
       ]
     },
     {
@@ -2411,6 +2783,7 @@
       "name": "DreamNote",
       "name_alias": null,
       "name_original": "드림노트",
+      "parent_id": null,
       "thumb_url": "https://up.kpop.re/net/0e/5eedb5bffca19eb52d21b7dc01e125e27a8150.jpg",
       "urls": [
         "https://net.kpop.re/?id=ZEMhd7-aOQHEgKvrMsT6",
@@ -2477,6 +2850,7 @@
       "name": "IZ*ONE",
       "name_alias": null,
       "name_original": "아이즈원",
+      "parent_id": null,
       "thumb_url": "https://up.kpop.re/net/e3/0dea53ff7c919b2f8b42bf97412bf449a64977.jpg",
       "urls": [
         "https://net.kpop.re/?id=YwoI7z7lGjm0-mYGKyU1",
@@ -2548,6 +2922,7 @@
       "name": "Pink Fantasy",
       "name_alias": null,
       "name_original": "핑크판타지",
+      "parent_id": null,
       "thumb_url": "https://up.kpop.re/net/4b/4d53fd185b6585ef868323864b9ae7598251b3.jpg",
       "urls": [
         "https://net.kpop.re/?id=qiRq2P8AA9_z7stC4v8r",
@@ -2599,6 +2974,7 @@
       "name": "GWSN",
       "name_alias": null,
       "name_original": "공원소녀",
+      "parent_id": null,
       "thumb_url": "https://up.kpop.re/net/02/efc30503577c1b64e19952cde1ceb391a76347.jpg",
       "urls": [
         "https://net.kpop.re/?id=mbjCSURE-tvpkgbH9BfT",
@@ -2675,6 +3051,7 @@
       "name": "LOONA",
       "name_alias": null,
       "name_original": "이달의 소녀",
+      "parent_id": null,
       "thumb_url": "https://up.kpop.re/net/37/33c6770e6d7c3ce3e43b7aa6ddced6e3108f76.jpg",
       "urls": [
         "https://net.kpop.re/?id=6IJKkQucqpcsb9zMBukg",
@@ -2741,6 +3118,7 @@
       "name": "Nature",
       "name_alias": null,
       "name_original": "네이처",
+      "parent_id": null,
       "thumb_url": "https://up.kpop.re/net/0a/de01ebb10f25ebe6e97ed7a353105ca6e3e2bd.jpg",
       "urls": [
         "https://net.kpop.re/?id=33SHSoKvlFL_l_ZFGZMy",
@@ -2802,10 +3180,43 @@
       "name": "Saturday",
       "name_alias": null,
       "name_original": "세러데이",
+      "parent_id": null,
       "thumb_url": "https://up.kpop.re/net/97/8816ef61830f089bdc6c94afb67a594a1bf09a.jpg",
       "urls": [
         "https://net.kpop.re/?id=RCCgdkcPlK0lBC52coJ0",
         "https://selca.kastden.org/noona/group/saturday/"
+      ]
+    },
+    {
+      "agency_name": "Jellyfish Entertainment",
+      "debut_date": "2018-07-10",
+      "disband_date": null,
+      "id": "_efTloLbQhyJll_Q5KqU",
+      "members": [
+        {
+          "current": false,
+          "id": "_tQnVKtFkhLg2xKW3WOC",
+          "roles": null
+        },
+        {
+          "current": false,
+          "id": "DFoJORXzRzs5gm8y0GdA",
+          "roles": null
+        },
+        {
+          "current": false,
+          "id": "B6u3Bkz9U6DsyAIisqmi",
+          "roles": null
+        }
+      ],
+      "name": "gugudan SEMINA",
+      "name_alias": null,
+      "name_original": "구구단 세미나",
+      "parent_id": "L6gxQrxsDZfxXIjy_re5",
+      "thumb_url": "https://up.kpop.re/net/38/8c3ab112ee3b6bd236334778880c82ab664f77.jpg",
+      "urls": [
+        "https://net.kpop.re/?id=_efTloLbQhyJll_Q5KqU",
+        "https://selca.kastden.org/noona/group/gugudansemina/"
       ]
     },
     {
@@ -2843,6 +3254,7 @@
       "name": "NeonPunch",
       "name_alias": null,
       "name_original": "네온펀치",
+      "parent_id": null,
       "thumb_url": "https://up.kpop.re/net/ce/8abbf71d86dc5ad9fcb9afa17150b21576bf89.jpg",
       "urls": [
         "https://net.kpop.re/?id=_e-gg-weJoRcakm7v0vZ",
@@ -2879,10 +3291,90 @@
       "name": "WJMK",
       "name_alias": null,
       "name_original": "우주미키",
+      "parent_id": null,
       "thumb_url": "https://up.kpop.re/net/4e/73d6e1a446eb84c8896ffdf23b76fc4c4b8708.jpg",
       "urls": [
         "https://net.kpop.re/?id=f3r9W1Pj-Ittall8C_F5",
         "https://selca.kastden.org/noona/group/wjmk/"
+      ]
+    },
+    {
+      "agency_name": "BlockBerry Creative",
+      "debut_date": "2018-05-30",
+      "disband_date": null,
+      "id": "-9V8FTJXEGRxJmvEM4Ts",
+      "members": [
+        {
+          "current": true,
+          "id": "LuQ-D7SdFgpOgUytDBf_",
+          "roles": null
+        },
+        {
+          "current": true,
+          "id": "SyNpWe2pleVWiqXlmpCO",
+          "roles": null
+        },
+        {
+          "current": false,
+          "id": "moLqw022fJ0P_-MeaKkN",
+          "roles": null
+        },
+        {
+          "current": true,
+          "id": "LmyNkaf4JjpLpJqL_wMs",
+          "roles": null
+        }
+      ],
+      "name": "LOONA yyxy",
+      "name_alias": null,
+      "name_original": "이달의 소녀 yyxy",
+      "parent_id": "6IJKkQucqpcsb9zMBukg",
+      "thumb_url": "https://up.kpop.re/net/08/5aad26b88f660c88c16fc0f36e031f7bc742c9.jpg",
+      "urls": [
+        "https://net.kpop.re/?id=-9V8FTJXEGRxJmvEM4Ts",
+        "https://selca.kastden.org/noona/group/loonayyxy/"
+      ]
+    },
+    {
+      "agency_name": "Pledis",
+      "debut_date": "2018-05-28",
+      "disband_date": null,
+      "id": "dlMpxvXDWPDktsfQnjnr",
+      "members": [
+        {
+          "current": false,
+          "id": "I8nm4q-wHUYjyL_UXhN4",
+          "roles": null
+        },
+        {
+          "current": false,
+          "id": "D2TYkGNgJVg0eA0fzvGm",
+          "roles": null
+        },
+        {
+          "current": false,
+          "id": "M1WwVJ3pMUps9PU5vOGZ",
+          "roles": null
+        },
+        {
+          "current": false,
+          "id": "TfhUwhKN9gKKe8r64BWT",
+          "roles": null
+        },
+        {
+          "current": false,
+          "id": "HYcEZ6jIbTJVpLR-UEan",
+          "roles": null
+        }
+      ],
+      "name": "Pristin V",
+      "name_alias": null,
+      "name_original": "프리스틴 V",
+      "parent_id": "twABzlJyXcomHahOMd_V",
+      "thumb_url": "https://up.kpop.re/net/a0/71a8f6fc639f73b6f69c33bf5cf893d0f6231e.jpg",
+      "urls": [
+        "https://net.kpop.re/?id=dlMpxvXDWPDktsfQnjnr",
+        "https://selca.kastden.org/noona/group/pristinv/"
       ]
     },
     {
@@ -2905,6 +3397,7 @@
       "name": "Khan",
       "name_alias": null,
       "name_original": "칸",
+      "parent_id": null,
       "thumb_url": "https://up.kpop.re/net/f0/2f74f4628d72448b424f2abc161aa03c8b2592.jpg",
       "urls": [
         "https://net.kpop.re/?id=HnX1Dkn6kFbx_AzNy-fH",
@@ -2966,6 +3459,7 @@
       "name": "UNI.T",
       "name_alias": null,
       "name_original": "유니티",
+      "parent_id": null,
       "thumb_url": "https://up.kpop.re/net/12/706fb2a47b0226f6c4610a7a6405406b3d6afc.jpg",
       "urls": [
         "https://net.kpop.re/?id=-i78Czz_Fl4zvsQMA0p4",
@@ -3012,10 +3506,43 @@
       "name": "(G)I-DLE",
       "name_alias": null,
       "name_original": "(여자)아이들",
+      "parent_id": null,
       "thumb_url": "https://up.kpop.re/net/e5/0c68dc6c1606bf87a055b1f2866178cbe9354a.jpg",
       "urls": [
         "https://net.kpop.re/?id=Ra9YUsYoP3Mz2xeSDGPS",
         "https://selca.kastden.org/noona/group/gidle/"
+      ]
+    },
+    {
+      "agency_name": "WM Entertainment",
+      "debut_date": "2018-04-02",
+      "disband_date": null,
+      "id": "yiUU7k4povSYiQo28OwB",
+      "members": [
+        {
+          "current": true,
+          "id": "Nxv27fbDDJL1DFtllsXj",
+          "roles": null
+        },
+        {
+          "current": true,
+          "id": "JECqGcby50Vd9Q4iL-Jw",
+          "roles": null
+        },
+        {
+          "current": true,
+          "id": "908IK3U2zY_XqYwM6e4F",
+          "roles": null
+        }
+      ],
+      "name": "Oh My Girl Banhana",
+      "name_alias": null,
+      "name_original": "오마이걸 반하나",
+      "parent_id": "ehiHpUhLBMXKWSObhlW-",
+      "thumb_url": "https://up.kpop.re/net/68/25bcdabc7f9681b450734adaa43e0c50ed13c9.jpg",
+      "urls": [
+        "https://net.kpop.re/?id=yiUU7k4povSYiQo28OwB",
+        "https://selca.kastden.org/noona/group/ohmygirlbanhana/"
       ]
     },
     {
@@ -3043,6 +3570,7 @@
       "name": "Honey Popcorn",
       "name_alias": null,
       "name_original": "허니팝콘",
+      "parent_id": null,
       "thumb_url": "https://up.kpop.re/net/00/4edbf5e02d589f28db97278edf68eed76fd1f6.jpg",
       "urls": [
         "https://net.kpop.re/?id=TP9UHl5P3YAvA3ojBUCl",
@@ -3104,6 +3632,7 @@
       "name": "fromis_9",
       "name_alias": null,
       "name_original": "프로미스나인",
+      "parent_id": null,
       "thumb_url": "https://up.kpop.re/net/ab/398e00d2c546c7bf451fda3ce0974fd1e918df.jpg",
       "urls": [
         "https://net.kpop.re/?id=I8CF8S6cfYZAkGFH9dH0",
@@ -3180,6 +3709,7 @@
       "name": "Busters",
       "name_alias": null,
       "name_original": "버스터즈",
+      "parent_id": null,
       "thumb_url": "https://up.kpop.re/net/0f/9d008dc4c1496e4860a6551db3c9b10446fe80.jpg",
       "urls": [
         "https://net.kpop.re/?id=IpWKnL1FxZX-QrrjEX92",
@@ -3231,10 +3761,43 @@
       "name": "Hash Tag",
       "name_alias": null,
       "name_original": "해시태그",
+      "parent_id": null,
       "thumb_url": "https://up.kpop.re/net/ef/2838ab98df70cd346e06cc522ca0787986f9a4.jpg",
       "urls": [
         "https://net.kpop.re/?id=OVj2IGXTM8oo_InIlwJf",
         "https://selca.kastden.org/noona/group/hashtag/"
+      ]
+    },
+    {
+      "agency_name": "BlockBerry Creative",
+      "debut_date": "2017-09-21",
+      "disband_date": null,
+      "id": "U2junyt2gq6QiK2ZBJ9e",
+      "members": [
+        {
+          "current": true,
+          "id": "h6nbfoPCNWMUlaPH51gR",
+          "roles": null
+        },
+        {
+          "current": true,
+          "id": "RiYBSiSg3YZx_ZMyxDkd",
+          "roles": null
+        },
+        {
+          "current": true,
+          "id": "Qq95Qj0M8mWPywPRTaVh",
+          "roles": null
+        }
+      ],
+      "name": "LOONA ODD EYE CIRCLE",
+      "name_alias": null,
+      "name_original": "이달의 소녀 오드아이써클",
+      "parent_id": "6IJKkQucqpcsb9zMBukg",
+      "thumb_url": "https://up.kpop.re/net/6e/cdfc38fef836c8b146caeeb3dda8e1df8b7104.jpg",
+      "urls": [
+        "https://net.kpop.re/?id=U2junyt2gq6QiK2ZBJ9e",
+        "https://selca.kastden.org/noona/group/loonaoec/"
       ]
     },
     {
@@ -3297,10 +3860,38 @@
       "name": "Good Day",
       "name_alias": null,
       "name_original": "굿데이",
+      "parent_id": null,
       "thumb_url": "https://up.kpop.re/net/f8/bd3c4167e804135978fa4120716812a896ccf2.jpg",
       "urls": [
         "https://net.kpop.re/?id=mZUy69GI6wFLperB-bQf",
         "https://selca.kastden.org/noona/group/goodday/"
+      ]
+    },
+    {
+      "agency_name": "Jellyfish Entertainment",
+      "debut_date": "2017-08-10",
+      "disband_date": null,
+      "id": "JgS1iME58atiRwNkoeTp",
+      "members": [
+        {
+          "current": false,
+          "id": "w259f7QnJRRca-eQN5uS",
+          "roles": null
+        },
+        {
+          "current": false,
+          "id": "_tQnVKtFkhLg2xKW3WOC",
+          "roles": null
+        }
+      ],
+      "name": "gugudan OGUOGU",
+      "name_alias": null,
+      "name_original": "구구단 오구오구",
+      "parent_id": "L6gxQrxsDZfxXIjy_re5",
+      "thumb_url": "https://up.kpop.re/net/9a/1be721676bfa905e52b8451cfb1ee4a3347bfa.jpg",
+      "urls": [
+        "https://net.kpop.re/?id=JgS1iME58atiRwNkoeTp",
+        "https://selca.kastden.org/noona/group/gugudanoguogu/"
       ]
     },
     {
@@ -3353,6 +3944,7 @@
       "name": "Weki Meki",
       "name_alias": null,
       "name_original": "위키미키",
+      "parent_id": null,
       "thumb_url": "https://up.kpop.re/net/d2/d61b3ad924136f315314ec6c374efe05a37530.jpg",
       "urls": [
         "https://net.kpop.re/?id=diQi-cXAwKVYx-z_2Vgk",
@@ -3399,6 +3991,7 @@
       "name": "P.O.P",
       "name_alias": null,
       "name_original": "피오피",
+      "parent_id": null,
       "thumb_url": "https://up.kpop.re/net/7e/baca16022c6183a4e27941b42b3cb13d95442b.jpg",
       "urls": [
         "https://net.kpop.re/?id=ddVIderGifdVG5YX4HLH",
@@ -3425,6 +4018,7 @@
       "name": "KARD",
       "name_alias": null,
       "name_original": "KARD",
+      "parent_id": null,
       "thumb_url": "https://up.kpop.re/net/8a/f94411e9a22c878e92db82544c98a4758ee31b.jpg",
       "urls": [
         "https://net.kpop.re/?id=hXvi_41D8Q_RX1GRFQgY",
@@ -3456,6 +4050,7 @@
       "name": "S.E.T",
       "name_alias": null,
       "name_original": "에스이티",
+      "parent_id": null,
       "thumb_url": "https://up.kpop.re/net/3c/e51714575037be8da4633010e3a5ddc04c1ff0.jpg",
       "urls": [
         "https://net.kpop.re/?id=y633XBjJLwzHh4l7958Y",
@@ -3492,6 +4087,7 @@
       "name": "G-reyish",
       "name_alias": null,
       "name_original": "그레이시",
+      "parent_id": null,
       "thumb_url": "https://up.kpop.re/net/2c/f3852ad605b5755d9aad3ee60fa7599783ef13.jpg",
       "urls": [
         "https://net.kpop.re/?id=Jrq7g-jrfiJLHkVDreou",
@@ -3543,6 +4139,7 @@
       "name": "Alice",
       "name_alias": null,
       "name_original": "앨리스",
+      "parent_id": null,
       "thumb_url": "https://up.kpop.re/net/7e/da2411e1bd1ed1fdf4d489598b88bd2740c673.jpg",
       "urls": [
         "https://net.kpop.re/?id=H3ZhpgLmIIxgfN2x5vBk",
@@ -3609,10 +4206,48 @@
       "name": "Pristin",
       "name_alias": null,
       "name_original": "프리스틴",
+      "parent_id": null,
       "thumb_url": "https://up.kpop.re/net/91/01d8886f1607b4ee70db3e79ceb92dcd17fdc8.jpg",
       "urls": [
         "https://net.kpop.re/?id=twABzlJyXcomHahOMd_V",
         "https://selca.kastden.org/noona/group/pristin/"
+      ]
+    },
+    {
+      "agency_name": "BlockBerry Creative",
+      "debut_date": "2017-03-12",
+      "disband_date": null,
+      "id": "LAXHEg-2Qsd1o1IWNGGo",
+      "members": [
+        {
+          "current": true,
+          "id": "7ntW4E11G-oIPMLFnvoI",
+          "roles": null
+        },
+        {
+          "current": true,
+          "id": "YReVvhjfcG3rNbYYQvDN",
+          "roles": null
+        },
+        {
+          "current": true,
+          "id": "lIatQ-S2oStdD7ebaG1E",
+          "roles": null
+        },
+        {
+          "current": true,
+          "id": "DSEfgy1kMgQcVmY9Hlpy",
+          "roles": null
+        }
+      ],
+      "name": "LOONA 1/3",
+      "name_alias": null,
+      "name_original": "이달의 소녀 1/3",
+      "parent_id": "6IJKkQucqpcsb9zMBukg",
+      "thumb_url": "https://up.kpop.re/net/79/893cc671d5152ec877fd6f6e1d2ee1422f942e.jpg",
+      "urls": [
+        "https://net.kpop.re/?id=LAXHEg-2Qsd1o1IWNGGo",
+        "https://selca.kastden.org/noona/group/loona13/"
       ]
     },
     {
@@ -3660,6 +4295,7 @@
       "name": "Dreamcatcher",
       "name_alias": null,
       "name_original": "드림캐쳐",
+      "parent_id": null,
       "thumb_url": "https://up.kpop.re/net/ed/42b44a74c5bcf980235515003d23c6c20a1540.jpg",
       "urls": [
         "https://net.kpop.re/?id=f27yxDQvaomaX-1oS19b",
@@ -3706,6 +4342,7 @@
       "name": "BONUSbaby",
       "name_alias": null,
       "name_original": "보너스베이비",
+      "parent_id": null,
       "thumb_url": "https://up.kpop.re/net/59/b7423c020ca890482dd5acbc05abac4f0cb866.jpg",
       "urls": [
         "https://net.kpop.re/?id=PRlJLHdB9IEu49fVGX8g",
@@ -3727,6 +4364,7 @@
       "name": "H.U.B",
       "name_alias": null,
       "name_original": "에이치유비",
+      "parent_id": null,
       "thumb_url": "https://up.kpop.re/net/17/51c305fd6ab2047d83c512115676182784f54b.jpg",
       "urls": [
         "https://net.kpop.re/?id=vEw4JvU-2WO-klhtSwi7",
@@ -3788,6 +4426,7 @@
       "name": "Momoland",
       "name_alias": null,
       "name_original": "모모랜드",
+      "parent_id": null,
       "thumb_url": "https://up.kpop.re/net/63/69c3e6acdd60b1081a03582bfa23eda73c7aa1.jpg",
       "urls": [
         "https://net.kpop.re/?id=yx3kEoXikZOOg08Gag4C",
@@ -3814,6 +4453,7 @@
       "name": "Real Girls Project",
       "name_alias": null,
       "name_original": "리얼걸 프로젝트",
+      "parent_id": null,
       "thumb_url": "https://up.kpop.re/net/29/a61cfee78796458923485e9dd87c95e090e6b0.jpg",
       "urls": [
         "https://net.kpop.re/?id=QOgcDLNEDYUHcY0KF8UB",
@@ -3855,6 +4495,7 @@
       "name": "I.B.I",
       "name_alias": null,
       "name_original": "아이비아이",
+      "parent_id": null,
       "thumb_url": "https://up.kpop.re/net/70/8ac33e63e625a133ab6d5cc82da5aa2aca03a0.jpg",
       "urls": [
         "https://net.kpop.re/?id=NH7I93H95ORGGDfWBSQ5",
@@ -3891,6 +4532,7 @@
       "name": "Blackpink",
       "name_alias": null,
       "name_original": "블랙핑크",
+      "parent_id": null,
       "thumb_url": "https://up.kpop.re/net/95/7d09ee084bc9f2b35a83d51db64a7df8e592be.jpg",
       "urls": [
         "https://net.kpop.re/?id=0MPEMIqvhKPMLaPvh7s8",
@@ -3952,6 +4594,7 @@
       "name": "gugudan",
       "name_alias": null,
       "name_original": "구구단",
+      "parent_id": null,
       "thumb_url": "https://up.kpop.re/net/a1/ffdbd76448df39c21b04caad9f7445af82c61a.jpg",
       "urls": [
         "https://net.kpop.re/?id=L6gxQrxsDZfxXIjy_re5",
@@ -4003,6 +4646,7 @@
       "name": "A.De",
       "name_alias": null,
       "name_original": "에이디이",
+      "parent_id": null,
       "thumb_url": "https://up.kpop.re/net/3d/f78e9c77ff284c35cfcb8c31b11e75ab8d6485.jpg",
       "urls": [
         "https://net.kpop.re/?id=OIckldRPtYVRi6TpFIei",
@@ -4074,6 +4718,7 @@
       "name": "I.O.I",
       "name_alias": null,
       "name_original": "아이오아이",
+      "parent_id": null,
       "thumb_url": "https://up.kpop.re/net/32/7473a8ccb047a0e39853f84e92403c82224d94.jpg",
       "urls": [
         "https://net.kpop.re/?id=N1hM4R5q-H1-wS58KtX3",
@@ -4155,6 +4800,7 @@
       "name": "WJSN",
       "name_alias": "Cosmic Girls",
       "name_original": "우주소녀",
+      "parent_id": null,
       "thumb_url": "https://up.kpop.re/net/50/4b51e2983062104c1334c2e0f72b516d17b889.jpg",
       "urls": [
         "https://net.kpop.re/?id=_Xr8i6j68t6bncM_nItb",
@@ -4181,6 +4827,7 @@
       "name": "CoCoSoRi",
       "name_alias": null,
       "name_original": "코코소리",
+      "parent_id": null,
       "thumb_url": "https://up.kpop.re/net/41/4a7b4a770131cb62ca3d332facaecf57fac9c5.jpg",
       "urls": [
         "https://net.kpop.re/?id=W9jZ1B4PZB-5eZYDix7m",
@@ -4242,6 +4889,7 @@
       "name": "TWICE",
       "name_alias": null,
       "name_original": "트와이스",
+      "parent_id": null,
       "thumb_url": "https://up.kpop.re/net/9d/6b92b980795b49a5f2720a54f8c6f670172a95.jpg",
       "urls": [
         "https://net.kpop.re/?id=rwnrMzuDKHu0DT4hiM5k",
@@ -4303,6 +4951,7 @@
       "name": "DIA",
       "name_alias": null,
       "name_original": "다이아",
+      "parent_id": null,
       "thumb_url": "https://up.kpop.re/net/d2/d5ef6ab913aafbf8f7e63c66f30612a1dcf9f4.jpg",
       "urls": [
         "https://net.kpop.re/?id=NhWu-gP1iT3aT0YnXGsh",
@@ -4359,6 +5008,7 @@
       "name": "April",
       "name_alias": null,
       "name_original": "에이프릴",
+      "parent_id": null,
       "thumb_url": "https://up.kpop.re/net/9f/1bf6c0e1f36dc6b29e5e3de9f6c72695f2ceea.jpg",
       "urls": [
         "https://net.kpop.re/?id=1XyGxDDAXvROlWhL0D2F",
@@ -4385,6 +5035,7 @@
       "name": "LoveUs",
       "name_alias": null,
       "name_original": "러브어스",
+      "parent_id": null,
       "thumb_url": "https://up.kpop.re/net/87/674fecb29237489d5629ed51a822a2259d6adc.jpg",
       "urls": [
         "https://net.kpop.re/?id=30VJwQk0yz4auE0h2yj3",
@@ -4426,6 +5077,7 @@
       "name": "Playback",
       "name_alias": null,
       "name_original": "플레이백",
+      "parent_id": null,
       "thumb_url": "https://up.kpop.re/net/6b/0b953bfbbf5992c8568f8cdc281572aeb98515.jpg",
       "urls": [
         "https://net.kpop.re/?id=GAhPz1hrP4lMJy1GOboP",
@@ -4482,6 +5134,7 @@
       "name": "Oh My Girl",
       "name_alias": null,
       "name_original": "오마이걸",
+      "parent_id": null,
       "thumb_url": "https://up.kpop.re/net/96/cf4cb671d63e01a4ee3cc9b98b78b0e9b08cf6.jpg",
       "urls": [
         "https://net.kpop.re/?id=ehiHpUhLBMXKWSObhlW-",
@@ -4513,6 +5166,7 @@
       "name": "The Ark",
       "name_alias": null,
       "name_original": "디아크",
+      "parent_id": null,
       "thumb_url": "https://up.kpop.re/net/47/5468417e55b0cc6d0c64c4811fa9897cac02be.jpg",
       "urls": [
         "https://net.kpop.re/?id=CjtrZOYpnrZ3uf_cO7qg",
@@ -4564,6 +5218,7 @@
       "name": "CLC",
       "name_alias": null,
       "name_original": "씨엘씨",
+      "parent_id": null,
       "thumb_url": "https://up.kpop.re/net/85/a05a8e22a0cdda9fad4be01530db551fb5a681.jpg",
       "urls": [
         "https://net.kpop.re/?id=NqFTCbmQgmvXv5uIz3t5",
@@ -4610,6 +5265,7 @@
       "name": "GFRIEND",
       "name_alias": null,
       "name_original": "여자친구",
+      "parent_id": null,
       "thumb_url": "https://up.kpop.re/net/d0/bb1cc4221bee09c3dc9c31bed4ec5ecc96e6dc.jpg",
       "urls": [
         "https://net.kpop.re/?id=soqzNRHKikAJWE4lhF-n",
@@ -4661,6 +5317,7 @@
       "name": "Sonamoo",
       "name_alias": null,
       "name_original": "소나무",
+      "parent_id": null,
       "thumb_url": "https://up.kpop.re/net/86/28047e342b468183ee7d4e5c5336f87a4e11ad.jpg",
       "urls": [
         "https://net.kpop.re/?id=cEnOp7gp_0rdaVC_Bq8a",
@@ -4717,6 +5374,7 @@
       "name": "Lovelyz",
       "name_alias": null,
       "name_original": "러블리즈",
+      "parent_id": null,
       "thumb_url": "https://up.kpop.re/net/1a/0e7032569c757119cd479a96ec5ab6c1bd19aa.jpg",
       "urls": [
         "https://net.kpop.re/?id=0M2t0biwNANvnDpkbn1s",
@@ -4758,10 +5416,38 @@
       "name": "MINX",
       "name_alias": null,
       "name_original": "밍스",
+      "parent_id": null,
       "thumb_url": "https://up.kpop.re/net/fa/0b9ffa00f0a66600d07abf7222c08c7e0c8289.jpg",
       "urls": [
         "https://net.kpop.re/?id=HwNVRwkP--87QZ0GlZrf",
         "https://selca.kastden.org/noona/group/minx/"
+      ]
+    },
+    {
+      "agency_name": "Star Empire Entertainment",
+      "debut_date": "2014-09-03",
+      "disband_date": null,
+      "id": "pcEoIhVWXmBvVgKRB2dC",
+      "members": [
+        {
+          "current": false,
+          "id": "7sNNv8p2eSp1FRwOlvsE",
+          "roles": null
+        },
+        {
+          "current": false,
+          "id": "_1Wi50OILDrcui_7fNm3",
+          "roles": null
+        }
+      ],
+      "name": "Nasty Nasty",
+      "name_alias": null,
+      "name_original": "네스티네스티",
+      "parent_id": "zHtC-C6bkdAIhl4G1z2q",
+      "thumb_url": "https://up.kpop.re/net/d5/4ca69ac8819b00538d2ad9d256d341b2cf8896.jpg",
+      "urls": [
+        "https://net.kpop.re/?id=pcEoIhVWXmBvVgKRB2dC",
+        "https://selca.kastden.org/noona/group/nastynasty/"
       ]
     },
     {
@@ -4804,6 +5490,7 @@
       "name": "Laboum",
       "name_alias": null,
       "name_original": "라붐",
+      "parent_id": null,
       "thumb_url": "https://up.kpop.re/net/05/96c20b507e44d3d7da9e656c4b3fe30ed10e04.jpg",
       "urls": [
         "https://net.kpop.re/?id=vAgeCY3EWe_nrvmAeWbO",
@@ -4845,6 +5532,7 @@
       "name": "Red Velvet",
       "name_alias": null,
       "name_original": "레드벨벳",
+      "parent_id": null,
       "thumb_url": "https://up.kpop.re/net/40/f7e3d367cbfc953adb6e9d4a6dcc0ca84dfedb.jpg",
       "urls": [
         "https://net.kpop.re/?id=7KOGqnkBambJhEWv06v3",
@@ -4881,6 +5569,7 @@
       "name": "Mamamoo",
       "name_alias": null,
       "name_original": "마마무",
+      "parent_id": null,
       "thumb_url": "https://up.kpop.re/net/eb/32afb33b160979357e77f7e5fd740e095ddf1b.jpg",
       "urls": [
         "https://net.kpop.re/?id=yQAcijh9DbgO9JEAajHS",
@@ -4917,6 +5606,7 @@
       "name": "Bob Girls",
       "name_alias": null,
       "name_original": "단발머리",
+      "parent_id": null,
       "thumb_url": "https://up.kpop.re/net/84/c4e3ddc3f319dbf1873e4845333a5359f3fae9.jpg",
       "urls": [
         "https://net.kpop.re/?id=8TX1ooCCnGNiXG1eNxOI",
@@ -4968,6 +5658,7 @@
       "name": "Berry Good",
       "name_alias": null,
       "name_original": "베리굿",
+      "parent_id": null,
       "thumb_url": "https://up.kpop.re/net/fa/5a5f27bfafaa1ddc5e102ffdcde8842c1b2598.jpg",
       "urls": [
         "https://net.kpop.re/?id=EnBwVk_LWr2OA3-4WPQw",
@@ -4989,6 +5680,7 @@
       "name": "AKMU",
       "name_alias": null,
       "name_original": "악동뮤지션",
+      "parent_id": null,
       "thumb_url": "https://up.kpop.re/net/6b/bc5fc3d7ef7e9bbb8077066bfe1320a719b4f9.jpg",
       "urls": [
         "https://net.kpop.re/?id=WzL1TF8yAEWqVr2B1gC1",
@@ -5025,6 +5717,7 @@
       "name": "Melody Day",
       "name_alias": null,
       "name_original": "멜로디데이",
+      "parent_id": null,
       "thumb_url": "https://up.kpop.re/net/06/eaef66f639b5a0ede54b3de7f8add1e1f29b15.jpg",
       "urls": [
         "https://net.kpop.re/?id=mi4okC-pEY1Kj87L3JRQ",
@@ -5051,10 +5744,48 @@
       "name": "BEBOP",
       "name_alias": null,
       "name_original": "비밥",
+      "parent_id": null,
       "thumb_url": "https://up.kpop.re/net/82/f2457b37ae4ec2dd410e7392950c7b6137b290.jpg",
       "urls": [
         "https://net.kpop.re/?id=2FLt7bACdmi8j6HvoSnn",
         "https://selca.kastden.org/noona/group/bebop/"
+      ]
+    },
+    {
+      "agency_name": "DSP",
+      "debut_date": "2014-01-20",
+      "disband_date": null,
+      "id": "w7_LbciUnUY6kOQ3yPNv",
+      "members": [
+        {
+          "current": false,
+          "id": "L_SHjKkPw9_n5LabvqCl",
+          "roles": null
+        },
+        {
+          "current": false,
+          "id": "aUOwE74QHJfmeVtOQbnP",
+          "roles": null
+        },
+        {
+          "current": false,
+          "id": "az99ZkRECIFmAnm_Hltq",
+          "roles": null
+        },
+        {
+          "current": false,
+          "id": "ACmOF8YxTzSMiaALxt8G",
+          "roles": null
+        }
+      ],
+      "name": "Rainbow Blaxx",
+      "name_alias": null,
+      "name_original": "레인보우 블랙",
+      "parent_id": "D2uv2gn13fJlqrlHBArm",
+      "thumb_url": "https://up.kpop.re/net/31/dea515e1e3e51c478910d7c18312b982e3190b.jpg",
+      "urls": [
+        "https://net.kpop.re/?id=w7_LbciUnUY6kOQ3yPNv",
+        "https://selca.kastden.org/noona/group/rainbow_blaxx/"
       ]
     },
     {
@@ -5072,6 +5803,7 @@
       "name": "TREN-D",
       "name_alias": null,
       "name_original": "트랜디",
+      "parent_id": null,
       "thumb_url": "https://up.kpop.re/net/4f/ddb2612c30300e26894267a9050deb1c758b69.jpg",
       "urls": [
         "https://net.kpop.re/?id=e1rWMU1lneoeEpZIM5ao",
@@ -5123,6 +5855,7 @@
       "name": "WASSUP",
       "name_alias": null,
       "name_original": "와썹",
+      "parent_id": null,
       "thumb_url": "https://up.kpop.re/net/d0/ad10606440ba56dcdc8b6bae828f38f4cd3b17.jpg",
       "urls": [
         "https://net.kpop.re/?id=NgMRd9fMPioay-jrZgyO",
@@ -5159,6 +5892,7 @@
       "name": "BESTie",
       "name_alias": null,
       "name_original": "베스티",
+      "parent_id": null,
       "thumb_url": "https://up.kpop.re/net/63/14c54b3a323089ae288ddbe13b4035889c88e6.jpg",
       "urls": [
         "https://net.kpop.re/?id=FEy3LQ2UiyyMZdb86A2R",
@@ -5195,10 +5929,48 @@
       "name": "2EYES",
       "name_alias": null,
       "name_original": "투아이즈",
+      "parent_id": null,
       "thumb_url": "https://up.kpop.re/net/d2/90e68df1747c8c986d5f1a43c38a310bfb5d92.jpg",
       "urls": [
         "https://net.kpop.re/?id=tV_uaCf2iHEAaAyMXh9P",
         "https://selca.kastden.org/noona/group/2eyes/"
+      ]
+    },
+    {
+      "agency_name": "MBK Entertainment",
+      "debut_date": "2013-04-12",
+      "disband_date": null,
+      "id": "AS7wYxRd9i-90pvbxNBg",
+      "members": [
+        {
+          "current": false,
+          "id": "L1rqoMb6HLycZQjbDEoD",
+          "roles": null
+        },
+        {
+          "current": true,
+          "id": "fjm_nf4KTgwfBmjLozxO",
+          "roles": null
+        },
+        {
+          "current": true,
+          "id": "vOxh5FCgmdS8DajvDQ99",
+          "roles": null
+        },
+        {
+          "current": true,
+          "id": "Nlrj7pDeacD8i6KbG_Ht",
+          "roles": null
+        }
+      ],
+      "name": "T-ara N4",
+      "name_alias": null,
+      "name_original": "티아라 N4",
+      "parent_id": "BDrk1S7LZ47I36hsu4Mr",
+      "thumb_url": "https://up.kpop.re/net/4a/82da46605852d94cb64ab896967ddb4256fef2.jpg",
+      "urls": [
+        "https://net.kpop.re/?id=AS7wYxRd9i-90pvbxNBg",
+        "https://selca.kastden.org/noona/group/tara_n4/"
       ]
     },
     {
@@ -5236,10 +6008,65 @@
       "name": "Ladies' Code",
       "name_alias": null,
       "name_original": "레이디스 코드",
+      "parent_id": null,
       "thumb_url": "https://up.kpop.re/net/c2/8b6aec7c41894407b49d75d78d7e8e9b810127.jpg",
       "urls": [
         "https://net.kpop.re/?id=mMLYzaS79hqlaRFg5agF",
         "https://selca.kastden.org/noona/group/ladiescode/"
+      ]
+    },
+    {
+      "agency_name": "Gamgak",
+      "debut_date": "2013-02-16",
+      "disband_date": null,
+      "id": "IjUw6oUcpRr8iphATaDb",
+      "members": [
+        {
+          "current": true,
+          "id": "a_WTTFjx9x7GF_iMB4pW",
+          "roles": null
+        },
+        {
+          "current": true,
+          "id": "EV52qgHEg27k7uP568Fs",
+          "roles": null
+        }
+      ],
+      "name": "DASONI",
+      "name_alias": null,
+      "name_original": "다소니",
+      "parent_id": "iKphOmK9oGNj5KvHbN2m",
+      "thumb_url": "https://up.kpop.re/net/42/890039f8e4765ef073b8590aae0dbbda4ee99b.jpg",
+      "urls": [
+        "https://net.kpop.re/?id=IjUw6oUcpRr8iphATaDb",
+        "https://selca.kastden.org/noona/group/dasoni/"
+      ]
+    },
+    {
+      "agency_name": "Cube Entertainment",
+      "debut_date": "2013-01-17",
+      "disband_date": null,
+      "id": "_sXrbOXa2PAQLLibJg4z",
+      "members": [
+        {
+          "current": false,
+          "id": "5slGP0L2POfDp2uPuLkH",
+          "roles": null
+        },
+        {
+          "current": false,
+          "id": "vLMMQ0BjLpHwmGCBaK06",
+          "roles": null
+        }
+      ],
+      "name": "2Yoon",
+      "name_alias": null,
+      "name_original": "투윤",
+      "parent_id": "74zZDjC0r-YPMkytPHln",
+      "thumb_url": "https://up.kpop.re/net/b8/7b2dc11b4176320f4a3c881d0b18e8f9bb5e5b.jpg",
+      "urls": [
+        "https://net.kpop.re/?id=_sXrbOXa2PAQLLibJg4z",
+        "https://selca.kastden.org/noona/group/2yoon/"
       ]
     },
     {
@@ -5277,6 +6104,7 @@
       "name": "BPPOP",
       "name_alias": null,
       "name_original": "비피팝",
+      "parent_id": null,
       "thumb_url": "https://up.kpop.re/net/8e/7f54ae8926f80383ca8d83f916b66ddad8c088.jpg",
       "urls": [
         "https://net.kpop.re/?id=zRKXEwceL9jwEKrDTCki",
@@ -5298,6 +6126,7 @@
       "name": "The SeeYa",
       "name_alias": null,
       "name_original": "더 씨야",
+      "parent_id": null,
       "thumb_url": "https://up.kpop.re/net/c0/c426a585717dd6624426bc7d4af31bb3bdf225.jpg",
       "urls": [
         "https://net.kpop.re/?id=wrwTkRyw30rgzG4vjw8k",
@@ -5344,6 +6173,7 @@
       "name": "Fiestar",
       "name_alias": null,
       "name_original": "피에스타",
+      "parent_id": null,
       "thumb_url": "https://up.kpop.re/net/88/17c3a626d891212a677c342757ca3922bda1f6.jpg",
       "urls": [
         "https://net.kpop.re/?id=DPrQ-B3Y0ubobujL74VC",
@@ -5365,6 +6195,7 @@
       "name": "Tiny-G",
       "name_alias": null,
       "name_original": "타이니지",
+      "parent_id": null,
       "thumb_url": "https://up.kpop.re/net/6c/1ada0a49efb1fa13e9e5113a6b9ad45e467bad.jpg",
       "urls": [
         "https://net.kpop.re/?id=zrxtxmxgvZGl5Jcc1z1s",
@@ -5386,6 +6217,7 @@
       "name": "EvoL",
       "name_alias": null,
       "name_original": "이블",
+      "parent_id": null,
       "thumb_url": "https://up.kpop.re/net/8a/41a9220a4d746b007ae89525e0ed3df6aee1fe.jpg",
       "urls": [
         "https://net.kpop.re/?id=0DSNK8iJpFOpsHg-KlQP",
@@ -5442,6 +6274,7 @@
       "name": "AOA",
       "name_alias": null,
       "name_original": "에이오에이",
+      "parent_id": null,
       "thumb_url": "https://up.kpop.re/net/7c/4b92ccd1d968a30666e0eb45eb625c9937d566.jpg",
       "urls": [
         "https://net.kpop.re/?id=QdjbtH1qSQ_H_1CYXF2l",
@@ -5483,6 +6316,7 @@
       "name": "Tahiti",
       "name_alias": null,
       "name_original": "타히티",
+      "parent_id": null,
       "thumb_url": "https://up.kpop.re/net/77/8e99422f3499d6192a96ac209ee972d7535c2c.jpg",
       "urls": [
         "https://net.kpop.re/?id=Y433AL40rPogimH_mjLn",
@@ -5524,6 +6358,7 @@
       "name": "Crayon Pop",
       "name_alias": null,
       "name_original": "크레용팝",
+      "parent_id": null,
       "thumb_url": "https://up.kpop.re/net/6c/ac9690bf572311057be898385f56ce5625b872.jpg",
       "urls": [
         "https://net.kpop.re/?id=AbMrNaEw9Hopk4tqICsg",
@@ -5565,6 +6400,7 @@
       "name": "GLAM",
       "name_alias": null,
       "name_original": "글램",
+      "parent_id": null,
       "thumb_url": "https://up.kpop.re/net/f5/a886462a9bf77f1dac7a71db67bf46c933af17.jpg",
       "urls": [
         "https://net.kpop.re/?id=qFblMxNSiXF_xKPR1NhB",
@@ -5621,10 +6457,43 @@
       "name": "Hello Venus",
       "name_alias": null,
       "name_original": "헬로비너스",
+      "parent_id": null,
       "thumb_url": "https://up.kpop.re/net/4b/92a5cbd732c831fd8fdaabce5eef8f20954b4d.jpg",
       "urls": [
         "https://net.kpop.re/?id=wwY4pZoI3Pq6tK-SD88b",
         "https://selca.kastden.org/noona/group/hellovenus/"
+      ]
+    },
+    {
+      "agency_name": "SM Entertainment",
+      "debut_date": "2012-05-02",
+      "disband_date": null,
+      "id": "Z9g_47kJoJCC-uRrFJ5m",
+      "members": [
+        {
+          "current": true,
+          "id": "aI2T8mHv7HdrTf-5k2En",
+          "roles": null
+        },
+        {
+          "current": true,
+          "id": "VppAiWUaAtHw6RaZ2MMx",
+          "roles": null
+        },
+        {
+          "current": true,
+          "id": "OoggfKHiSD58ADcQLvaK",
+          "roles": null
+        }
+      ],
+      "name": "TaeTiSeo",
+      "name_alias": null,
+      "name_original": "태티서",
+      "parent_id": "hyZ0ePPCi1KJAT4hMUN0",
+      "thumb_url": "https://up.kpop.re/net/b2/4ed2741fbd7742b15d4e150427235ea2468f2c.jpg",
+      "urls": [
+        "https://net.kpop.re/?id=Z9g_47kJoJCC-uRrFJ5m",
+        "https://selca.kastden.org/noona/group/taetiseo/"
       ]
     },
     {
@@ -5662,6 +6531,7 @@
       "name": "EXID",
       "name_alias": null,
       "name_original": "이엑스아이디",
+      "parent_id": null,
       "thumb_url": "https://up.kpop.re/net/46/1bd82a51e91fbbac325d5bd643d223189cd4a2.jpg",
       "urls": [
         "https://net.kpop.re/?id=iKphOmK9oGNj5KvHbN2m",
@@ -5703,10 +6573,43 @@
       "name": "SPICA",
       "name_alias": null,
       "name_original": "스피카",
+      "parent_id": null,
       "thumb_url": "https://up.kpop.re/net/34/b17ba184bb7c7596d29af97dd4950b70bb20c6.jpg",
       "urls": [
         "https://net.kpop.re/?id=5XZhYGO-SiW0M_m1o5uY",
         "https://selca.kastden.org/noona/group/spica/"
+      ]
+    },
+    {
+      "agency_name": "DSP",
+      "debut_date": "2012-01-11",
+      "disband_date": null,
+      "id": "0Ye5Yj4MoMa1U6GEBh3c",
+      "members": [
+        {
+          "current": false,
+          "id": "L_SHjKkPw9_n5LabvqCl",
+          "roles": null
+        },
+        {
+          "current": false,
+          "id": "O490WVt4lrKyebJMVlGU",
+          "roles": null
+        },
+        {
+          "current": false,
+          "id": "az99ZkRECIFmAnm_Hltq",
+          "roles": null
+        }
+      ],
+      "name": "Rainbow Pixie",
+      "name_alias": null,
+      "name_original": "레인보우 픽시",
+      "parent_id": "D2uv2gn13fJlqrlHBArm",
+      "thumb_url": "https://up.kpop.re/net/3c/ad731f1c11196ad3729f32c7c80e5cc2bc8736.jpg",
+      "urls": [
+        "https://net.kpop.re/?id=0Ye5Yj4MoMa1U6GEBh3c",
+        "https://selca.kastden.org/noona/group/rainbow_pixie/"
       ]
     },
     {
@@ -5724,6 +6627,7 @@
       "name": "HKT48",
       "name_alias": null,
       "name_original": "HKT48",
+      "parent_id": null,
       "thumb_url": "https://up.kpop.re/net/8c/481cd0d7461dc326e093e76ab452fb55cb0868.jpg",
       "urls": [
         "https://net.kpop.re/?id=XB3X9-XcPS8Jmn4IgraI",
@@ -5760,6 +6664,7 @@
       "name": "Stellar",
       "name_alias": null,
       "name_original": "스텔라",
+      "parent_id": null,
       "thumb_url": "https://up.kpop.re/net/1a/3e07a25a77501bb600cd6c2bca01ae3b55ccd1.jpg",
       "urls": [
         "https://net.kpop.re/?id=2Ym7S8kzh16bTUuNNUZn",
@@ -5781,10 +6686,38 @@
       "name": "Chocolat",
       "name_alias": null,
       "name_original": "쇼콜라",
+      "parent_id": null,
       "thumb_url": "https://up.kpop.re/net/d8/365409a54bc37b7d1d92f1dfd4c51006f22438.jpg",
       "urls": [
         "https://net.kpop.re/?id=r_irS-qm91TPEuL99lmL",
         "https://selca.kastden.org/noona/group/chocolat/"
+      ]
+    },
+    {
+      "agency_name": "Starship Entertainment",
+      "debut_date": "2011-05-03",
+      "disband_date": null,
+      "id": "-33oXWUU74JcGM0mDvgt",
+      "members": [
+        {
+          "current": false,
+          "id": "9P-3DiIEkavBUNoijPmL",
+          "roles": null
+        },
+        {
+          "current": false,
+          "id": "5TG2sX09sB7wUeoE8Nem",
+          "roles": null
+        }
+      ],
+      "name": "Sistar19",
+      "name_alias": null,
+      "name_original": "씨스타19",
+      "parent_id": "7sK4Y7OnT6DSFmw8KEXH",
+      "thumb_url": "https://up.kpop.re/net/d6/6dce4980a0a277748f4de6035188a73056860d.jpg",
+      "urls": [
+        "https://net.kpop.re/?id=-33oXWUU74JcGM0mDvgt",
+        "https://selca.kastden.org/noona/group/sistar19/"
       ]
     },
     {
@@ -5827,6 +6760,7 @@
       "name": "Apink",
       "name_alias": null,
       "name_original": "에이핑크",
+      "parent_id": null,
       "thumb_url": "https://up.kpop.re/net/99/18ae550f93b75961b6ac6736cfff776046b037.jpg",
       "urls": [
         "https://net.kpop.re/?id=HH4mYi0Z7NhRWX5JEQfB",
@@ -5868,6 +6802,7 @@
       "name": "Brave Girls",
       "name_alias": null,
       "name_original": "브레이브걸스",
+      "parent_id": null,
       "thumb_url": "https://up.kpop.re/net/19/f50e884fecf92663ab61e361ed6f8b52253ac0.jpg",
       "urls": [
         "https://net.kpop.re/?id=1ijWwZMFZq3b95L3vrwr",
@@ -5889,6 +6824,7 @@
       "name": "F-ve Dolls",
       "name_alias": null,
       "name_original": "파이브돌스",
+      "parent_id": null,
       "thumb_url": "https://up.kpop.re/net/69/a2dfbdf61de47dad7039799a5e82906c266fd0.jpg",
       "urls": [
         "https://net.kpop.re/?id=nhu2TdHtA8c81tL62WfP",
@@ -5940,6 +6876,7 @@
       "name": "Dal★Shabet",
       "name_alias": null,
       "name_original": "달샤벳",
+      "parent_id": null,
       "thumb_url": "https://up.kpop.re/net/9d/61b8d32c398c9789176ef84892a14ce053e8d6.jpg",
       "urls": [
         "https://net.kpop.re/?id=wKDzhrEy34tc3QithyFH",
@@ -5966,6 +6903,7 @@
       "name": "NMB48",
       "name_alias": null,
       "name_original": "NMB48",
+      "parent_id": null,
       "thumb_url": "https://up.kpop.re/net/8e/3e2431091bd0d9b27e6dd99fdf851c62ea7fe1.jpg",
       "urls": [
         "https://net.kpop.re/?id=xjOg8jpCckWoRMocEk97",
@@ -6037,6 +6975,7 @@
       "name": "Nine Muses",
       "name_alias": null,
       "name_original": "나인뮤지스",
+      "parent_id": null,
       "thumb_url": "https://up.kpop.re/net/af/a7bc9db60eb13592403bd2089fa99a5f5e1563.jpg",
       "urls": [
         "https://net.kpop.re/?id=zHtC-C6bkdAIhl4G1z2q",
@@ -6073,6 +7012,7 @@
       "name": "Girl's Day",
       "name_alias": null,
       "name_original": "걸스데이",
+      "parent_id": null,
       "thumb_url": "https://up.kpop.re/net/e7/7222194202e323bbe7bbfe8828e4d41d9fe98c.jpg",
       "urls": [
         "https://net.kpop.re/?id=6lbCucIGFVc2wBxVHFvv",
@@ -6109,10 +7049,43 @@
       "name": "Miss A",
       "name_alias": null,
       "name_original": "미쓰에이",
+      "parent_id": null,
       "thumb_url": "https://up.kpop.re/net/b4/d09601f400cbf153838769e7962c363253ddbd.jpg",
       "urls": [
         "https://net.kpop.re/?id=VgH_wBs33_W4w2NnCkDp",
         "https://selca.kastden.org/noona/group/missa/"
+      ]
+    },
+    {
+      "agency_name": "Pledis",
+      "debut_date": "2010-06-17",
+      "disband_date": null,
+      "id": "5m8ulHt7Cjb07oK_ukT-",
+      "members": [
+        {
+          "current": false,
+          "id": "Itjb5JKXSSsxyrHs15TF",
+          "roles": null
+        },
+        {
+          "current": true,
+          "id": "p4ETsKrn8ulzxUw1UORM",
+          "roles": null
+        },
+        {
+          "current": false,
+          "id": "AmutcEN1HIlh68Qmh2rQ",
+          "roles": null
+        }
+      ],
+      "name": "Orange Caramel",
+      "name_alias": null,
+      "name_original": "오렌지 캬라멜",
+      "parent_id": "RcT8JMGsWAcy7of-Ae5B",
+      "thumb_url": "https://up.kpop.re/net/9e/b2a91aa3d5ae52a3b2010a16a8046ec62ae961.jpg",
+      "urls": [
+        "https://net.kpop.re/?id=5m8ulHt7Cjb07oK_ukT-",
+        "https://selca.kastden.org/noona/group/orangecaramel/"
       ]
     },
     {
@@ -6145,6 +7118,7 @@
       "name": "Sistar",
       "name_alias": null,
       "name_original": "씨스타",
+      "parent_id": null,
       "thumb_url": "https://up.kpop.re/net/00/1ccd5c1d5a0492a94146df65089f62fcdc96c9.jpg",
       "urls": [
         "https://net.kpop.re/?id=7sK4Y7OnT6DSFmw8KEXH",
@@ -6196,6 +7170,7 @@
       "name": "Rainbow",
       "name_alias": null,
       "name_original": "레인보우",
+      "parent_id": null,
       "thumb_url": "https://up.kpop.re/net/0a/214396748e70a25c0df64b01a4aa06469116c3.jpg",
       "urls": [
         "https://net.kpop.re/?id=D2uv2gn13fJlqrlHBArm",
@@ -6232,6 +7207,7 @@
       "name": "Secret",
       "name_alias": null,
       "name_original": "시크릿",
+      "parent_id": null,
       "thumb_url": "https://up.kpop.re/net/fa/2cf9104c4bfa8282ab7de112822435b3b5099f.jpg",
       "urls": [
         "https://net.kpop.re/?id=6bPKqszZ2mGqDaK3Fw3U",
@@ -6273,6 +7249,7 @@
       "name": "f(x)",
       "name_alias": null,
       "name_original": "에프엑스",
+      "parent_id": null,
       "thumb_url": "https://up.kpop.re/net/10/c672c8abb9838481e5c9609ec12394fd5e90be.jpg",
       "urls": [
         "https://net.kpop.re/?id=8AVugWR3QipJECyJQxSf",
@@ -6329,6 +7306,7 @@
       "name": "T-ara",
       "name_alias": null,
       "name_original": "티아라",
+      "parent_id": null,
       "thumb_url": "https://up.kpop.re/net/9c/7f1497bb61ca86d838d38d2b87ea1e258148fe.jpg",
       "urls": [
         "https://net.kpop.re/?id=BDrk1S7LZ47I36hsu4Mr",
@@ -6370,6 +7348,7 @@
       "name": "4minute",
       "name_alias": null,
       "name_original": "포미닛",
+      "parent_id": null,
       "thumb_url": "https://up.kpop.re/net/af/d21aec262043483f251b5c68948a7996522434.jpg",
       "urls": [
         "https://net.kpop.re/?id=74zZDjC0r-YPMkytPHln",
@@ -6406,6 +7385,7 @@
       "name": "2NE1",
       "name_alias": null,
       "name_original": "투애니원",
+      "parent_id": null,
       "thumb_url": "https://up.kpop.re/net/b1/147f89ca31a935c900bd7f1b508853a74ff387.jpg",
       "urls": [
         "https://net.kpop.re/?id=KirkTBjxhtTDJnQZ4sZc",
@@ -6467,6 +7447,7 @@
       "name": "After School",
       "name_alias": null,
       "name_original": "애프터 스쿨",
+      "parent_id": null,
       "thumb_url": "https://up.kpop.re/net/67/cb68e318ef0acdfa39ebe4722b1907b2e17ac8.jpg",
       "urls": [
         "https://net.kpop.re/?id=RcT8JMGsWAcy7of-Ae5B",
@@ -6488,6 +7469,7 @@
       "name": "SKE48",
       "name_alias": null,
       "name_original": "SKE48",
+      "parent_id": null,
       "thumb_url": "https://up.kpop.re/net/1e/3bdc19a9b2c1a068d75bf7161129acada6a232.jpg",
       "urls": [
         "https://net.kpop.re/?id=72xL9JRKqBoaT-VUbxAR",
@@ -6514,6 +7496,7 @@
       "name": "Davichi",
       "name_alias": null,
       "name_original": "다비치",
+      "parent_id": null,
       "thumb_url": "https://up.kpop.re/net/23/4771919020c0aec7ae328011f68ea05d740521.jpg",
       "urls": [
         "https://net.kpop.re/?id=-HRnjSF5izqvZXqt8D3S",
@@ -6575,6 +7558,7 @@
       "name": "Girls' Generation",
       "name_alias": null,
       "name_original": "소녀시대",
+      "parent_id": null,
       "thumb_url": "https://up.kpop.re/net/88/d246713bf26efbde1ae2e3800bb3e0765fbc2c.jpg",
       "urls": [
         "https://net.kpop.re/?id=hyZ0ePPCi1KJAT4hMUN0",
@@ -6621,6 +7605,7 @@
       "name": "KARA",
       "name_alias": null,
       "name_original": "카라",
+      "parent_id": null,
       "thumb_url": "https://up.kpop.re/net/73/e8adb5265f6c194e17c35cfc6fb66d660b4f32.jpg",
       "urls": [
         "https://net.kpop.re/?id=HzmNLakD2uFaV7ECMPiG",
@@ -6667,6 +7652,7 @@
       "name": "Wonder Girls",
       "name_alias": null,
       "name_original": "원더걸스",
+      "parent_id": null,
       "thumb_url": "https://up.kpop.re/net/f6/bf5dd5439df41dd28e285d82255e780c41e592.jpg",
       "urls": [
         "https://net.kpop.re/?id=wl_Lu4ZL9i7hT6EORLkS",
@@ -6703,6 +7689,7 @@
       "name": "Brown Eyed Girls",
       "name_alias": null,
       "name_original": "브라운 아이드 걸스",
+      "parent_id": null,
       "thumb_url": "https://up.kpop.re/net/ce/30202884159be9187759945c33640ccce5b6e6.jpg",
       "urls": [
         "https://net.kpop.re/?id=RmwG-ERCOjgvI2NwHVFl",
@@ -6724,6 +7711,7 @@
       "name": "AKB48",
       "name_alias": null,
       "name_original": "AKB48",
+      "parent_id": null,
       "thumb_url": "https://up.kpop.re/net/c2/b27844b107c0fcf1a70f28ff6ab695d0ef8613.jpg",
       "urls": [
         "https://net.kpop.re/?id=KzIe6nQ5JBQhgfoLyfuP",
@@ -6745,6 +7733,7 @@
       "name": "SEEART",
       "name_alias": null,
       "name_original": "씨앗",
+      "parent_id": null,
       "thumb_url": "https://up.kpop.re/net/ba/da68f9079f0d27acd776750369e123366dadf9.jpg",
       "urls": [
         "https://net.kpop.re/?id=VOwGOBLH0CeihDW5uobk",
@@ -6786,6 +7775,7 @@
       "name": "Loossemble",
       "name_alias": null,
       "name_original": "루셈블",
+      "parent_id": null,
       "thumb_url": "https://up.kpop.re/net/5d/1279b49e55ba73029ce595d46fc6843357c23a.jpg",
       "urls": [
         "https://net.kpop.re/?id=pNuvYQlA_6c95iOVRNEN",
@@ -6822,6 +7812,7 @@
       "name": "Kiss of Life",
       "name_alias": null,
       "name_original": "키스 오브 라이프",
+      "parent_id": null,
       "thumb_url": "https://up.kpop.re/net/d8/f749d398c089e5df5371fbb6f3f1f706f0fb00.jpg",
       "urls": [
         "https://net.kpop.re/?id=3oRvJmw38gkcfvRTJJr_",
@@ -6848,6 +7839,7 @@
       "name": "KEEMBO",
       "name_alias": null,
       "name_original": "김보",
+      "parent_id": null,
       "thumb_url": "https://up.kpop.re/net/fa/2a5675ce32ae4a139c5995a393c4fa2e39dec5.jpg",
       "urls": [
         "https://net.kpop.re/?id=Qfu0IszppqJHXT-48INW",
@@ -6894,6 +7886,7 @@
       "name": "I'll-it",
       "name_alias": null,
       "name_original": "아일릿",
+      "parent_id": null,
       "thumb_url": null,
       "urls": [
         "https://net.kpop.re/?id=6CgApLEL_ZevDfskblX-",
@@ -6945,6 +7938,7 @@
       "name": "EL7Z U+P",
       "name_alias": null,
       "name_original": "엘즈업",
+      "parent_id": null,
       "thumb_url": "https://up.kpop.re/net/80/b86c947659784c22961e6a739ec74a4e1d880f.jpg",
       "urls": [
         "https://net.kpop.re/?id=PP5hCnisIzLOSq9cs08h",
@@ -6966,6 +7960,7 @@
       "name": "DAYDAY",
       "name_alias": null,
       "name_original": "데이데이",
+      "parent_id": null,
       "thumb_url": "https://up.kpop.re/net/da/082dcc2e3e6e3f736e608d84d53c8bf53ef897.jpg",
       "urls": [
         "https://net.kpop.re/?id=3tf5cWVNK_NUVZTNiRue",
@@ -7007,6 +8002,7 @@
       "name": "ARTMS",
       "name_alias": null,
       "name_original": "아르테미스",
+      "parent_id": null,
       "thumb_url": "https://up.kpop.re/net/f5/2233bf4fb0a47cffd3432019769525b04ae67e.jpg",
       "urls": [
         "https://net.kpop.re/?id=-cmUTRSHXXBJFEWKW_eV",
@@ -7139,6 +8135,7 @@
       "birth_date": "2008-01-08",
       "debut_date": "2023-10-11",
       "groups": [
+        "-avkw-cyV8yTIXaF89Rk",
         "pnPfkA6YOroT-uM84RsF"
       ],
       "height": 162.3,
@@ -7199,6 +8196,8 @@
       "birth_date": "2007-10-03",
       "debut_date": "2023-02-13",
       "groups": [
+        "-avkw-cyV8yTIXaF89Rk",
+        "vt_CeJYdD_9RlQzAtf2D",
         "pnPfkA6YOroT-uM84RsF"
       ],
       "height": 157.0,
@@ -7239,7 +8238,9 @@
       "birth_date": "2007-04-12",
       "debut_date": "2022-10-28",
       "groups": [
-        "pnPfkA6YOroT-uM84RsF"
+        "2oyC33weM185JDCCnYGO",
+        "pnPfkA6YOroT-uM84RsF",
+        "W39pZ2mMvMhdsD6VhMRF"
       ],
       "height": 161.0,
       "id": "OUhXE_GMal0MzEIgUYI-",
@@ -7599,6 +8600,7 @@
       "birth_date": "2005-12-20",
       "debut_date": "2023-02-13",
       "groups": [
+        "2oyC33weM185JDCCnYGO",
         "pnPfkA6YOroT-uM84RsF"
       ],
       "height": 159.0,
@@ -7739,6 +8741,8 @@
       "birth_date": "2005-10-24",
       "debut_date": "2023-02-13",
       "groups": [
+        "-avkw-cyV8yTIXaF89Rk",
+        "vt_CeJYdD_9RlQzAtf2D",
         "pnPfkA6YOroT-uM84RsF"
       ],
       "height": 172.0,
@@ -8160,7 +9164,9 @@
       "birth_date": "2005-02-03",
       "debut_date": "2022-10-28",
       "groups": [
-        "pnPfkA6YOroT-uM84RsF"
+        "2oyC33weM185JDCCnYGO",
+        "pnPfkA6YOroT-uM84RsF",
+        "W39pZ2mMvMhdsD6VhMRF"
       ],
       "height": 163.0,
       "id": "op1uqTvTOnmCtJpOVemv",
@@ -8340,6 +9346,8 @@
       "birth_date": "2004-12-04",
       "debut_date": "2008-12-03",
       "groups": [
+        "-avkw-cyV8yTIXaF89Rk",
+        "vt_CeJYdD_9RlQzAtf2D",
         "pnPfkA6YOroT-uM84RsF",
         "IpWKnL1FxZX-QrrjEX92"
       ],
@@ -9100,6 +10108,7 @@
       "birth_date": "2004-03-10",
       "debut_date": "2023-10-11",
       "groups": [
+        "-avkw-cyV8yTIXaF89Rk",
         "pnPfkA6YOroT-uM84RsF"
       ],
       "height": 161.5,
@@ -9320,7 +10329,8 @@
       "birth_date": "2003-12-04",
       "debut_date": "2018-11-26",
       "groups": [
-        "03U6H6kIY3w7jWFWW2BL"
+        "03U6H6kIY3w7jWFWW2BL",
+        "AyPa81WVg9TAgzQw2zTr"
       ],
       "height": 163.0,
       "id": "8O-ZSW8BlhbTXR1UGWFk",
@@ -9521,6 +10531,8 @@
       "birth_date": "2003-08-06",
       "debut_date": "2023-02-13",
       "groups": [
+        "2oyC33weM185JDCCnYGO",
+        "vt_CeJYdD_9RlQzAtf2D",
         "pnPfkA6YOroT-uM84RsF"
       ],
       "height": 160.0,
@@ -9641,6 +10653,7 @@
       "birth_date": "2003-06-02",
       "debut_date": "2023-08-17",
       "groups": [
+        "2oyC33weM185JDCCnYGO",
         "pnPfkA6YOroT-uM84RsF"
       ],
       "height": 169.0,
@@ -9981,6 +10994,7 @@
       "birth_date": "2003-01-08",
       "debut_date": "2023-02-13",
       "groups": [
+        "2oyC33weM185JDCCnYGO",
         "pnPfkA6YOroT-uM84RsF"
       ],
       "height": 159.8,
@@ -10223,6 +11237,7 @@
       "birth_date": "2002-10-13",
       "debut_date": "2023-08-17",
       "groups": [
+        "2oyC33weM185JDCCnYGO",
         "pnPfkA6YOroT-uM84RsF"
       ],
       "height": 167.0,
@@ -10243,7 +11258,9 @@
       "birth_date": "2002-10-13",
       "debut_date": "2022-10-28",
       "groups": [
-        "pnPfkA6YOroT-uM84RsF"
+        "-avkw-cyV8yTIXaF89Rk",
+        "pnPfkA6YOroT-uM84RsF",
+        "W39pZ2mMvMhdsD6VhMRF"
       ],
       "height": 166.0,
       "id": "SzOIvSJPMyXJRYqUZMwx",
@@ -10644,6 +11661,7 @@
       "birth_date": "2002-05-25",
       "debut_date": "2023-08-17",
       "groups": [
+        "2oyC33weM185JDCCnYGO",
         "pnPfkA6YOroT-uM84RsF"
       ],
       "height": 174.0,
@@ -10684,6 +11702,7 @@
       "birth_date": "2002-05-12",
       "debut_date": "2023-10-11",
       "groups": [
+        "-avkw-cyV8yTIXaF89Rk",
         "pnPfkA6YOroT-uM84RsF"
       ],
       "height": null,
@@ -11226,6 +12245,7 @@
       "debut_date": "2018-03-30",
       "groups": [
         "6IJKkQucqpcsb9zMBukg",
+        "-9V8FTJXEGRxJmvEM4Ts",
         "pNuvYQlA_6c95iOVRNEN"
       ],
       "height": 165.0,
@@ -11367,7 +12387,8 @@
       "birth_date": "2001-10-04",
       "debut_date": "2018-11-26",
       "groups": [
-        "03U6H6kIY3w7jWFWW2BL"
+        "03U6H6kIY3w7jWFWW2BL",
+        "AyPa81WVg9TAgzQw2zTr"
       ],
       "height": 173.0,
       "id": "WOXSK_H0TQxFEKoeX583",
@@ -11609,6 +12630,7 @@
       "debut_date": "2017-07-28",
       "groups": [
         "6IJKkQucqpcsb9zMBukg",
+        "U2junyt2gq6QiK2ZBJ9e",
         "-cmUTRSHXXBJFEWKW_eV"
       ],
       "height": 163.0,
@@ -11991,7 +13013,9 @@
       "birth_date": "2001-02-09",
       "debut_date": "2022-10-28",
       "groups": [
-        "pnPfkA6YOroT-uM84RsF"
+        "-avkw-cyV8yTIXaF89Rk",
+        "pnPfkA6YOroT-uM84RsF",
+        "W39pZ2mMvMhdsD6VhMRF"
       ],
       "height": 165.0,
       "id": "ULOPXx1hTksdJGLcgGDE",
@@ -12374,6 +13398,7 @@
       "debut_date": "2018-01-30",
       "groups": [
         "6IJKkQucqpcsb9zMBukg",
+        "-9V8FTJXEGRxJmvEM4Ts",
         "pNuvYQlA_6c95iOVRNEN"
       ],
       "height": 160.0,
@@ -12416,6 +13441,7 @@
       "debut_date": "2016-11-17",
       "groups": [
         "6IJKkQucqpcsb9zMBukg",
+        "LAXHEg-2Qsd1o1IWNGGo",
         "pNuvYQlA_6c95iOVRNEN"
       ],
       "height": 165.0,
@@ -12537,6 +13563,7 @@
       "debut_date": "2016-10-05",
       "groups": [
         "6IJKkQucqpcsb9zMBukg",
+        "LAXHEg-2Qsd1o1IWNGGo",
         "-cmUTRSHXXBJFEWKW_eV"
       ],
       "height": 161.0,
@@ -12717,6 +13744,7 @@
       "birth_date": "2000-08-05",
       "debut_date": "2016-06-28",
       "groups": [
+        "JgS1iME58atiRwNkoeTp",
         "L6gxQrxsDZfxXIjy_re5"
       ],
       "height": 167.0,
@@ -13421,7 +14449,8 @@
       "birth_date": "2000-01-22",
       "debut_date": "2018-11-26",
       "groups": [
-        "03U6H6kIY3w7jWFWW2BL"
+        "03U6H6kIY3w7jWFWW2BL",
+        "AyPa81WVg9TAgzQw2zTr"
       ],
       "height": 164.0,
       "id": "3VUpehfwCfBxEQ3qR2q6",
@@ -13643,6 +14672,8 @@
       "birth_date": "1999-12-04",
       "debut_date": "2016-05-04",
       "groups": [
+        "_efTloLbQhyJll_Q5KqU",
+        "JgS1iME58atiRwNkoeTp",
         "L6gxQrxsDZfxXIjy_re5",
         "N1hM4R5q-H1-wS58KtX3"
       ],
@@ -13866,7 +14897,8 @@
       "birth_date": "1999-10-20",
       "debut_date": "2017-12-28",
       "groups": [
-        "6IJKkQucqpcsb9zMBukg"
+        "6IJKkQucqpcsb9zMBukg",
+        "-9V8FTJXEGRxJmvEM4Ts"
       ],
       "height": 161.0,
       "id": "moLqw022fJ0P_-MeaKkN",
@@ -14348,6 +15380,7 @@
       "birth_date": "1999-06-18",
       "debut_date": "2015-04-21",
       "groups": [
+        "yiUU7k4povSYiQo28OwB",
         "ehiHpUhLBMXKWSObhlW-"
       ],
       "height": 163.0,
@@ -14448,6 +15481,7 @@
       "birth_date": "1999-05-14",
       "debut_date": "2016-02-25",
       "groups": [
+        "mHAlgxemfik9CktXBthl",
         "_Xr8i6j68t6bncM_nItb"
       ],
       "height": 161.0,
@@ -14729,6 +15763,7 @@
       "debut_date": "2017-05-23",
       "groups": [
         "6IJKkQucqpcsb9zMBukg",
+        "U2junyt2gq6QiK2ZBJ9e",
         "-cmUTRSHXXBJFEWKW_eV"
       ],
       "height": 163.0,
@@ -14809,6 +15844,7 @@
       "birth_date": "1999-01-10",
       "debut_date": "2016-02-25",
       "groups": [
+        "mHAlgxemfik9CktXBthl",
         "_Xr8i6j68t6bncM_nItb",
         "PP5hCnisIzLOSq9cs08h"
       ],
@@ -14888,6 +15924,7 @@
       "birth_date": "1998-12-16",
       "debut_date": "2016-05-04",
       "groups": [
+        "dlMpxvXDWPDktsfQnjnr",
         "twABzlJyXcomHahOMd_V",
         "N1hM4R5q-H1-wS58KtX3"
       ],
@@ -15050,6 +16087,7 @@
       "debut_date": "2017-03-21",
       "groups": [
         "ioz0FhlazizrorM1_phb",
+        "dlMpxvXDWPDktsfQnjnr",
         "twABzlJyXcomHahOMd_V"
       ],
       "height": 162.0,
@@ -15294,6 +16332,7 @@
       "debut_date": "2017-03-21",
       "groups": [
         "ioz0FhlazizrorM1_phb",
+        "dlMpxvXDWPDktsfQnjnr",
         "twABzlJyXcomHahOMd_V"
       ],
       "height": 167.0,
@@ -15395,6 +16434,7 @@
       "birth_date": "1998-05-27",
       "debut_date": "2016-02-25",
       "groups": [
+        "WtinlyPm2uuve6BDbwGV",
         "_Xr8i6j68t6bncM_nItb"
       ],
       "height": 172.0,
@@ -15999,6 +17039,7 @@
       "birth_date": "1997-09-09",
       "debut_date": "2015-04-21",
       "groups": [
+        "yiUU7k4povSYiQo28OwB",
         "ehiHpUhLBMXKWSObhlW-"
       ],
       "height": 162.0,
@@ -16100,6 +17141,7 @@
       "debut_date": "2016-12-15",
       "groups": [
         "6IJKkQucqpcsb9zMBukg",
+        "LAXHEg-2Qsd1o1IWNGGo",
         "-cmUTRSHXXBJFEWKW_eV"
       ],
       "height": 159.0,
@@ -16141,6 +17183,7 @@
       "debut_date": "2017-03-21",
       "groups": [
         "ioz0FhlazizrorM1_phb",
+        "dlMpxvXDWPDktsfQnjnr",
         "twABzlJyXcomHahOMd_V"
       ],
       "height": 172.0,
@@ -16284,6 +17327,7 @@
       "debut_date": "2017-06-26",
       "groups": [
         "6IJKkQucqpcsb9zMBukg",
+        "U2junyt2gq6QiK2ZBJ9e",
         "-cmUTRSHXXBJFEWKW_eV"
       ],
       "height": 165.0,
@@ -16365,7 +17409,8 @@
       "birth_date": "1997-05-24",
       "debut_date": "2017-11-28",
       "groups": [
-        "6IJKkQucqpcsb9zMBukg"
+        "6IJKkQucqpcsb9zMBukg",
+        "-9V8FTJXEGRxJmvEM4Ts"
       ],
       "height": 166.0,
       "id": "LmyNkaf4JjpLpJqL_wMs",
@@ -16606,6 +17651,7 @@
       "birth_date": "1997-02-06",
       "debut_date": "2016-02-25",
       "groups": [
+        "mHAlgxemfik9CktXBthl",
         "f3r9W1Pj-Ittall8C_F5",
         "_Xr8i6j68t6bncM_nItb"
       ],
@@ -16908,6 +17954,7 @@
       "debut_date": "2017-03-12",
       "groups": [
         "6IJKkQucqpcsb9zMBukg",
+        "LAXHEg-2Qsd1o1IWNGGo",
         "pNuvYQlA_6c95iOVRNEN"
       ],
       "height": 160.0,
@@ -17286,6 +18333,7 @@
       "birth_date": "1996-08-28",
       "debut_date": "2016-05-04",
       "groups": [
+        "_efTloLbQhyJll_Q5KqU",
         "L6gxQrxsDZfxXIjy_re5",
         "N1hM4R5q-H1-wS58KtX3"
       ],
@@ -17469,6 +18517,7 @@
       "birth_date": "1996-07-14",
       "debut_date": "2016-02-25",
       "groups": [
+        "mHAlgxemfik9CktXBthl",
         "_Xr8i6j68t6bncM_nItb"
       ],
       "height": 157.0,
@@ -17868,6 +18917,7 @@
       "birth_date": "1995-12-18",
       "debut_date": "2016-05-04",
       "groups": [
+        "dlMpxvXDWPDktsfQnjnr",
         "twABzlJyXcomHahOMd_V",
         "N1hM4R5q-H1-wS58KtX3"
       ],
@@ -17987,6 +19037,7 @@
       "birth_date": "1995-11-23",
       "debut_date": "2016-06-28",
       "groups": [
+        "_efTloLbQhyJll_Q5KqU",
         "L6gxQrxsDZfxXIjy_re5"
       ],
       "height": 169.0,
@@ -18047,6 +19098,7 @@
       "birth_date": "1995-11-06",
       "debut_date": "2016-02-25",
       "groups": [
+        "WtinlyPm2uuve6BDbwGV",
         "_Xr8i6j68t6bncM_nItb"
       ],
       "height": 166.0,
@@ -18329,6 +19381,7 @@
       "birth_date": "1995-08-19",
       "debut_date": "2016-02-25",
       "groups": [
+        "WtinlyPm2uuve6BDbwGV",
         "_Xr8i6j68t6bncM_nItb"
       ],
       "height": 163.0,
@@ -18771,6 +19824,7 @@
       "birth_date": "1994-12-24",
       "debut_date": "2016-02-25",
       "groups": [
+        "WtinlyPm2uuve6BDbwGV",
         "f3r9W1Pj-Ittall8C_F5",
         "_Xr8i6j68t6bncM_nItb"
       ],
@@ -19135,6 +20189,7 @@
       "birth_date": "1994-07-28",
       "debut_date": "2015-04-21",
       "groups": [
+        "yiUU7k4povSYiQo28OwB",
         "ehiHpUhLBMXKWSObhlW-"
       ],
       "height": 158.0,
@@ -19379,6 +20434,7 @@
       "birth_date": "1994-04-19",
       "debut_date": "2012-07-03",
       "groups": [
+        "AS7wYxRd9i-90pvbxNBg",
         "BDrk1S7LZ47I36hsu4Mr"
       ],
       "height": 168.0,
@@ -19896,6 +20952,7 @@
       "birth_date": "1993-08-13",
       "debut_date": "2011-04-19",
       "groups": [
+        "XNV4sTtbNECe7hXf5PKr",
         "HH4mYi0Z7NhRWX5JEQfB"
       ],
       "height": 163.0,
@@ -20036,6 +21093,7 @@
       "birth_date": "1993-06-07",
       "debut_date": "2009-07-27",
       "groups": [
+        "AS7wYxRd9i-90pvbxNBg",
         "BDrk1S7LZ47I36hsu4Mr"
       ],
       "height": 167.0,
@@ -20711,6 +21769,7 @@
       "birth_date": "1992-07-31",
       "debut_date": "2010-03-25",
       "groups": [
+        "5m8ulHt7Cjb07oK_ukT-",
         "RcT8JMGsWAcy7of-Ae5B"
       ],
       "height": 169.0,
@@ -20889,6 +21948,7 @@
       "birth_date": "1992-05-01",
       "debut_date": "2012-02-16",
       "groups": [
+        "IjUw6oUcpRr8iphATaDb",
         "iKphOmK9oGNj5KvHbN2m"
       ],
       "height": 168.8,
@@ -21169,6 +22229,7 @@
       "birth_date": "1991-10-11",
       "debut_date": "2014-09-04",
       "groups": [
+        "pcEoIhVWXmBvVgKRB2dC",
         "zHtC-C6bkdAIhl4G1z2q"
       ],
       "height": 168.2,
@@ -21209,6 +22270,7 @@
       "birth_date": "1991-09-14",
       "debut_date": "2009-11-25",
       "groups": [
+        "5m8ulHt7Cjb07oK_ukT-",
         "RcT8JMGsWAcy7of-Ae5B"
       ],
       "height": 170.6,
@@ -21289,6 +22351,8 @@
       "birth_date": "1991-08-11",
       "debut_date": "2009-11-12",
       "groups": [
+        "w7_LbciUnUY6kOQ3yPNv",
+        "0Ye5Yj4MoMa1U6GEBh3c",
         "D2uv2gn13fJlqrlHBArm"
       ],
       "height": 160.0,
@@ -21367,6 +22431,7 @@
       "birth_date": "1991-06-28",
       "debut_date": "2007-08-05",
       "groups": [
+        "Z9g_47kJoJCC-uRrFJ5m",
         "hyZ0ePPCi1KJAT4hMUN0"
       ],
       "height": 170.0,
@@ -21667,6 +22732,7 @@
       "birth_date": "1991-03-03",
       "debut_date": "2011-04-19",
       "groups": [
+        "XNV4sTtbNECe7hXf5PKr",
         "HH4mYi0Z7NhRWX5JEQfB"
       ],
       "height": 163.0,
@@ -21825,6 +22891,7 @@
       "birth_date": "1990-12-11",
       "debut_date": "2010-06-04",
       "groups": [
+        "-33oXWUU74JcGM0mDvgt",
         "7sK4Y7OnT6DSFmw8KEXH"
       ],
       "height": 161.0,
@@ -21865,6 +22932,7 @@
       "birth_date": "1990-10-15",
       "debut_date": "2009-06-18",
       "groups": [
+        "_sXrbOXa2PAQLLibJg4z",
         "74zZDjC0r-YPMkytPHln"
       ],
       "height": 165.0,
@@ -22006,6 +23074,7 @@
       "birth_date": "1990-07-18",
       "debut_date": "2009-11-12",
       "groups": [
+        "0Ye5Yj4MoMa1U6GEBh3c",
         "D2uv2gn13fJlqrlHBArm"
       ],
       "height": 162.6,
@@ -22066,6 +23135,7 @@
       "birth_date": "1990-07-05",
       "debut_date": "2012-01-11",
       "groups": [
+        "pcEoIhVWXmBvVgKRB2dC",
         "zHtC-C6bkdAIhl4G1z2q"
       ],
       "height": 170.4,
@@ -22146,6 +23216,7 @@
       "birth_date": "1990-05-18",
       "debut_date": "2009-06-18",
       "groups": [
+        "_sXrbOXa2PAQLLibJg4z",
         "74zZDjC0r-YPMkytPHln"
       ],
       "height": 165.0,
@@ -22366,6 +23437,7 @@
       "birth_date": "1989-12-30",
       "debut_date": "2010-06-04",
       "groups": [
+        "-33oXWUU74JcGM0mDvgt",
         "7sK4Y7OnT6DSFmw8KEXH"
       ],
       "height": 164.0,
@@ -22547,6 +23619,7 @@
       "birth_date": "1989-08-01",
       "debut_date": "2007-08-05",
       "groups": [
+        "Z9g_47kJoJCC-uRrFJ5m",
         "hyZ0ePPCi1KJAT4hMUN0"
       ],
       "height": 162.0,
@@ -22587,6 +23660,7 @@
       "birth_date": "1989-05-30",
       "debut_date": "2009-07-27",
       "groups": [
+        "AS7wYxRd9i-90pvbxNBg",
         "BDrk1S7LZ47I36hsu4Mr"
       ],
       "height": 167.0,
@@ -22685,6 +23759,7 @@
       "birth_date": "1989-05-07",
       "debut_date": "2009-11-25",
       "groups": [
+        "5m8ulHt7Cjb07oK_ukT-",
         "RcT8JMGsWAcy7of-Ae5B"
       ],
       "height": 166.0,
@@ -22747,6 +23822,7 @@
       "debut_date": "2007-08-05",
       "groups": [
         "8t-jPdvEkQAw52HDMedH",
+        "Z9g_47kJoJCC-uRrFJ5m",
         "hyZ0ePPCi1KJAT4hMUN0"
       ],
       "height": 158.0,
@@ -22807,6 +23883,7 @@
       "birth_date": "1989-01-10",
       "debut_date": "2006-03-31",
       "groups": [
+        "IjUw6oUcpRr8iphATaDb",
         "iKphOmK9oGNj5KvHbN2m"
       ],
       "height": 170.0,
@@ -22827,6 +23904,7 @@
       "birth_date": "1988-12-24",
       "debut_date": "2009-11-12",
       "groups": [
+        "w7_LbciUnUY6kOQ3yPNv",
         "D2uv2gn13fJlqrlHBArm"
       ],
       "height": 167.9,
@@ -22847,6 +23925,7 @@
       "birth_date": "1988-12-12",
       "debut_date": "1995-00-00",
       "groups": [
+        "AS7wYxRd9i-90pvbxNBg",
         "BDrk1S7LZ47I36hsu4Mr"
       ],
       "height": 167.0,
@@ -22907,6 +23986,8 @@
       "birth_date": "1988-09-13",
       "debut_date": "2009-11-12",
       "groups": [
+        "w7_LbciUnUY6kOQ3yPNv",
+        "0Ye5Yj4MoMa1U6GEBh3c",
         "D2uv2gn13fJlqrlHBArm"
       ],
       "height": 168.0,
@@ -23124,6 +24205,7 @@
       "birth_date": "1988-02-22",
       "debut_date": "2009-11-12",
       "groups": [
+        "w7_LbciUnUY6kOQ3yPNv",
         "D2uv2gn13fJlqrlHBArm"
       ],
       "height": 165.0,

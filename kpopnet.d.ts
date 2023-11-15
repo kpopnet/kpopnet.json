@@ -37,6 +37,7 @@ export interface Group {
   thumb_url: string | null;
   // references
   members: GroupMember[];
+  parent_id: string | null;
 }
 
 export interface Profiles {

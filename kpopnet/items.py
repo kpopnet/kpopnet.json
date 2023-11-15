@@ -45,6 +45,7 @@ class Group(TypedDict):
     thumb_url: Optional[str]
     # references
     members: list[GroupMember]
+    parent_id: Optional[str]
 
 
 class Profiles(TypedDict):
@@ -137,7 +138,13 @@ class IdolValidator(Validator):
 
 class GroupValidator(Validator):
     REQUIRED_FIELDS = ["name", "name_original", "agency_name", "urls"]
-    OPTIONAL_FIELDS = ["name_alias", "debut_date", "disband_date", "thumb_url"]
+    OPTIONAL_FIELDS = [
+        "name_alias",
+        "debut_date",
+        "disband_date",
+        "thumb_url",
+        "parent_id",
+    ]
     OTHER_FIELDS = ["members"]
     UNIQUE_FIELDS = ["name", "name_original"]
 

@@ -4,7 +4,6 @@ import io
 import json
 import hashlib
 from pathlib import Path
-from urllib.parse import unquote
 from typing import cast
 from contextlib import suppress
 
@@ -20,6 +19,7 @@ from ..items import (
     IdolValidator,
     GroupValidator,
 )
+from ..utils import find_by_field
 
 
 class KastdenSpider(scrapy.Spider):
@@ -55,12 +55,6 @@ class KastdenSpider(scrapy.Spider):
             os.remove(self.out_json_fpath)
         with suppress(FileNotFoundError):
             os.remove(self.out_minjson_fpath)
-
-    @staticmethod
-    def unquote(url: str) -> str:
-        url = unquote(url)
-        # for convenient ctrl+click from terminal
-        return url.replace(" ", "%20")
 
     def parse(self, response):
         for href in response.css(".cell_line a::attr(href)").getall():
@@ -168,20 +162,21 @@ class KastdenSpider(scrapy.Spider):
                 idol["weight"] = float(m.group(1))
 
         idol["_groups"] = []  # tmp key, will update later
-        tables_groups = response.css("h2 ~ table tbody")
-        if tables_groups:
-            # TODO: subunit table
-            # XXX: subunits table without groups table?
-            for tr in tables_groups[0].css("tr"):
+        for table_groups in response.css("h2 ~ table tbody"):  # groups + subunits
+            for tr in table_groups.css("tr"):
                 tds = tr.css("td")
                 # group_name = tds[1].css("a::text").get()
                 group_url = response.urljoin(tds[1].css("a::attr(href)").get())
-                group_disbanded = tds[4].get() is not None
-                group_current = not group_disbanded
-                if len(tds) > 5:
+                if len(tds) >= 5:
+                    group_disbanded = tds[4].get() is not None
+                    group_current = not group_disbanded
+                else:
+                    # will fix with info from main group later
+                    group_current = True
+                if len(tds) >= 6:
                     group_current = tds[5].css("::text").get() == "Yes"
                 group_roles = None
-                if len(tds) > 6:
+                if len(tds) >= 7:
                     roles_text = tds[6].css("::text").get()
                     group_roles = roles_text.lower() if roles_text else None
                 idol["_groups"].append(
@@ -233,6 +228,23 @@ class KastdenSpider(scrapy.Spider):
             elif re.search(r"disbandment\s+date", prop, re.I):
                 group["disband_date"] = self.parse_date(prop, value, full=False)
 
+        table_parent_group = response.xpath(
+            "//h2[contains(text(), 'Main group')]/following-sibling::table[1]/tbody"
+        )
+        if table_parent_group:
+            # should be only one parent group
+            trs = table_parent_group[0].css("tr")
+            assert len(trs) == 1, trs
+            tr_group = trs[0]
+
+            parent_url = tr_group.css("td:nth-child(2) a::attr(href)").get()
+            parent_url = response.urljoin(parent_url)
+            group["parent_id"] = parent_url  # will fix with ID later
+
+            # subunits miss agency_name, copy from main group
+            assert "agency_name" not in group, group
+            group["agency_name"] = tr_group.css("td:nth-child(3) ::text").get().strip()
+
         yield from self.download_thumb(response, group)
 
         group["urls"] = [response.url]
@@ -278,6 +290,18 @@ class KastdenSpider(scrapy.Spider):
                     }
                 )
             idol["groups"].sort(key=idol_groups_key, reverse=True)
+        # fix subunits
+        for group in groups:
+            if group["parent_id"]:
+                parent_group = group_by_url[group["parent_id"]]
+                group["parent_id"] = parent_group["id"]
+                for member in group["members"]:
+                    # O(n^2) but should be fine
+                    parent_member = find_by_field(
+                        parent_group["members"], "id", member["id"]
+                    )
+                    assert parent_member, (group, member)
+                    member["current"] = parent_member["current"]
 
         # Validate after modifications
         IdolValidator.validate_all(self.all_idols)
