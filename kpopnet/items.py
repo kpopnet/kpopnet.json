@@ -26,7 +26,7 @@ class Idol(TypedDict):
 
 
 class GroupMember(TypedDict):
-    id: str
+    idol_id: str
     current: bool
     roles: Optional[str]
 

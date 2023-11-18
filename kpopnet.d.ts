@@ -18,7 +18,7 @@ export interface Idol {
 }
 
 export interface GroupMember {
-  id: string;
+  idol_id: string;
   current: boolean;
   roles: string | null;
 }

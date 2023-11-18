@@ -284,7 +284,7 @@ class KastdenSpider(scrapy.Spider):
                 idol["groups"].append(group["id"])
                 group["members"].append(
                     {
-                        "id": idol["id"],
+                        "idol_id": idol["id"],
                         "current": idol_group["current"],
                         "roles": idol_group["roles"],
                     }
@@ -298,7 +298,7 @@ class KastdenSpider(scrapy.Spider):
                 for member in group["members"]:
                     # O(n^2) but should be fine
                     parent_member = find_by_field(
-                        parent_group["members"], "id", member["id"]
+                        parent_group["members"], "idol_id", member["idol_id"]
                     )
                     assert parent_member, (group, member)
                     member["current"] = parent_member["current"]
