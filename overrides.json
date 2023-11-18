@@ -47,6 +47,14 @@
         "name_alias": "Cosmic Girls",
         "name_original": "우주소녀"
       }
+    },
+    {
+      "match": {
+        "name_original": "소녀시대"
+      },
+      "update": {
+        "name_alias": "SNSD"
+      }
     }
   ]
 }
