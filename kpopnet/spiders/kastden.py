@@ -100,9 +100,6 @@ class KastdenSpider(scrapy.Spider):
         fpath.write_bytes(response.body)
         item["thumb_url"] = self.THUMB_BASE_URL + "/" + fname
 
-    def get_item_kpopnet_url(self, item: Idol | Group) -> str:
-        return f"https://net.kpop.re/?id={item['id']}"
-
     def parse_name_alias(self, value: str) -> str:
         value = re.sub(r"\s*\(\s*", ",", value)
         value = re.sub(r"\s*\)\s*", ",", value)
@@ -211,7 +208,6 @@ class KastdenSpider(scrapy.Spider):
                 idol["urls"].append(namu_urls[0])
 
         IdolValidator.normalize(cast(dict, idol), self.all_overrides["idols"])
-        idol["urls"].insert(0, self.get_item_kpopnet_url(idol))
         self.all_idols.append(idol)
 
     def parse_group(self, response):
@@ -273,8 +269,6 @@ class KastdenSpider(scrapy.Spider):
                 group["urls"].append(namu_urls[0])
 
         GroupValidator.normalize(cast(dict, group), self.all_overrides["groups"])
-        # after normalize because we need ID
-        group["urls"].insert(0, self.get_item_kpopnet_url(group))
         self.all_groups.append(group)
 
     def closed(self, reason):

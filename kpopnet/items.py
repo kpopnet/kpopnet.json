@@ -71,11 +71,29 @@ class Validator:
     UNIQUE_FIELDS = []
 
     @classmethod
+    def override_urls(cls, item: dict, update: dict):
+        url_keys = []
+        for key in update:
+            if key.startswith("urls"):
+                url_keys.append(key)
+        if not url_keys:
+            return
+
+        for key in url_keys:
+            val = update.pop(key)
+            idx = int(key[5:-1])  # urls[x] -> x
+            # FIXME(Kagami): kpopnet url is inserted later
+            item["urls"][idx - 1] = val
+        return update
+
+    @classmethod
     def normalize(cls, item: dict, overrides: list[Override]):
         for override in overrides:
             matched = all(item[k] == v for k, v in override["match"].items())
             if matched:
-                item.update(override["update"])
+                override_update = override["update"].copy()
+                cls.override_urls(item, override_update)
+                item.update(override_update)
                 break
         for field in cls.REQUIRED_FIELDS:
             assert item.get(field), (field, item)
@@ -83,6 +101,8 @@ class Validator:
             if field not in item:
                 item[field] = None
         item["id"] = cls.gen_id(item)
+        item["urls"].insert(0, cls.get_kpopnet_url(item))
+        # TODO: overrides by id here?
 
     @staticmethod
     def hash(s: str) -> str:
@@ -92,6 +112,10 @@ class Validator:
     @classmethod
     def gen_id(cls, item: dict) -> str:
         raise NotImplementedError
+
+    @classmethod
+    def get_kpopnet_url(cls, item: dict) -> str:
+        return f"https://net.kpop.re/?id={item['id']}"
 
     # TODO: validate types, regular expression
     @classmethod

@@ -19,6 +19,15 @@
         "real_name": "unknown_daewang",
         "real_name_original": "unknown_daewang"
       }
+    },
+    {
+      "match": {
+        "real_name_original": "권보아",
+        "birth_date": "1986-11-05"
+      },
+      "update": {
+        "urls[2]": "https://namu.wiki/w/보아"
+      }
     }
   ],
   "groups": [
