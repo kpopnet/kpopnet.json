@@ -4,6 +4,7 @@ import io
 import json
 import hashlib
 from pathlib import Path
+from urllib.parse import unquote
 from typing import cast
 from contextlib import suppress
 
@@ -55,6 +56,12 @@ class KastdenSpider(scrapy.Spider):
             os.remove(self.out_json_fpath)
         with suppress(FileNotFoundError):
             os.remove(self.out_minjson_fpath)
+
+    @staticmethod
+    def unquote(url: str) -> str:
+        url = unquote(url)
+        # for convenient ctrl+click from terminal
+        return url.replace(" ", "%20")
 
     def parse(self, response):
         for href in response.css(".cell_line a::attr(href)").getall():
@@ -188,11 +195,20 @@ class KastdenSpider(scrapy.Spider):
         yield from self.download_thumb(response, idol)
 
         idol["urls"] = [response.url]
-        # TODO: Check for <h2>References</h2>?
-        # list_urls = response.css("h2 ~ ul")
-        # if list_urls:
-        #     for url in list_urls.css("a::attr(href)").getall():
-        #         idol["urls"].append(self.unquote(url))
+        list_urls = response.css("h2 ~ ul")
+        if list_urls:
+            urls = list_urls[0].css("a::attr(href)").getall()
+            namu_urls = [self.unquote(url) for url in urls if "namu.wiki" in url]
+            if len(namu_urls) > 1:
+                # might be multiple references to namu, we need the one pointing to idol
+                namu_urls = [
+                    url
+                    for url in namu_urls
+                    if idol["name_original"] in url or idol["name"] in url
+                ]
+                assert len(namu_urls) == 1, urls
+            if namu_urls:
+                idol["urls"].append(namu_urls[0])
 
         IdolValidator.normalize(cast(dict, idol), self.all_overrides["idols"])
         idol["urls"].insert(0, self.get_item_kpopnet_url(idol))
@@ -248,10 +264,13 @@ class KastdenSpider(scrapy.Spider):
         yield from self.download_thumb(response, group)
 
         group["urls"] = [response.url]
-        # list_urls = response.css("h2 ~ ul")
-        # if list_urls:
-        #     for url in list_urls.css("a::attr(href)").getall():
-        #         group["urls"].append(self.unquote(url))
+        list_urls = response.css("h2 ~ ul")
+        if list_urls:
+            urls = list_urls[0].css("a::attr(href)").getall()
+            namu_urls = [self.unquote(url) for url in urls if "namu.wiki" in url]
+            assert len(namu_urls) <= 1, urls
+            if namu_urls:
+                group["urls"].append(namu_urls[0])
 
         GroupValidator.normalize(cast(dict, group), self.all_overrides["groups"])
         # after normalize because we need ID

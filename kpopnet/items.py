@@ -101,6 +101,22 @@ class Validator:
         )
         current_fields = set(item.keys())
         assert allowed_fields == current_fields, (allowed_fields, current_fields)
+        cls.validate_urls(item)
+
+    @classmethod
+    def validate_urls(cls, item: Mapping):
+        assert 2 <= len(item["urls"]) <= 3, item
+        assert item["urls"][0].startswith("https://net.kpop.re/?id="), item
+        if "members" in item:
+            assert item["urls"][1].startswith(
+                "https://selca.kastden.org/noona/group/"
+            ), item
+        else:
+            assert item["urls"][1].startswith(
+                "https://selca.kastden.org/noona/idol/"
+            ), item
+        if len(item["urls"]) > 2:
+            assert item["urls"][2].startswith("https://namu.wiki/w/"), item
 
     @classmethod
     def validate_unique_fields(cls, items: Sequence[Mapping], fields: list[str]):
