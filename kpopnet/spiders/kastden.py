@@ -75,8 +75,8 @@ class KastdenSpider(scrapy.Spider):
             m = re.search(r"(\d{4})(?:\s*-\s*(\d{2})(?:\s*-\s*(\d{2}))?)?", value)
         assert m, (prop, value)
         year, month, day = m.groups()
-        month = month or "00"
-        day = day or "00"
+        month = month or "01"
+        day = day or "01"
         return f"{year}-{month}-{day}"
 
     def download_thumb(self, response: Response, item: Idol | Group):

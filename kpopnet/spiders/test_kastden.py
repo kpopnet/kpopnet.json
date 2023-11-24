@@ -19,8 +19,8 @@ def test_parse_date(spider):
     with pytest.raises(AssertionError):
         s.parse_date("date", "2023-01")
 
-    assert s.parse_date("date", "2003", full=False) == "2003-00-00"
-    assert s.parse_date("date", "2003-01", full=False) == "2003-01-00"
+    assert s.parse_date("date", "2003", full=False) == "2003-01-01"
+    assert s.parse_date("date", "2003-01", full=False) == "2003-01-01"
 
 
 def test_parse_name_alias(spider):
